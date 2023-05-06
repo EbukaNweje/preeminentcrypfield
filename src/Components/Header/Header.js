@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { A, Container, Header1, Header2, Left, Line, Login, Logo, LogoHold, Nav, NavHold, Right, SignUp, SocialHold, SocialIcon, Wrapper , Icon, Wrapper1, BurgerHold, NavDiv} from './HeaderStyle';
 import {AiOutlinePhone,AiOutlineMenu, AiFillMail} from 'react-icons/ai'
 import {BsInstagram, BsTwitter, BsYoutube} from 'react-icons/bs'
-import {} from 'react-icons'
 import logo from '../../Assets/mylogo.png'
 import SideNav from "./SideNav";
 import AOS from 'aos'
