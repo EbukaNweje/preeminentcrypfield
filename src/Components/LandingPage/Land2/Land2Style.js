@@ -16,11 +16,15 @@ align-items: center;
 }
 `;
 export const Wrapper = styled.div`
-width: 70%;
+width: 78%;
 height: 73%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+transition: all 400ms;
+
+
+
 
 @media Screen and (max-width: 768px){
     flex-wrap: wrap;
@@ -36,7 +40,7 @@ align-items: center;
 export const Card = styled.div`
 width: 30%;
 height: 80%;
-background-color: #16243D;
+background-color: #0B1526;
 border-radius: 0.2rem;
 ;
 box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px 1px;
@@ -48,6 +52,7 @@ box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px
     background-size: contain;
     transition: all 1s;
     cursor: pointer;
+    transform: scale(1.03);
 }
 @media Screen and (max-width: 768px){
     width: 60%;
