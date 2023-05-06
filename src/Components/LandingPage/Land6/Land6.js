@@ -34,24 +34,24 @@ const Land6 = () => {
         <H1>100% Fully Automated Binary<br/> Trading Software.</H1>
         <P>Trade and earn with Preeminent crypt field VIP multichain decentralized exchange</P>
         <BoxHold>
-            <Box data-aos='flip-right'>
+            <Box >
                 <GiHandOk style={{width: 50, height: 50, color: "#0CD5F9"}}/>
                 <h6>Fast & easy h6rocess</h6>
                 <p>Easy to invest and trade</p>
             </Box>
-            <Box data-aos='flip-left'>
+            <Box >
                 <FaFileSignature style={{width: 50, height: 50, color: "#0CD5F9"}}/>
                 <h6>Earn a share of trading</h6>
                 <p>Put your crypto to work in liquidity polls</p>
             </Box>
         </BoxHold>
         <BoxHold>
-            <Box data-aos='flip-right'>
+            <Box>
                 <FaScroll style={{width: 50, height: 50, color: "#0CD5F9"}}/>
                 <h6>Control over Policy</h6>
                 <p>Our policy apply when trading</p>
-                </Box>
-            <Box data-aos='flip-left'>
+            </Box>
+            <Box>
                 <GiCash style={{width: 50, height: 50, color: "#0CD5F9"}}/>
                 <h6>Earn your money</h6>
                 <p>Profit are deposited to your wallet instantly</p>

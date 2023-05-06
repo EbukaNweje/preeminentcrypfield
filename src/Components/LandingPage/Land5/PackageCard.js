@@ -85,10 +85,10 @@ display: flex;
 width: 85%;
 margin: 0.5rem 0;
 `;
-const A = styled.div`
-color: #808080;
-margin-left : 20px;
-`;
+// const A = styled.div`
+// color: #808080;
+// margin-left : 20px;
+// `;
 const B = styled.div`
 color: #808080;
 margin-left : 20px;

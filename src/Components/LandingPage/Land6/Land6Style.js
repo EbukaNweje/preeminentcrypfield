@@ -11,7 +11,7 @@ background-position: left;
 background-color: black;
 `;
 export const Wrapper = styled.div`
-background-color: whitesmoke;
+background-color: #16243D;
 opacity: 98%;
 height: 100%;
 display: flex;
@@ -19,15 +19,27 @@ justify-content: center;
 align-items: center;
 padding: 8rem 0;
 
+@media Screen and (max-width: 768px){
+    padding: 0 0 25rem 0
+}
+
 `;
 export const Wrap = styled.div`
 width: 80%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+@media Screen and (max-width: 768px){
+    flex-direction: column;
+}
 `;
 export const LeftDiv = styled.div`
 width: 50%;
+
+@media Screen and (max-width: 768px){
+    width: 100%;
+}
 `;
 export const BoxHold = styled.div`
 width: 90%;
@@ -35,10 +47,15 @@ margin: 1rem 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+@media Screen and (max-width: 768px){
+    width :100%;
+    flex-direction: column;
+}
 `;
 export const Box= styled.div`
 width: 45%;
-background-color: #BF1E24;
+background-color: #0F192C;
 height: 11rem;
 display: flex;
 flex-direction: column;
@@ -74,6 +91,11 @@ h6{
     }
 }
 
+@media Screen and (max-width: 768px){
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 `;
 
 export const BgImg = styled.img`
@@ -81,18 +103,33 @@ width: 50%;
 position: absolute;
 right: 5rem;
 margin-bottom: 20px;
+
+@media Screen and (max-width: 768px){
+    width: 100%;
+    right: 0;
+}
 `;
 export const NewBg = styled.img`
 width: 34%;
 margin-left: 200px;
+
+@media Screen and (max-width: 768px){
+    display: none;
+}
 `;
 export const NewBg2 = styled.img`
 width: 34%;
+@media Screen and (max-width: 768px){
+    display: none;
+}
 /* margin-left: 100px; */
 `;
 export const NewBg3 = styled.img`
 width: 45%;
 margin-left: 400px;
+@media Screen and (max-width: 768px){
+    display: none;
+}
 `;
 // export const NewBg4 = styled.img`
 // width: 45%;
@@ -104,7 +141,7 @@ width: 30%;
 display: flex;
 align-items: center;
 justify-content: space-between;
-color: #2A203B;
+color: lightgrey;
 
 :hover{
     width: 32%;
@@ -117,7 +154,7 @@ color: #2A203B;
 export const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: #2A203B;
+color: lightgrey;
 margin-bottom: 40px;
 `;
 export const P = styled.div`

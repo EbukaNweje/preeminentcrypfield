@@ -131,7 +131,6 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 color: lightgrey;
-
 :hover{
     width: 32%;
     cursor: pointer;

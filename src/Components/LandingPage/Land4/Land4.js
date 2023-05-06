@@ -1,10 +1,8 @@
 import React from 'react';
-import {Container, Left, Right, Wrapper, Trade, Img, H1, Img1, Img2, Button, ButtonHold, ContactHold, ContDiv, CallIcon, P, Nav,} from './Land4Style'
+import {Container, Left, Right, Wrapper, Trade, Img, H1, Img1, Button, ButtonHold, ContactHold, ContDiv, CallIcon, P, Nav,} from './Land4Style'
 import arr from '../../../Assets/arr.png'
 import arr2 from '../../../Assets/arr2.png'
 import bg1 from '../../../Assets/bkbg.jpg'
-import bg2 from '../../../Assets/frbg.jpg'
-// import bg3 from '../../../Assets/bg5.png'
 import {AiFillPhone} from 'react-icons/ai'
 
 
@@ -16,9 +14,6 @@ const Land4 = () => {
         <Wrapper>
         <Left>
             <Img1 src={bg1}/>
-            {/* <Img2 src={bg2}/> */}
-            {/* <Div><AiOutlineHome style={{width: 50, height: 50}}/>
-            </Div> */}
         </Left>
         <Right>
             <Trade>

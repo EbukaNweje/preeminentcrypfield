@@ -35,10 +35,10 @@ const Landing = () => {
       <Land3/>
       <Land4/>
       <Land5/>
-      {/* <Land6/> */}
+      <Land6/>
+      {/* <Land9/> */}
       {/* <Land7/> */}
       {/* <Land8/> */}
-      {/* <Land9/> */}
        </>
       }
     </div>
