@@ -28,6 +28,14 @@ const PackageCard = (props) => {
                 <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
                 <E>{props.e}</E>
             </Packages>
+            <Packages>
+                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
+                <F>{props.f}</F>
+            </Packages>
+            <Packages>
+                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
+                <G>{props.g}</G>
+            </Packages>
             <Button>Get Started</Button>
         </Wrapper>
     </Container>
@@ -46,6 +54,12 @@ justify-content: center;
 align-items: center;
 padding: 3rem 0.5rem;
 border-radius: 0.3rem;
+
+@media Screen and (max-width: 768px){
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
 `;
 const Wrapper = styled.div`
 width: 90%;
@@ -93,8 +107,16 @@ const E = styled.div`
 color: #808080;
 margin-left : 20px;
 `;
+const F = styled.div`
+color: #808080;
+margin-left : 20px;
+`;
+const G = styled.div`
+color: #808080;
+margin-left : 20px;
+`;
 const Button = styled.div`
-background-color: #2A203B;
+background-color: #015FC9;
 width: 70%;
 padding: 1.1rem 0.2rem;
 text-align: center;
@@ -104,9 +126,10 @@ font-size: 17px;
 font-weight: 500;
 margin-top: 2rem;
 cursor: pointer;
+color: lightgrey;
 
-:hover{
+/* :hover{
     background-color: #BA2222;
     transition: all 1s;
-}
+} */
 `;

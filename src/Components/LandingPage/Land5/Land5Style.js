@@ -7,15 +7,21 @@ display: flex;
 justify-content: center;
 align-items: center;
 /* background-color: #072847; */
-background-color: #2A203B;
-padding: 3rem 0;
+background-color: #0F192C;
+padding: 5rem 0;
+
+
 `;
 export const Wrapper = styled.div`
 width: 80%;
-/* background-color: red; */
 display: flex;
 flex-direction: column;
 height: 80%;
+
+@media Screen and (max-width: 768px){
+    width: 90%;
+    margin-right: 15px;
+}
 `;
 export const TopDiv = styled.div`
 width: 100%;
@@ -24,13 +30,25 @@ justify-content: space-between;
 align-items: center;
 /* background-color: #800080; */
 height: 30%;
+
+@media Screen and (max-width: 768px){
+flex-direction :column;
+}
 `;
 export const Left = styled.div`
 width: 50%;
 /* background-color: #d87093; */
+
+@media Screen and (max-width: 768px){
+    width: 100%;
+}
 `;
 export const Right = styled.div`
 width: 50%;
+
+@media Screen and (max-width: 768px){
+    width: 100%;
+}
 /* background-color: #4682b4; */
 `;
 export const Trade = styled.div`
@@ -44,6 +62,13 @@ color: white;
     width: 32%;
     cursor: pointer;
     transition: all 2s;
+}
+@media Screen and (max-width: 768px){
+    width: 60%;
+
+    :hover{
+        width: 62%;
+    }
 }
 `;
 export const Img = styled.img`
@@ -68,7 +93,8 @@ align-items: center;
 
 @media Screen and (max-width: 768px){
 flex-wrap: wrap;
-justify-content: center;
+flex-direction: column;
+/* justify-content: center; */
 }
 
 `;

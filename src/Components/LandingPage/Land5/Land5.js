@@ -24,10 +24,10 @@ const Land5 = ({price,title,a,b,c,e}) =>{
                     </Right>
                 </TopDiv>
                 <BottomDiv>
-                    <PackageCard price='$3,000 - $9,999' title='Bronze Plan' a='20+ assets/products' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited Support' />
-                    <PackageCard price='$10,000 - $29,999' title='Silver Plan' a='50+ assets/product' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited support'/>
-                    <PackageCard price='$30,000 - $99,999' title='Gold Plan' a='100+ assets/product' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited support'/>
-                    <PackageCard price='$100,000 - $1,000,000' title='Diamond Plan' a='200+ assets/product' b='24/7 support' d='Free Signals' e='Unlimited support'/>
+                    <PackageCard price='$10,000 - $24,999' title='Bronze Plan' a=' Trading Instruments: 36 currency pairs, Metals, Cryptocurrencies' b='  Minimum deposit: 10,000 USD / 10,000 EUR' c='Spread: Floating from 1.3 pips' d='Maximum leverage: 24,999' e=' Return on Investment: 187%' f="Deposit bonuses: All offers" g="Loyalty bonuses: All offers"/>
+                    <PackageCard price='$25,000 - $49,999' title='Silver Plan' a='Trading Instruments: 36 currency pairs, Metals, CFD on US stocks, CFD on Indices, CFD on Oil, Cryptocurrencies' b='Minimum deposit: 25,000 USD / 25,000 EUR' c='Spread: Floating from 1.3 pips' d='Maximum : 49,999' e=' Return on Investment: 216%' f="Deposit bonuses: All offers" g="Loyalty bonuses: All offers"/>
+                    <PackageCard price='$50,000 - $99,999' title='Gold Plan' a='rading Instruments: 36 currency pairs, Metals, CFD on US stocks, CFD on Indices, CFD on Oil, Cryptocurrencies' b='Minimum deposit: 50,000 USD / 50,000 EUR' c='Spread: Floating from 1.3 pips' d=' Maximum leverage: 99,999' e='Return on Investment: 246%' f="Deposit bonuses: All offers" g="Loyalty bonuses: All offers"/>
+                    <PackageCard price='$150,000 - $1,000,000' title='Diamond Plan' a='2rading Instruments: More than 12,000: Indices, Real stocks, CFD on stocks, Forex and ETF, CFDs on Oil, CFDs on Metals, CFDs on Brazil Stocks, Cryptocurrencies' b='Minimum deposit: 150,000 USD / 150,000 EUR' c=' Spread: Floating from 0.01 USD' d='Maximum leverage: 1,000,000' e='Return on Investment: 301%' f='Deposit bonuses: All offers' g="Loyalty bonuses: All offers"/>
                 </BottomDiv>
             </Wrapper>
         </Container>

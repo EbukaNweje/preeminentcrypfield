@@ -6,20 +6,15 @@ import bg1 from '../../../Assets/bkbg.jpg'
 import bg2 from '../../../Assets/frbg.jpg'
 // import bg3 from '../../../Assets/bg5.png'
 import {AiFillPhone} from 'react-icons/ai'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+
 
 
 const Land4 = () => {
 
-    useEffect(() =>{
-        AOS.init({duration:2000})
-      },[]);
-
   return (
     <Container>
         <Wrapper>
-        <Left data-aos="fade-right">
+        <Left>
             <Img1 src={bg1}/>
             <Img2 src={bg2}/>
             {/* <Div><AiOutlineHome style={{width: 50, height: 50}}/>
@@ -31,16 +26,16 @@ const Land4 = () => {
                 </Holder>
             </Exp>
         </Left>
-        <Right data-aos="fade-left">
+        <Right>
             <Trade>
                 <Img src={arr} alt='arr left'/>
                 <h4>Who we are</h4>
                 <Img src={arr2} alt='arr right'/>
             </Trade>
             <H1>Reliability, productive, <br/> Opportunities</H1>
-            <p>At Preeminent crypt field Digital VIP, we see investing differently. Today's <br/> financial system is complex, exclusive and expensive - making it <br/> hard for the typical person to start investing.</p>
+            <p>At premium-cryptasset, we see investing differently. Today's <br/> financial system is complex, exclusive and expensive - making it <br/> hard for the typical person to start investing.</p>
             <p>So, we're building a platform without digital walls and complex <br/> barriers. A platform that empowers you to see new possibilities for <br/> your money -  and helps make them a reality.</p>
-            <p>Preeminent crypt field VIP is backed by a team of world-class experts <br/> and the best technology talent. To stay at the forefront of <br/>innovation, we're always working on strengthening our position as <br/> Europe's leading digital asset platform.</p>
+            <p>premium-cryptasset is backed by a team of world-class experts <br/> and the best technology talent. To stay at the forefront of <br/>innovation, we're always working on strengthening our position as <br/> Europe's leading digital asset platform.</p>
             <ButtonHold>
                 <Button>Discover More</Button>
                 <ContactHold>

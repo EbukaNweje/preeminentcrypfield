@@ -3,10 +3,15 @@ import styled from "styled-components";
 export const Container = styled.div`
 width: 100%;
 height: 100vh;
-background-color: #fff;
+background-color: #111D32;
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media Screen and (max-width: 768px){
+height: auto;
+padding-bottom: 10px;
+}
 `;
 export const Wrapper = styled.div`
 width: 80%;
@@ -15,10 +20,22 @@ height: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+@media Screen and (max-width: 768px){
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    padding-bottom: 30px;
+}
 `;
 export const Left = styled.div`
 width: 50%;
 height: 80%;
+
+@media Screen and (max-width: 768px){
+    width: 100%;
+    margin-top: 10px;
+}
 `;
 export const Right = styled.div`
 width: 50%;
@@ -26,8 +43,13 @@ height: 80%;
 /* background-color: tomato; */
 
 p{
-    color: #2A203B;
+    color: lightgrey;
     font-family: roboto;
+}
+
+@media Screen and (max-width: 768px){
+    width: 90%;
+    margin-top: 50px;
 }
 `;
 export const Img1 = styled.img`
@@ -36,6 +58,15 @@ margin-left: 75px;
 width: 70%;
 height: 70%;
 position: relative;
+
+
+@media Screen and (max-width: 768px){
+    width: 315px;
+    height: 315px;
+    margin-left: 0;
+    margin-right: 35px;
+}
+
 `;
 export const Img2 = styled.img`
 position: absolute;
@@ -44,25 +75,16 @@ margin-top: 230px;
 border-radius: 1rem;
 width: 50%;
 height: 50%;
+@media Screen and (max-width: 768px){
+    display: none;
+    
+}
 `;
 
 
-// export const Div = styled.div`
-// /* border-radius: ; */
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// width: 150px;
-// height: 98px;
-// background-image: linear-gradient(to right, #187FBA, skyblue);
-// margin-bottom: 100px;
-// margin-left: 250px;
-// color: white;
-// `;
 export const Exp = styled.div`
-background-color: #2A203B;
+background-color: #015FC9;
 width: 200px;
-/* padding: 2.5rem 0.5rem; */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -71,6 +93,11 @@ top: 25rem;
 left: 15rem;
 border-radius: 0.6rem;
 padding:0.8rem 0.4rem;
+
+@media Screen and (max-width: 768px){
+   display: none;
+
+}
 `;
 
 export const Holder = styled.div`
@@ -93,7 +120,7 @@ p{
 }
 `;
 export const Button = styled.div`
-background-color: #2A203B;
+background-color: #015FC9;
 /* border-radius: 1rem 3rem 3rem 1rem; */
 border-radius: 0.3rem;
 border: none;
@@ -115,12 +142,21 @@ width: 30%;
 display: flex;
 align-items: center;
 justify-content: space-between;
-color: #2A203B;
+color: lightgrey;
 
 :hover{
     width: 32%;
     cursor: pointer;
     transition: all 2s;
+}
+
+@media Screen and (max-width: 768px){
+    width: 70%;
+
+    :hover{
+        width: 72%;
+    }
+
 }
 `;
 export const Img = styled.img`
@@ -129,7 +165,7 @@ export const Img = styled.img`
 export const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: #BF1E24;
+color: #FFCC40;
 margin-bottom: 40px;
 `;
 export const ButtonHold = styled.div`

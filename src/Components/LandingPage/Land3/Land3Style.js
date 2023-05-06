@@ -3,13 +3,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 width: 100%;
-height: 100vh;
+height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #2A203B;
+background-color: #0F192C;
 @media Screen and (max-width: 768px){
-    height: auto
+    height: auto;
+    /* padding-bottom: 20px; */
 }
 `;
 export const Wrapper = styled.div`
@@ -18,7 +19,14 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+padding-bottom: 20px;
+
 /* background-color: red; */
+
+@media Screen and (max-width: 768px){
+    width: 90%;
+    padding-bottom: 20px;
+}
 
 `;
 export const TopDiv = styled.div`
@@ -35,13 +43,14 @@ margin-bottom: 40px;
 }
 `;
 export const BottomDiv = styled.div`
-background-color: #BF1E24;
+/* background-color: #BF1E24; */
 width: 100%;
-height: 500px;
+height: 750px;
 border: 1px solid silver;
 
 @media Screen and (max-width: 768px){
-    height: 400px
+    height: auto;
+    width: 100%;
 }
 `;
 
@@ -52,12 +61,17 @@ export const Left = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%
 }
 `;
 export const Right = styled.div`
 font-size: 20px;
 font-weight: 400;
 color: white;
+
+@media Screen and (max-width: 768px){
+    width: 100%;
+}
 `;
 export const Trade = styled.div`
 width: 50%;
@@ -70,6 +84,10 @@ color: white;
     width: 52%;
     cursor: pointer;
     transition: all 2s;
+};
+
+@media Screen and (max-width: 768px){
+    width: 100%;
 }
 `;
 export const Img = styled.img`
