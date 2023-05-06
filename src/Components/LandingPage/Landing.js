@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import { SpinnerCircular } from 'spinners-react';
 import LandingPage from './Land1/LandingPage'
-// import Land2 from './Land2/Land2'
+import Land2 from './Land2/Land2'
 // import Land3 from './Land3/Land3'
 // import Land4 from './Land4/Land4'
 // import Land5 from './Land5/Land5'
@@ -31,14 +31,14 @@ const Landing = () => {
        </Div> : <>
        <EthScroll/>
       <LandingPage/>
-      {/* <Land2/>
-      <Land3/>
-      <Land4/>
-      <Land5/>
-      <Land6/>
-      <Land7/>
-      <Land8/>
-      <Land9/> */}
+      <Land2/>
+      {/* <Land3/> */}
+      {/* <Land4/> */}
+      {/* <Land5/> */}
+      {/* <Land6/> */}
+      {/* <Land7/> */}
+      {/* <Land8/> */}
+      {/* <Land9/> */}
        </>
       }
     </div>

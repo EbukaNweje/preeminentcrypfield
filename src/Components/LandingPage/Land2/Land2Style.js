@@ -6,7 +6,7 @@ export const Container = styled.div`
 width: 100%;
 height: 60vh;
 /* background-color: #05203D; */
-background-color: white;
+background-color: #111D32;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -16,7 +16,7 @@ align-items: center;
 }
 `;
 export const Wrapper = styled.div`
-width: 80%;
+width: 70%;
 height: 73%;
 display: flex;
 justify-content: space-between;
@@ -36,14 +36,16 @@ align-items: center;
 export const Card = styled.div`
 width: 30%;
 height: 80%;
-background-color: #2a203b;
+background-color: #16243D;
+border-radius: 0.2rem;
+;
 box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px 1px;
 
 :hover{
     background-image: url(${hover});
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transition: all 1s;
     cursor: pointer;
 }
@@ -71,7 +73,8 @@ justify-content: center;
 align-items: center;
 width: 150px;
 height: 130px;
-background-image: linear-gradient(to right, #187FBA, skyblue);
+background-image: linear-gradient(to right, #FFCC40,  #F14456);
+/* background-image: linear-gradient(to right, #187FBA, skyblue); */
 margin-bottom: 20px;
 color: white;
 `;

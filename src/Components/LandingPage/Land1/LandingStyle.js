@@ -84,7 +84,7 @@ border-radius: 2rem;
 export const H2 = styled.div`
 /* color: #2A203B; */
 color: whitesmoke;
-font-size: 55px;
+font-size: 65px;
 font-weight: bold;
 
 @media Screen and (max-width: 768px){
@@ -97,7 +97,8 @@ export const H5 = styled.h5`
 width: 45%;
 font-weight: 400;
 color: whitesmoke;
-.scale-up-horizontal-center{animation:scale-up-horizontal-center 0.4s} @keyframes scale-up-horizontal-center{0%{transform:scaleX(.2)}100%{transform:scaleX(1)}}
+.scale-up-horizontal-center{animation:scale-up-horizontal-center 0.4s} @keyframes scale-up-horizontal-center{0%{transform:scaleX(.2)}100%{transform:scaleX(1)}};
+font-size: 18px;
 
 @media Screen and (max-width: 768px){
     width: 90%

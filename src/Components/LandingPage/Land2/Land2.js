@@ -10,7 +10,7 @@ const Land2 = () => {
     <Container>
         <Wrapper>
             <Card>
-              <Div><AiOutlineHome style={{width: 50, height: 50}}/>
+              <Div><AiOutlineHome style={{width: 55, height: 55}}/>
               </Div>               
                 <Div2>
                 <H3>Regulated</H3>
@@ -19,7 +19,7 @@ const Land2 = () => {
                 </Div2>
             </Card>
             <Card>
-            <Div> <AiOutlineDollarCircle style={{width: 50, height: 50}}/>
+            <Div> <AiOutlineDollarCircle style={{width: 55, height: 55}}/>
             </Div>
             <Div2>
             <H3>Safe and secure</H3>
@@ -27,7 +27,7 @@ const Land2 = () => {
             </Div2>
             </Card>
             <Card>
-            <Div> <AiOutlineWallet style={{width: 50, height: 50}}/>
+            <Div> <AiOutlineWallet style={{width: 55, height: 55}}/>
             </Div>
             <Div2>
             <H3>Trust</H3>
