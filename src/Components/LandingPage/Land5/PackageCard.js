@@ -8,10 +8,10 @@ const PackageCard = (props) => {
         <Wrapper>
             <Price>{props.price}</Price>
             <Title>{props.title}</Title>
-            <Packages>
+            {/* <Packages>
                 <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
                 <A>{props.a}</A>
-            </Packages>
+            </Packages> */}
             <Packages>
                 <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
                 <B>{props.b}</B>
@@ -46,9 +46,9 @@ export default PackageCard;
 
 
 const Container = styled.div`
-width: 21%;
+width: 22%;
 background-color: whitesmoke;
-height: auto;
+height: 80vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -59,6 +59,7 @@ border-radius: 0.3rem;
     width: 100%;
     margin-top: 20px;
     margin-right: 10px;
+    height: auto;
 }
 `;
 const Wrapper = styled.div`

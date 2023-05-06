@@ -55,8 +55,8 @@ p{
 export const Img1 = styled.img`
 border-radius: 1rem;
 margin-left: 75px;
-width: 70%;
-height: 70%;
+width: 80%;
+height: 80%;
 position: relative;
 
 
@@ -67,18 +67,6 @@ position: relative;
     margin-right: 35px;
 }
 
-`;
-export const Img2 = styled.img`
-position: absolute;
-left: 40px;
-margin-top: 230px;
-border-radius: 1rem;
-width: 50%;
-height: 50%;
-@media Screen and (max-width: 768px){
-    display: none;
-    
-}
 `;
 
 
@@ -194,15 +182,15 @@ border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-border: 2px solid #2A203B;
-color: #2A203B;
+border: 2px solid #015FC9;
+color: #015FC9;
 margin-right: 9px;
 `;
 export const ContDiv = styled.div`
 
 `;
 export const Nav = styled.div`
-color: #2A203B;
+color: lightgrey;
 font-size: 17px;
 font-weight: 400;
 font-family: sans-serif;
@@ -215,5 +203,5 @@ opacity: 90%;
 `;
 
 export const P = styled.div`
-color: #2A203B;
+color: lightgrey;
 `;

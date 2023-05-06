@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {Container, Left, Right, Wrapper, Trade, Img, H1, Img1, Img2, Button, ButtonHold,Holder, ContactHold, ContDiv, CallIcon, P, Nav, Exp} from './Land4Style'
+import React from 'react';
+import {Container, Left, Right, Wrapper, Trade, Img, H1, Img1, Img2, Button, ButtonHold, ContactHold, ContDiv, CallIcon, P, Nav,} from './Land4Style'
 import arr from '../../../Assets/arr.png'
 import arr2 from '../../../Assets/arr2.png'
 import bg1 from '../../../Assets/bkbg.jpg'
@@ -16,15 +16,9 @@ const Land4 = () => {
         <Wrapper>
         <Left>
             <Img1 src={bg1}/>
-            <Img2 src={bg2}/>
+            {/* <Img2 src={bg2}/> */}
             {/* <Div><AiOutlineHome style={{width: 50, height: 50}}/>
             </Div> */}
-            <Exp>
-                <Holder>
-                    <b>30</b> 
-                    <p>Years of <br/>Experience</p>
-                </Holder>
-            </Exp>
         </Left>
         <Right>
             <Trade>
@@ -41,7 +35,7 @@ const Land4 = () => {
                 <ContactHold>
                         <CallIcon><AiFillPhone style={{width: "30px", height: "35px"}}/></CallIcon>
                         <ContDiv>
-                            <P>(760)545-5660</P>
+                            <P>0000000000</P>
                             <Nav>Call to Our Experts</Nav>
                         </ContDiv>
                     </ContactHold>
