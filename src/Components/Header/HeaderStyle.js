@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-
-//#072847 #193B56
-
 export const Container = styled.div`
 width: 100%;
 height: 110px;
@@ -79,7 +76,7 @@ display: none;
     outline:none;
     transition: 0.5s;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 `;
 export const Header1 = styled.div`
@@ -158,13 +155,13 @@ margin-right: 30px;
 
 `;
 export const LogoHold = styled.div`
-width: 15%;
+width: 18%;
 display: flex;
 justify-content: center;
 align-items: center;
 
 @media Screen and (max-width: 768px){
-    width: 30%;
+    width: 35%;
     height: auto;
     margin-left: 30px;
 }
@@ -175,7 +172,7 @@ height: 100%;
 /* margin-top: 20px; */
 
 @media Screen and (max-width: 768px){
-width: 180px;
+width: 250px;
 height: 50px;
 margin-left: 50px;
 

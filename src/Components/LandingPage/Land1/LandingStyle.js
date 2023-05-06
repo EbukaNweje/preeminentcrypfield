@@ -1,13 +1,6 @@
 import styled from "styled-components";
-
+import mainslider from "./main-slider-1-1.jpg"
 //#072847 #193B56
-export const OverBackround = styled.div`
-background-color: #0E192B;
-position: absolute;
-width: 100%;
-height: 100%;
-opacity: 92%;
-`;
 
 export const Container = styled.div`
 width: 100%;
@@ -17,15 +10,10 @@ justify-content: center;
 align-items: center;
 position: relative;
 z-index: -1;
-
-
-video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
+background:linear-gradient(45deg,  #030e21cf, #031128a9), url(${mainslider});
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 
 @media Screen and (max-width: 768px){
     width: 100%;
@@ -39,12 +27,12 @@ height: 100%;
 display: flex;
 flex-direction: column;
 margin-bottom: 20px;
+/* background-color: */
 /* opacity: 80%; */
 
 @media Screen and (max-width: 768px){
-    width: 100%;
+    width: 97%;
     align-items: center;
-    text-align:center;
     /* margin-bottom: 20px; */
 
     /* justify-content: center; */
@@ -63,9 +51,11 @@ margin-top: 50px;
 
 @media Screen and (max-width: 768px){
  width: 100%;
- margin-top: 30px;
+ margin-top: 70px;
  align-items: center;
 margin-left: 0;
+margin-left: 10px;
+
 
 }
 `;
@@ -78,17 +68,23 @@ border-radius: 2rem;
 
 @media Screen and (max-width: 768px){
     margin-bottom: 20px;
+    width: 60%;
+    margin-right: 140px;
 }
 `;
 
 export const H2 = styled.div`
-/* color: #2A203B; */
+/* color: #111D32; */
 color: whitesmoke;
 font-size: 65px;
 font-weight: bold;
 
+@media Screen and (max-width: 1024px){
+    font-size: 70px;
+}
 @media Screen and (max-width: 768px){
-    font-size: 30px;
+    font-size: 43px;
+    font-weight: bold;
 }
 
 `;
@@ -96,12 +92,13 @@ export const H5 = styled.h5`
 /* color: #2A203B; */
 width: 45%;
 font-weight: 400;
-color: whitesmoke;
-.scale-up-horizontal-center{animation:scale-up-horizontal-center 0.4s} @keyframes scale-up-horizontal-center{0%{transform:scaleX(.2)}100%{transform:scaleX(1)}};
+color: lightgrey;
+/* color: #111D32; */
 font-size: 18px;
 
 @media Screen and (max-width: 768px){
-    width: 90%
+    width: 100%;
+    font-size: 20px;
 }
 
 `;
@@ -117,4 +114,12 @@ margin-top: 20px;
 cursor: pointer;
 color: whitesmoke;
 font-size: 17px;
+
+@media Screen and (max-width: 768px){
+    margin-right: 120px;
+    height: 65px;
+    font-weight: bold;
+    margin-top: 0;
+    border-radius: 0.5rem;
+}
 `;
