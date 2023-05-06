@@ -6,7 +6,7 @@ export const Container = styled.div`
 width: 100%;
 height: 60vh;
 /* background-color: #05203D; */
-background-color: #05203D;
+background-color: white;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -36,7 +36,7 @@ align-items: center;
 export const Card = styled.div`
 width: 30%;
 height: 80%;
-background-color: #061D35;
+background-color: #2a203b;
 box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px 1px;
 
 :hover{

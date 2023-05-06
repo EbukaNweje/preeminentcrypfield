@@ -1,24 +1,56 @@
 import styled from 'styled-components';
-import bg from '../../../Assets/test.png'
-import bg2 from '../../../Assets/wave2.png'
+
 
 export const Container = styled.div`
 width: 100%;
-background-color: #122036;
+background-color: #2A203B;
 height: 70vh;
 display: flex;
-/* justify-content: center; */
+justify-content: center;
 align-items: center;
+padding: 30px 0;
+
 `;
 export const Wrapper = styled.div`
-width: 80%;
+width: 75%;
 height: 100%;
+display:flex;
+flex-direction: column;
 /* background-color: green; */
 `;
 
 export const Display = styled.div`
-    position: absolute;
-    top: -40px;
-    right: 0;
-    mix-blend-mode: luminosity;
 `;
+
+export const Trade = styled.div`
+width: 20%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: white;
+cursor: pointer;
+
+:hover{
+    width: 22%;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+`;
+export const Img = styled.img`
+
+`;
+export const H1 = styled.div`
+font-size: 35px;
+font-weight: bold;
+color: white;
+margin-bottom: 40px;
+`;
+
+export const CardHold = styled.div`
+width :100%;
+display: flex;
+justify-content: space-between;
+
+`;
+

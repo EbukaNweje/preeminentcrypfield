@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 width: 100%;
 height: 100vh;
-background-color: #05203D;
+background-color: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -26,7 +26,7 @@ height: 80%;
 /* background-color: tomato; */
 
 p{
-    color: whitesmoke;
+    color: #2A203B;
     font-family: roboto;
 }
 `;
@@ -60,7 +60,7 @@ height: 50%;
 // color: white;
 // `;
 export const Exp = styled.div`
-background-color: #014FC9;
+background-color: #2A203B;
 width: 200px;
 /* padding: 2.5rem 0.5rem; */
 display: flex;
@@ -84,16 +84,16 @@ align-items: center;
 
 b{
     font-size: 50px;
-    color :white;
+    color :silver;
 }
 
 p{
     font-size: 18px;
-    color: white;
+    color: silver;
 }
 `;
 export const Button = styled.div`
-background-color: #014FC9;
+background-color: #2A203B;
 /* border-radius: 1rem 3rem 3rem 1rem; */
 border-radius: 0.3rem;
 border: none;
@@ -115,7 +115,7 @@ width: 30%;
 display: flex;
 align-items: center;
 justify-content: space-between;
-color: white;
+color: #2A203B;
 
 :hover{
     width: 32%;
@@ -129,7 +129,7 @@ export const Img = styled.img`
 export const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: white;
+color: #BF1E24;
 margin-bottom: 40px;
 `;
 export const ButtonHold = styled.div`
@@ -158,15 +158,15 @@ border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-border: 2px solid aliceblue;
-color: #018ACA;
+border: 2px solid #2A203B;
+color: #2A203B;
 margin-right: 9px;
 `;
 export const ContDiv = styled.div`
 
 `;
 export const Nav = styled.div`
-color: aliceblue;
+color: #2A203B;
 font-size: 17px;
 font-weight: 400;
 font-family: sans-serif;
@@ -179,5 +179,5 @@ opacity: 90%;
 `;
 
 export const P = styled.div`
-color: white;
+color: #2A203B;
 `;

@@ -19,7 +19,11 @@ const Land3 = () => {
           </Left>
           <Right>Invest whenever you want, even when the traditional stock <br/> market is closed.</Right>
         </TopDiv>
-        <BottomDiv>Bottom</BottomDiv>
+        <BottomDiv>
+          
+          bbb
+
+        </BottomDiv>
       </Wrapper>
     </Container>
   )

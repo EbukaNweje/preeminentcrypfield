@@ -8,12 +8,12 @@ background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 width: 100%;
-background-color: #072847;
+/* background-color: #2A203B; */
 height: auto;
 
 `;
 export const Wrapper = styled.div`
-background-color: #121E33;
+background-color: #2A203B;
 height: 100%;
 opacity: 90%;
 display: flex;

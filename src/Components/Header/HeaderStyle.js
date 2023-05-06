@@ -5,20 +5,17 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 width: 100%;
-height: 130px;
-/* background-color:  #05203d; */
-background-color:  #fff;
+height: 110px;
+background-color:  #111D32;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-position: fixed;
-overflow: hidden;
-z-index: 999;
-
 @media Screen and (max-width: 768px){
     height: 120px;
-    width: 92.2%;
+    width: 100%;
+    background: linear-gradient(45deg, #111D32,#000911ef);;
+
 }
 
 `;
@@ -28,13 +25,16 @@ display: flex;
 align-items: center;
 justify-content: center;
 height: 70%;
-
-
+background: linear-gradient(45deg, #111D32,#000911c3);
+@media Screen and (max-width: 768px){
+    background: none;
+}
 `;
 export const Wrapper1 = styled.div`
 width: 100%;
-background-color: #BF1E24;
-display: flex;
+/* background-color: #BF1E24; */
+background-color: #16243D;
+display: flex; 
 align-items: center;
 justify-content: center;
 height: 30%;
@@ -48,12 +48,12 @@ height: 30%;
 export const NavDiv = styled.div`
 position: fixed;
 height: 50vh;
-width: 90%;
+width: 100%;
 display: flex;
-justify-content: center;
 align-items: center;
 bottom: 100px;
-top: 200px;
+top: 0;
+left: 0;
 
 @media Screen and (max-width: 768px){
     width: 92%;
@@ -62,25 +62,28 @@ top: 200px;
 
 `;
 export const BurgerHold = styled.button`
+width : 45px;
+height: 45px;
+
 display: none;
 @media Screen and (max-width: 768px){
     display: block;
-    background: transparent;
-    width: 50px;
+    background-color: #16243dc2;
+    width: 75px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
-    opacity: 90%;
+    border-radius: 15px;
     border: none;
-    overflow-x: hidden;
+    outline:none;
     transition: 0.5s;
     cursor: pointer;
+    margin-right: 20px;
 }
 `;
 export const Header1 = styled.div`
-width: 80%;
+width: 75%;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -88,7 +91,7 @@ height: 100%;
 `
 export const Left = styled.div`
 height: 100%;
-width: 33%;
+width: 30%;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -140,11 +143,13 @@ color: aliceblue;
 `;
 export const Header2 = styled.div`
 height: 100%;
-width: 80%;
+width: 78%;
 /* background: gainsboro; */
 display: flex;
 justify-content: space-between;
 align-items: center;
+margin-right: 30px;
+
 
 @media Screen and (max-width: 768px){
     width: 85%;
@@ -160,33 +165,47 @@ align-items: center;
 
 @media Screen and (max-width: 768px){
     width: 30%;
+    height: auto;
+    margin-left: 30px;
 }
 `;
 export const Logo = styled.img`
 width: 100%;
 height: 100%;
-margin-top: 20px;
+/* margin-top: 20px; */
+
+@media Screen and (max-width: 768px){
+width: 180px;
+height: 50px;
+margin-left: 50px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 `;
 
 export const NavHold = styled.div`
-width: 60%;
-background-color: #BF1E24;
+width: 70%;
+background-color: #0F192C;
 border-radius: 0.3rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0.2rem 0 0.2rem 1rem;
-height: 50%;
+height: 40%;
 @media Screen and (max-width: 768px){
     display: none;
 }
 `;
 export const Nav = styled.div`
-color: aliceblue;
-font-size: 17px;
+color: whitesmoke;
+font-size: 13px;
 font-weight: 400;
 font-family: sans-serif;
-opacity: 90%;
 
 :hover{
     cursor: pointer;
@@ -198,14 +217,14 @@ border: none;
 outline: none;
 background: none;
 color: aliceblue;
-font-size: 16px;
+font-size: 13px;
 font-weight: bold;
 cursor: pointer;
 transition: all 350ms;
 `;
 export const SignUp = styled.button`
-padding: 1.02rem 1.5rem;
-font-size: 16px;
+padding: 0.7rem 1.5rem;
+font-size: 13px;
 font-weight: bold;
 color: aliceblue;
 border: none;
@@ -213,7 +232,7 @@ outline: none;
 /* background-image: linear-gradient(to right,#008CC9, #212121); */
 border-radius: 0 0.3rem 0.3rem 0;
 /* border-radius: 0.3rem; */
-background-color: #254477;
+background-color: #015FC9;
 :hover{
     cursor: pointer;
     /* background: transparent; */
@@ -237,14 +256,13 @@ border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-border: 2px solid #254477;
-color: #018ACA;
+border: 2px solid #45395b;
 `;
 export const ContDiv = styled.div`
 
 `;
 export const P = styled.div`
-color: #254477;
+color: #45395b;
 font-size: 18px;
 font-weight: bold;
 `;

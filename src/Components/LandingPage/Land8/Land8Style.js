@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import twist from '../../../Assets/twist.png'
-import twist2 from '../../../Assets/twist2.png'
 
 
 export const Container = styled.div`
-background-color: #015FC9;
+background-color: #BF1E24;
 width: 100%;
 height: 300px;
 display: flex;
@@ -50,7 +48,7 @@ margin-left: 30px;
 export const Line = styled.div`
 width: 30%;
 height: 6px;
-background-image: linear-gradient(to left, #fff,#0CE0FF);
+background-image: linear-gradient(to left, #fff,#2A203B);
 border-radius: 1rem;
 `;
 export const H1 = styled.h1`

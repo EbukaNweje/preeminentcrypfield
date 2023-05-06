@@ -11,8 +11,8 @@ background-position: left;
 background-color: black;
 `;
 export const Wrapper = styled.div`
-background-color: #05203D;
-opacity: 99%;
+background-color: whitesmoke;
+opacity: 98%;
 height: 100%;
 display: flex;
 justify-content: center;
@@ -38,7 +38,7 @@ align-items: center;
 `;
 export const Box= styled.div`
 width: 45%;
-background-image: linear-gradient(45deg, #061D35, #061D45);
+background-color: #BF1E24;
 height: 11rem;
 display: flex;
 flex-direction: column;
@@ -104,7 +104,7 @@ width: 30%;
 display: flex;
 align-items: center;
 justify-content: space-between;
-color: white;
+color: #2A203B;
 
 :hover{
     width: 32%;
@@ -112,24 +112,22 @@ color: white;
     transition: all 2s;
 }
 `;
-export const Img = styled.img`
 
-`;
 
 export const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: white;
+color: #2A203B;
 margin-bottom: 40px;
 `;
 export const P = styled.div`
-color: whitesmoke;
+color: #2A203B;
 `;
 export const P2 = styled.div`
-color: whitesmoke;
+color: #2A203B;
 `;
 export const PP = styled.div`
-color: whitesmoke;
+color: #2A203B;
 font-size: 20px;
 font-weight: bold;
 `;
@@ -138,3 +136,4 @@ export const RightDiv = styled.div`
 width: 50%;
 /* background-color: indianred; */
 `;
+export const Img = styled.img``;

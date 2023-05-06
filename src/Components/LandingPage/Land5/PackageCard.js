@@ -55,11 +55,11 @@ align-items: center;
 `;
 const Price = styled.div`
 color: #014FC9;
-font-size: 25px;
+font-size: 20px;
 font-weight: bold;
 `;
 const Title = styled.div`
-color: #05203D;
+color: #2A203B;
 font-size: 25px;
 font-weight: 500;
 margin: 0.4rem 0 2rem 0;
@@ -67,7 +67,7 @@ margin: 0.4rem 0 2rem 0;
 const Packages = styled.div`
 display: flex;
 /* justify-content: space-between; */
-width: 80%;
+width: 85%;
 margin: 0.5rem 0;
 `;
 const A = styled.div`
@@ -92,10 +92,9 @@ margin-left : 20px;
 const E = styled.div`
 color: #808080;
 margin-left : 20px;
-
 `;
 const Button = styled.div`
-background-color: #05203D;
+background-color: #2A203B;
 width: 70%;
 padding: 1.1rem 0.2rem;
 text-align: center;

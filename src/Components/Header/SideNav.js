@@ -1,41 +1,80 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import {AiOutlineCloseSquare} from 'react-icons/ai';
+// import {AiOutlineCloseSquare} from 'react-icons/bs';
 import {Link} from 'react-router-dom';
+import LogoBg from './bglogo.png';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 const SideNav = ({setNav}) =>{
+
+    useEffect(() =>{
+        AOS.init({duration:1000})
+      },[])
     return(
         <Container>
             <Wrapper>
-        <Button  onClick={()=>{
+            <Wrapp>
+            <Logo src={LogoBg} alt='logo'/>
+        <Button data-aos="fade-left" onClick={()=>{
                 setNav(false);
-            }}  style={{border: "none", background: "none", width: 50, height: 50}}>
-            <AiOutlineCloseSquare style={{width: 50, height: 50, color:"#fff",}}/>
+            }}  style={{border: "none", background: "none", width: 50, height: 50}}> X
             </Button>
+            </Wrapp>
                 <MidNav>
                     <Div>
-                    <Span to='/'>Homes</Span>
-                    <Span to='/trading'>Spot Trading</Span>
-                    <Span to='/minning'>How our minning work </Span>
-                    <Span to='/about'>About us </Span>
-                    <Span to='/contact'>Contact</Span>
-                    <Span to='/login'>Login</Span>
-                    <Span to='/signup'>Sign Up</Span>
-                    </Div>
+                    <Span to='/login'  onClick={()=>{
+                setNav(false);
+            }}>Login</Span>
                     <Line></Line>
-                    <Div>
-                    <Span to='/policy'>Policy Privacy</Span>
-                    <Span to='/faqs'>FAQ's </Span>
-                    <Span to='https://mail.google.com/'>info@pipscountdigitalvip.net </Span>
-                    <Span to='/'>(760)545-5660</Span>
-                    <Span to='/'>Call to Our Experts</Span>
+                    <Span to='/signup'  onClick={()=>{
+                setNav(false);
+            }}>Sign Up</Span>
+                    <Line></Line>
+                    <Span to='/'  onClick={()=>{
+                setNav(false);
+            }}>Home</Span>
+                    <Line></Line>
+                    <Span to='/trading'  onClick={()=>{
+                setNav(false);
+            }}>About Us</Span>
+                    <Line></Line>
+                    <Span to='/minning'  onClick={()=>{
+                setNav(false);
+            }}> Arbitage </Span>
+                    <Line></Line>
+                    <Span to='/about'  onClick={()=>{
+                setNav(false);
+            }}>Affiliate Program</Span>
+                    <Line></Line>
+                    <Span to='/contact'  onClick={()=>{
+                setNav(false);
+            }}>Support</Span>
+                    <Line></Line>
                     </Div>
+                    {/* <Div>
+                    <Span to='/policy'>Policy Privacy</Span>
+                    <Line></Line>
+                    <Span to='/faqs'>FAQ's </Span>
+                    <Line></Line>
+                    <Span to='https://mail.google.com/'>info@example.net </Span>
+                    <Line></Line>
+                    <Span to='/'>00000000</Span>
+                    <Line></Line>
+                    <Span to='/'>Call to Our Experts</Span>
+                    </Div> */}
                 </MidNav>
         </Wrapper>
         </Container>
     )
 }
 export default SideNav;
+
+const Logo = styled.img`
+width: 50%;
+margin-left: 10px;
+`;
 
 const Div = styled.div`
 /* background-color: blanchedalmond; */
@@ -45,25 +84,24 @@ justify-content: center;
 `;
 
 const Line = styled.div`
-width: 1px;
+width: 230px;
 background-color: #fff;
-height: 200px;
-margin: 0 30px 0 20px;
+height: 1px;
+margin-bottom: 30px;
 `;
 
 const Button = styled.button`
-  width: 200px;
+  width: 100%;
   height: 30px;
   border: none;
-  padding: 5px 0;
-  border-radius: 5px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: medium;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+  font-size: 30px;
   font-weight: bold;
   color: silver;
   cursor: pointer;
+  
 
   :hover{
     opacity: 80%;
@@ -71,17 +109,15 @@ const Button = styled.button`
     cursor: pointer;
   }
 
-  @media Screen and (max-width: 768px){
-    margin: 0 0 30px 40px;
-  }
 `;
 
 const Container = styled.div`
-    width: 100%;
-    height: auto;
+    width: 83%;
+    height: 100vh;
     background-color: #05203D;
-    border: 2px solid silver;
     transition: all 2s;
+    left: 0;
+    right :0;
     ::after{
       transition: ease-in-out 1s;
     };
@@ -103,11 +139,21 @@ const Wrapper = styled.div`
     height: 100%;
 `;
 
+const Wrapp =  styled.div`
+width: 90%;
+height: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 60px;
+
+
+`;
 const MidNav = styled.div`
     width: 85%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
+    flex-direction: column;
+    margin-left: 20px
 `;
 
 const Span = styled(Link)`
@@ -115,6 +161,8 @@ const Span = styled(Link)`
             text-decoration: none;
             font-size: 20px;
             font-family: monospace;
+            margin: 5px 0;
+            padding-bottom: 2px;
       :hover{
             cursor: pointer;
             text-decoration: underline #003C58 1.5px;

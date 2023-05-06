@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { A, CallIcon, ContactHold, Container, ContDiv, Header1, Header2, Left, Line, Login, Logo, LogoHold, Nav, NavHold, P, Right, SignUp, SocialHold, SocialIcon, Wrapper , Icon, Wrapper1, BurgerHold, NavDiv} from './HeaderStyle';
-import {AiOutlinePhone,AiFillPhone,AiOutlineMenu, AiFillMail} from 'react-icons/ai'
+import { A, Container, Header1, Header2, Left, Line, Login, Logo, LogoHold, Nav, NavHold, Right, SignUp, SocialHold, SocialIcon, Wrapper , Icon, Wrapper1, BurgerHold, NavDiv} from './HeaderStyle';
+import {AiOutlinePhone,AiOutlineMenu, AiFillMail} from 'react-icons/ai'
 import {BsInstagram, BsTwitter, BsYoutube} from 'react-icons/bs'
 import {} from 'react-icons'
-import logo from '../../Assets/real-logo.png'
+import logo from '../../Assets/mylogo.png'
 import SideNav from "./SideNav";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -23,19 +23,19 @@ const Header = () =>{
                     <Left>
                         <A>
                             <Icon> <AiOutlinePhone/> </Icon>
-                            <Nav>(760)545-5660</Nav>
+                            <Nav>phone-number</Nav>
                         </A>
                         <A>
                             <Icon> <AiFillMail/> </Icon>
-                            <Nav>info@pipscountdigitalvip.net</Nav>
+                            <Nav>example@gmail.com</Nav>
                         </A>
                     </Left>
                     <Right>
                         <Nav>FAQ's</Nav>
                         <Nav>Policy Privacy</Nav>
                         <SocialHold>
-                            <SocialIcon><BsTwitter style={{width: "20px", height: "20px"}}/></SocialIcon>
-                            <SocialIcon><BsYoutube style={{width: "20px", height: "20px"}}/></SocialIcon>
+                            <SocialIcon><BsTwitter style={{width: "17px", height: "17px"}}/></SocialIcon>
+                            <SocialIcon><BsYoutube style={{width: "17px", height: "17px"}}/></SocialIcon>
                             <SocialIcon><BsInstagram style={{width: "20px", height: "20px"}}/></SocialIcon>
                         </SocialHold>
                     </Right>
@@ -48,30 +48,30 @@ const Header = () =>{
                     </LogoHold>
                     <NavHold>
                         <Nav>Homes</Nav>
-                        <Nav>Spot Trading</Nav>
-                        <Nav>How our mining work</Nav>
-                        <Nav>About us</Nav>
-                        <Nav>Contact</Nav>
+                        <Nav>About Us</Nav>
+                        <Nav>Arbitage</Nav>
+                        <Nav>Affiliate program</Nav>
+                        <Nav>Support</Nav>
                         <Line></Line>
                         <Login>login</Login>
                         <SignUp>SignUp</SignUp>
                     </NavHold>
-                    <ContactHold>
-                        <CallIcon><AiFillPhone style={{width: "30px", height: "35px", color:"#254477"}}/></CallIcon>
-                        <ContDiv>
+                    {/* <ContactHold>
+                        {/* <CallIcon><AiFillPhone style={{width: "30px", height: "35px", color:"#45395b"}}/></CallIcon> */}
+                        {/* <ContDiv>
                             <P>(760)545-5660</P>
-                            <Nav style={{color: "#254477", fontSize: "18px", fontWeight: "bold"}}>Call to Our Experts</Nav>
-                        </ContDiv>
-                    </ContactHold>
+                            <Nav style={{color: "#45395b", fontSize: "18px", fontWeight: "bold"}}>Call to Our Experts</Nav>
+                        </ContDiv> */}
+                    {/* </ContactHold> */}
             </Header2>
             <BurgerHold onClick={() =>{
           setNav(true)
         }}> 
-          <AiOutlineMenu style={{color: "white", width: "40px", height: "40px"}}/>
+          <AiOutlineMenu style={{color: "#0CE0FF", width: 20, height: 20}}/>
         </BurgerHold>
-            </Wrapper>
+       </Wrapper>
             {
-        nav? (<NavDiv data-aos="flip-left"> 
+        nav? (<NavDiv data-aos="fade-right"> 
           <SideNav setNav={setNav}/>
         </NavDiv>) : null
             }
@@ -80,3 +80,4 @@ const Header = () =>{
 };
 
 export default Header;
+

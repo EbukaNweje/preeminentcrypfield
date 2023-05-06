@@ -7,7 +7,7 @@ height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #042843;
+background-color: #2A203B;
 @media Screen and (max-width: 768px){
     height: auto
 }
@@ -35,7 +35,7 @@ margin-bottom: 40px;
 }
 `;
 export const BottomDiv = styled.div`
-background-color: #061D35;
+background-color: #BF1E24;
 width: 100%;
 height: 500px;
 border: 1px solid silver;

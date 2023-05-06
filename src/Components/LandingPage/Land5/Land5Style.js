@@ -6,7 +6,8 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #072847;
+/* background-color: #072847; */
+background-color: #2A203B;
 padding: 3rem 0;
 `;
 export const Wrapper = styled.div`

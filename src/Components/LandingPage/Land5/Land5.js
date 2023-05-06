@@ -24,10 +24,10 @@ const Land5 = ({price,title,a,b,c,e}) =>{
                     </Right>
                 </TopDiv>
                 <BottomDiv>
-                    <PackageCard price='$3,000 - $9,000' title='Starter Package' a='20+ assets/products' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited Support' />
-                    <PackageCard price='$10,000 - $29,000' title='Deluxe Package' a='50+ assets/product' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited support'/>
-                    <PackageCard price='$30,000 - $49,000' title='Premium Package' a='100+ assets/product' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited support'/>
-                    <PackageCard price='$100,000 - MORE' title='VIP Package' a='200+ assets/product' b='24/7 support' d='Free Signals' e='Unlimited support'/>
+                    <PackageCard price='$3,000 - $9,999' title='Bronze Plan' a='20+ assets/products' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited Support' />
+                    <PackageCard price='$10,000 - $29,999' title='Silver Plan' a='50+ assets/product' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited support'/>
+                    <PackageCard price='$30,000 - $99,999' title='Gold Plan' a='100+ assets/product' b='24/7 support' c='Risk Management' d='Free Signals' e='Unlimited support'/>
+                    <PackageCard price='$100,000 - $1,000,000' title='Diamond Plan' a='200+ assets/product' b='24/7 support' d='Free Signals' e='Unlimited support'/>
                 </BottomDiv>
             </Wrapper>
         </Container>
