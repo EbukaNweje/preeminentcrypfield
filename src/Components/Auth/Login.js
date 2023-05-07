@@ -28,11 +28,13 @@ const Login = () => {
     
     const url = "https://swiftcryptrade.onrender.com/api/login"
   const Data = {userName, password}
+  console.log(url)
+  console.log(Data)
 
   const Login = (e) => {
     e.preventDefault()
     setLoading(true)
-    Axios.post(url,Data)
+    Axios.post("url", "data")
     .then((res) => {
       console.log(res)
       localStorage.setItem("User", JSON.stringify(res.data));

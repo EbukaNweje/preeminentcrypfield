@@ -38,12 +38,14 @@ const SignUp = () => {
     const Data = {fullName, userName, email, retypeEmail, password, confirmPassword}
     const url = "https://swiftcryptrade.onrender.com/api/register"
 
+    console.log(url)
+
     const Siginup = (e) => {
         e.preventDefault()
         setLoading(true)
         console.log(Data);
 
-        Axios.post(url,Data)
+        Axios.post("url","Data")
         .then((res) => {
         localStorage.setItem("User", JSON.stringify(res.data));
         const getId = JSON.parse(localStorage.getItem("User"))
