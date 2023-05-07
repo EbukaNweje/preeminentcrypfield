@@ -91,7 +91,7 @@ align-items: center;
 @media Screen and (max-width: 1024px){
     width: 45%;
     img{
-    margin-right: 300px;
+    /* margin-right: 300px; */
     left :0;
 
     }
