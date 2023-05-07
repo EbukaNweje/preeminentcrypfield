@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 export const Container = styled.div`
 width: 100%;
@@ -51,6 +52,8 @@ align-items: center;
 bottom: 100px;
 top: 0;
 left: 0;
+z-index: 999999;
+
 
 @media Screen and (max-width: 768px){
     width: 92%;
@@ -198,18 +201,18 @@ height: 40%;
     display: none;
 }
 `;
-export const Nav = styled.div`
+export const Nav = styled(Link)`
 color: whitesmoke;
 font-size: 13px;
 font-weight: 400;
 font-family: sans-serif;
-
+text-decoration: none;
 :hover{
     cursor: pointer;
     transition: all 2s;
 }
 `;
-export const Login = styled.button`
+export const Login = styled(Link)`
 border: none;
 outline: none;
 background: none;
@@ -218,8 +221,9 @@ font-size: 13px;
 font-weight: bold;
 cursor: pointer;
 transition: all 350ms;
+text-decoration: none;
 `;
-export const SignUp = styled.button`
+export const SignUp = styled(Link)`
 padding: 0.7rem 1.5rem;
 font-size: 13px;
 font-weight: bold;
@@ -230,6 +234,8 @@ outline: none;
 border-radius: 0 0.3rem 0.3rem 0;
 /* border-radius: 0.3rem; */
 background-color: #015FC9;
+text-decoration: none;
+
 :hover{
     cursor: pointer;
     /* background: transparent; */

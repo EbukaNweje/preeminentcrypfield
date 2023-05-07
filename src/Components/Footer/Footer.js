@@ -1,58 +1,43 @@
-import React from 'react'
-import {
-    Container, Wrapper, Top, Copyright, Line, Left, Mid, Right,
-    Logo, Content, IconHold,Icon, Topic,  First, InputHold, Input,
-    CallIcon, ContDiv, ContactHold, Nav, P
-} from './FooterStyle'
+import React from 'react';
+import { AiFillFacebook, AiFillTwitterSquare } from 'react-icons/ai';
+import bitcoin from './blo.png'
+import { 
+    Container, Wrapper, LeftDiv, RightDiv, Img, Logo, Hold
+} from './FooterStyle';
+
 
 const Footer = () => {
+
+
+
   return (
     <Container>
         <Wrapper>
-            <Top>
-                <Left>
-                    <Logo/>
-                    <Content>
-                    Pips Count Digital VIP has been a global leader in introducing user to invest and earn. We make it easy for anyone to invest, earn, and stay up-to-date on cryptocurrency and the future of finance.
-                    </Content>
-                    <IconHold>
-                        <Icon>Tw</Icon>
-                        <Icon>Yu</Icon>
-                        <Icon>Ins</Icon>
-                    </IconHold>
-                </Left>
-                <Mid>
-                <Topic></Topic>
-                    <First>
-                        <Icon></Icon>
-                        <Content><a href='https://gmail.com'>Email@email.com</a></Content>
-                    </First>
-                    <First>
-                        <Icon></Icon>
-                        <Content>Pips Count Digital VIP ,81 - 83 Frizinghall Road, Bradford",BD9 4LG, United Kingdom</Content>
-                    </First>
-                </Mid>
-                <Right>
-                    <Topic></Topic>
-                    <Content>Subscribe our newsletter to get our <br/>latest update & news</Content>
-                    <InputHold>
-                        <Input placeholder='Email address'/>
-                        <Icon></Icon>
-                    </InputHold>
-                    <ContactHold>
-                        <CallIcon></CallIcon>
-                        <ContDiv>
-                            <P>(760) 545-5660</P>
-                            <Nav>Call to Our Experts</Nav>
-                        </ContDiv>
-                    </ContactHold>
-                </Right>
-            </Top>
-            <Line></Line>
-            <Copyright>© All Copyright 2023 by Pips Count Digital VIP</Copyright>
+            <LeftDiv>
+                <Logo>PREMIUM-CRYPTASSETS @2023</Logo>
+                {/* <Dot></Dot>
+                <Span to='/news'>News</Span>
+                <Dot></Dot>
+                <Span to='/terms'>Terms & Condition</Span>
+                <Dot></Dot>
+                <Span to='/FAQ'>FAQ</Span>
+                <Dot></Dot>
+                <Span to='/contact'>Contact</Span> */}
+            </LeftDiv>
+            <RightDiv>
+                <Hold href='https://www.facebook.com'><AiFillFacebook  style={{cursor: "pointer", width: "25px", height: "25px", borderRadius:"20px"}}/>
+                </Hold>
+                <Hold href='https://twitter.com'>
+                <AiFillTwitterSquare  style={{width: "25px", height: "25px", cursor: "pointer", borderRadius:"20px"}}/>
+                </Hold>
+                <Img src={bitcoin} alt="bitcoin"/>
+            </RightDiv>
+            {/* <ScrollToTop style={{
+                    width: 150, height: 50, border: "1px solid grey", backgroundColor: "grey", opacity: "80%"
+                }} smooth/>  */}
         </Wrapper>
     </Container>
   )
 }
 
-export default Footer
+export default Footer;

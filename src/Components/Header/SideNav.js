@@ -28,7 +28,7 @@ const SideNav = ({setNav}) =>{
                 setNav(false);
             }}>Login</Span>
                     <Line></Line>
-                    <Span to='/signup'  onClick={()=>{
+                    <Span to='/register'  onClick={()=>{
                 setNav(false);
             }}>Sign Up</Span>
                     <Line></Line>
@@ -36,22 +36,25 @@ const SideNav = ({setNav}) =>{
                 setNav(false);
             }}>Home</Span>
                     <Line></Line>
-                    <Span to='/trading'  onClick={()=>{
+                    <Span to='/aboutus'  onClick={()=>{
                 setNav(false);
             }}>About Us</Span>
                     <Line></Line>
-                    <Span to='/minning'  onClick={()=>{
+                    <Span to='/arbitage'  onClick={()=>{
                 setNav(false);
             }}> Arbitage </Span>
                     <Line></Line>
-                    <Span to='/about'  onClick={()=>{
+                    <Span to='/affiliate'  onClick={()=>{
                 setNav(false);
             }}>Affiliate Program</Span>
                     <Line></Line>
-                    <Span to='/contact'  onClick={()=>{
+                    <Span to='/support'  onClick={()=>{
                 setNav(false);
             }}>Support</Span>
                     <Line></Line>
+                    <Span to='/plans' onClick={() =>{
+                        setNav(false);
+                    }}>Plans</Span>
                     </Div>
                     {/* <Div>
                     <Span to='/policy'>Policy Privacy</Span>
@@ -118,6 +121,7 @@ const Container = styled.div`
     transition: all 2s;
     left: 0;
     right :0;
+    z-index: 999999;
     ::after{
       transition: ease-in-out 1s;
     };

@@ -46,14 +46,15 @@ const Header = () =>{
                         <Logo src={logo} alt="logo"/>
                     </LogoHold>
                     <NavHold>
-                        <Nav>Homes</Nav>
-                        <Nav>About Us</Nav>
-                        <Nav>Arbitage</Nav>
-                        <Nav>Affiliate program</Nav>
-                        <Nav>Support</Nav>
+                        <Nav to='/'>Home</Nav>
+                        <Nav to='/aboutus'>About Us</Nav>
+                        <Nav to='/investment'>Investment</Nav>
+                        <Nav to='/arbitage'>Arbitage</Nav>
+                        <Nav to='/affiliate'>Affiliate program</Nav>
+                        <Nav to='/support'>Support</Nav>
                         <Line></Line>
-                        <Login>login</Login>
-                        <SignUp>SignUp</SignUp>
+                        <Login to='/login'>login</Login>
+                        <SignUp to='/register'>SignUp</SignUp>
                     </NavHold>
                     {/* <ContactHold>
                         {/* <CallIcon><AiFillPhone style={{width: "30px", height: "35px", color:"#45395b"}}/></CallIcon> */}

@@ -1,29 +1,39 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Container, Wrapper, TopDiv, BottomDiv,
     Left, Right, Trade, Img, H1, P
 } from './Land5Style';
 import arr from '../../../Assets/arr.png'
 import arr2 from '../../../Assets/arr2.png'
 import PackageCard from './PackageCard';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import Slides from '../EthScroll'
 
-const Land5 = ({price,title,a,b,c,e}) =>{
+
+const Land5 = () =>{
+
+    useEffect(() =>{
+        AOS.init({duration:1000})
+      },[]);
+
     return(
         <Container>
             <Wrapper>
+            <Slides/>
                 <TopDiv>
                     <Left>
-                    <Trade>
+                    <Trade data-aos="fade-down">
                      <Img src={arr} alt='arr left'/>
                      <h4>OUR PACKAGE</h4>
                      <Img src={arr2} alt='arr right'/>
                     </Trade>
-                     <H1>Investing.Now<br/> Available to everyone.</H1>
+                     <H1 data-aos="fade-down">Investing.Now<br/> Available to everyone.</H1>
                     </Left>
                     <Right>
-                        <P>Select any of our packages to start your journey of investment and <br/>enjoy huge benefit of trading while you sleep</P>
+                        <P data-aos="fade-down">Select any of our packages to start your journey of investment and <br/>enjoy huge benefit of trading while you sleep</P>
                     </Right>
                 </TopDiv>
-                <BottomDiv>
+                <BottomDiv data-aos="fade-down">
                     <PackageCard price='$1,000 - $49,999' title='Starter Plan' a=' Trading Instruments: 36 currency pairs, Metals, Cryptocurrencies' b='  Minimum deposit: 1,000 USD / 10,000 EUR' c='Spread: Floating from 1.3 pips' d='Maximum leverage: 49,999' e=' Return on Investment: 187%' f="Deposit bonuses: All offers" g="Loyalty bonuses: All offers"/>
                     <PackageCard price='$10,000 - $24,999' title='Bronze Plan' a=' Trading Instruments: 36 currency pairs, Metals, Cryptocurrencies' b='  Minimum deposit: 10,000 USD / 10,000 EUR' c='Spread: Floating from 1.3 pips' d='Maximum leverage: 24,999' e=' Return on Investment: 187%' f="Deposit bonuses: All offers" g="Loyalty bonuses: All offers"/>
                     <PackageCard price='$25,000 - $49,999' title='Silver Plan' a='Trading Instruments: 36 currency pairs, Metals, CFD on US stocks, CFD on Indices, CFD on Oil, Cryptocurrencies' b='Minimum deposit: 25,000 USD / 25,000 EUR' c='Spread: Floating from 1.3 pips' d='Maximum : 49,999' e=' Return on Investment: 216%' f="Deposit bonuses: All offers" g="Loyalty bonuses: All offers"/>

@@ -10,7 +10,9 @@ align-items: center;
 background-color: #0F192C;
 padding: 5rem 0;
 
-
+@media Screen and (max-width: 1280px){
+    padding: 1rem 0;
+}
 
 `;
 export const Wrapper = styled.div`
