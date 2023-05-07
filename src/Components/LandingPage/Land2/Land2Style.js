@@ -79,6 +79,13 @@ box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px
     cursor: pointer;
     transform: scale(1.03);
 }
+@media Screen and (max-width: 1280px){
+    width: 90%;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    height: max-content;
+}
 @media Screen and (max-width: 1024px){
     width: 90%;
     margin-right: 5rem;

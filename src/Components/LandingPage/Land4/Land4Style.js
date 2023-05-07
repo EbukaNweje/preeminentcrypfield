@@ -139,6 +139,10 @@ cursor: pointer;
 color: aliceblue;
 font-size: 17px;
 
+@media Screen and (max-width: 1280px){
+padding: 0.3rem 2rem;
+margin-bottom: 10px;
+}
 @media Screen and (max-width: 1024px){
 padding: 0.5rem 3rem;
 margin-bottom: 10px;
@@ -194,6 +198,11 @@ justify-content: space-between;
 align-items: center;
 margin-top: 50px;
 
+@media Screen and (max-width: 1280px){
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
 @media Screen and (max-width: 1024px){
     width: 100%;
     flex-direction: column;
