@@ -97,7 +97,7 @@ transition: all 300ms;
   opacity: 100%;
   transition: opacity ease 300ms;
 }
-@media Screen and (max-width: 1024px){
+@media Screen and (max-width: 1280px){
   width: 13.5%;
   margin-left: 255px;
 
