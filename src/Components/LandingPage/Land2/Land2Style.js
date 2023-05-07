@@ -14,7 +14,7 @@ align-items: center;
 
 
 @media Screen and (max-width: 1024px){
-    height: 85vh;
+    height: auto;
 }
 
 @media Screen and (max-width: 768px){

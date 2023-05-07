@@ -24,7 +24,7 @@ const Discover = () =>{
                     <Button>About Us</Button>
                 </Right>
                 <Left>
-                    <img src={pic} alt='rectangle'/>
+                    {/* <img src={pic} alt='rectangle'/> */}
                     <Rec></Rec>
                 </Left>
             </Wrapper>
@@ -69,7 +69,7 @@ justify-content: space-between;
     height: auto;
 }
 @media Screen and (max-width: 425px){
-    width: 90%;
+    width: 100%;
 }
 
 `;
@@ -91,18 +91,6 @@ align-items: center;
     left:0;
     }
 };
-/* @media Screen and (max-width: 1280px){
-    width: 45%;
-    img{
-        position: absolute;
-    margin-right: 500px;
-    right: 0;
-    left :0;
-    display: none;
-
-    }
-}; */
-
 
 @media Screen and (max-width: 768px){
     width: 90%;
@@ -114,20 +102,12 @@ align-items: center;
 };
 
 @media Screen and (max-width: 425px){
-    right: 250px;
-
-    img{
-    display: none;
-    }
+    right: 50px;
+    width: 100%;
+    height: 50%;
     /* display: none; */
 }
-img{
-    position: absolute;
-    margin-right: 20px;
-    left :970px;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    z-index: 1;
-};
+
 `;
 const Right = styled.div`
 width: 50%;
@@ -143,37 +123,38 @@ flex-direction: column;
     width: 45%;
     margin-top: 40px;
 }
-@media Screen and (max-width: 425px){
-    width: 100%;
+@media Screen and (max-width: 500px){
+    width: 90%;
     margin-top: 40px;
 }
 `;
 const Rec = styled.div`
-width: 75%;
 height: 520px;
 background-color: #015FC9;
 border-radius: 0.5rem;
 margin-top: 20px;
-margin-left: 150px;
-position: relative;
+/* margin-left: 150px; */
+width:80%;
+background-image: url(${pic});
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 
-
-@media Screen and (max-width: 1280px){
+/* @media Screen and (max-width: 1280px){
     width:80%;
     background-image: url(${pic});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    /* position: relative; */
-}
+    position: relative;
+} */
 @media Screen and (max-width: 768px){
     width:70%;
     margin-left: 85px;
 }
 @media Screen and (max-width: 425px){
-    /* width: 100%; */
-    display:  none;
+    width: 100%;
 }
 `;
 const H1 = styled.div`

@@ -84,8 +84,8 @@ color: whitesmoke;
 font-size: 65px;
 font-weight: bold;
 
-@media Screen and (max-width: 1024px){
-    font-size: 50px;
+@media Screen and (max-width: 1280px){
+    font-size: 47px;
 }
 @media Screen and (max-width: 768px){
     font-size: 53px;
