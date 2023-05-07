@@ -6,8 +6,8 @@ const PackageCard = (props) => {
   return (
     <Container>
         <Wrapper>
-            <Price>{props.price}</Price>
-            <Title>{props.title}</Title>
+            <Price pr={props.pr}>{props.price}</Price>
+            <Title coll={props.coll}>{props.title}</Title>
             {/* <Packages>
                 <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
                 <A>{props.a}</A>
@@ -82,12 +82,13 @@ flex-direction: column;
 align-items: center;
 `;
 const Price = styled.div`
-color: #014FC9;
+color: ${({pr}) => pr};
 font-size: 20px;
 font-weight: bold;
 `;
 const Title = styled.div`
-color: #2A203B;
+/* color: ${(coll) => coll}; */
+color: ${({coll}) => coll};
 font-size: 25px;
 font-weight: 500;
 margin: 0.4rem 0 2rem 0;
