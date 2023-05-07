@@ -4,6 +4,7 @@ import Header from './Components/Header/Header'
 import Landing from './Components/LandingPage/Landing';
 import Login from './Components/Auth/Login';
 import SignUp from './Components/Auth/SignUp';
+// import VerificationPage from './Components/Auth/VerificationPage';
 import Footer from './Components/Footer/Footer';
 import Affiliate from './Components/Affiliate/Affiliate';
 import AboutUs from './Components/AboutUs/Aboutus';
@@ -13,6 +14,7 @@ import Faq from './Components/Support/Faq';
 import Howreg from './Components/Support/Howreg';
 import Sendreq from './Components/Support/Sendrequest';
 import Investment from './Components/LandingPage/Land5/Land5';
+
 
 const App = () => {
   return (
@@ -25,6 +27,7 @@ const App = () => {
         <Route path="/affiliate" element={<Affiliate/>}/>
         <Route path="/aboutus" element={<AboutUs/>}/>
         <Route path="/arbitage" element={<Arbitage/>}/>
+        {/* <Route path="/verify" element={<VerificationPage/>}/> */}
         <Route path="/investment" element={<Investment/>}/>
         <Route path="/support" element={<Support/>}/>
         <Route path="/faqdet" element={<Faq/>}/>

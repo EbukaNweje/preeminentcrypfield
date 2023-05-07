@@ -22,7 +22,7 @@ const Header = () =>{
                     <Left>
                         <A>
                             <Icon> <AiOutlinePhone/> </Icon>
-                            <Nav>phone-number</Nav>
+                            <Nav>phone number</Nav>
                         </A>
                         <A>
                             <Icon> <AiFillMail/> </Icon>
@@ -48,7 +48,7 @@ const Header = () =>{
                     <NavHold>
                         <Nav to='/'>Home</Nav>
                         <Nav to='/aboutus'>About Us</Nav>
-                        <Nav to='/investment'>Investment Plan</Nav>
+                        {/* <Nav to='/investment'>Investment Plan</Nav> */}
                         <Nav to='/arbitage'>Arbitage</Nav>
                         <Nav to='/affiliate'>Affiliate program</Nav>
                         <Nav to='/support'>Support</Nav>
@@ -56,13 +56,13 @@ const Header = () =>{
                         <Login to='/login'>login</Login>
                         <SignUp to='/register'>SignUp</SignUp>
                     </NavHold>
-                    {/* <ContactHold>
+                    {/*    <ContactHold>
                         {/* <CallIcon><AiFillPhone style={{width: "30px", height: "35px", color:"#45395b"}}/></CallIcon> */}
                         {/* <ContDiv>
                             <P>(760)545-5660</P>
-                            <Nav style={{color: "#45395b", fontSize: "18px", fontWeight: "bold"}}>Call to Our Experts</Nav>
+                        <Nav style={{color: "#45395b", fontSize: "18px", fontWeight: "bold"}}>Call to Our Experts</Nav>
                         </ContDiv> */}
-                    {/* </ContactHold> */}
+                    {/*</ContactHold>*/}
             </Header2>
             <BurgerHold onClick={() =>{
           setNav(true)

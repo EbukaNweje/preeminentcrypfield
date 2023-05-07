@@ -6,6 +6,7 @@ import Land2 from './Land2/Land2'
 import Land3 from './Land3/Land3'
 import Land4 from './Land4/Land4'
 import Land6 from './Land6/Land6'
+import Land10 from './Land10/Land10'
 import Discover from './Discover/Discover'
 import Assetcryp from './AssetCryp/Assetcryp'
 import Land9 from './Land9/Land9'
@@ -39,8 +40,8 @@ const Landing = () => {
       {/* <Land5/> */}
       <Assetcryp/>
       <Land6/>
+      <Land10/>
       <Land9/>
-      {/* <Land7/> */}
       {/* <Land8/> */}
        </>
       }

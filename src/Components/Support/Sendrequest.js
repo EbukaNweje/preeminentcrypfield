@@ -53,7 +53,7 @@ export default Sendrequest;
 const Container = styled.div`
 width: 100%;
 height: auto;
-background-color: whitesmoke;
+background-color: #16243D;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -67,6 +67,10 @@ display: flex;
 flex-direction: column;
 /* align-items: center; */
 
+@media Screen and (max-width:768px){
+    text-align: center;
+    margin-top: -80px;
+}
 @media Screen and (max-width:425px){
     text-align: center;
 }
@@ -74,7 +78,7 @@ flex-direction: column;
 const H1 = styled.div`
 font-size: 35px;
 font-weight: 500;
-color:  #463A5C;
+color:  lightgrey;
 margin: 15px 0;
 
 @media Screen and (max-width: 768px){
@@ -91,19 +95,22 @@ flex-direction: column;
 const Notice = styled.div`
 width: 96%;
 border-radius: 0.7rem;
-background-color: #463A5C;
+background-color: #101C30;
 color: white;
 padding: 40px 30px;
 margin: 30px 0;
 
+
 @media Screen and (max-width: 768px){
     width: 90%;
+    margin-left: -15px;
 }
 `;
 const P = styled.div`
 font-size: 16px;
 `;
-const PP = styled.div``;
+const PP = styled.div`
+`;
 const Top = styled.div`
 width: 100%;
 display: flex;
@@ -138,7 +145,7 @@ margin: 10px 0;
 const Title = styled.div`
 font-size: 17px;
 font-weight: 500;
-color: #463A5C;
+color: lightgrey;
 `;
 const Select = styled.select`
 padding: 15px 5px;
@@ -189,7 +196,8 @@ justify-content: space-between;
 const Button = styled.button`
 color: white;
 font-weight: bold;
-background-color: #FF4D4D;
+/* background-color: #FF4D4D; */
+background-color: #015FC9;
 border-radius: 5px;
 cursor: pointer;
 padding: 0.5rem 2rem;
