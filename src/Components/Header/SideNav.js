@@ -40,6 +40,10 @@ const SideNav = ({setNav}) =>{
                 setNav(false);
             }}>About Us</Span>
                     <Line></Line>
+                     <Span to='/investment' onClick={() =>{
+                        setNav(false);
+                    }}>Investment Plan</Span>
+                    <Line></Line>
                     <Span to='/arbitage'  onClick={()=>{
                 setNav(false);
             }}> Arbitage </Span>
@@ -51,10 +55,6 @@ const SideNav = ({setNav}) =>{
                     <Span to='/support'  onClick={()=>{
                 setNav(false);
             }}>Support</Span>
-                    <Line></Line>
-                    <Span to='/plans' onClick={() =>{
-                        setNav(false);
-                    }}>Plans</Span>
                     </Div>
                     {/* <Div>
                     <Span to='/policy'>Policy Privacy</Span>

@@ -48,7 +48,7 @@ const Header = () =>{
                     <NavHold>
                         <Nav to='/'>Home</Nav>
                         <Nav to='/aboutus'>About Us</Nav>
-                        <Nav to='/investment'>Investment</Nav>
+                        <Nav to='/investment'>Investment Plan</Nav>
                         <Nav to='/arbitage'>Arbitage</Nav>
                         <Nav to='/affiliate'>Affiliate program</Nav>
                         <Nav to='/support'>Support</Nav>
