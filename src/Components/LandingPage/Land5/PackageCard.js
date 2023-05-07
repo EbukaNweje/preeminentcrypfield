@@ -54,8 +54,21 @@ justify-content: center;
 align-items: center;
 padding: 3rem 0.5rem;
 border-radius: 0.3rem;
+margin-top: 10px;
 
+@media Screen and (max-width: 1024px){
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 10px;
+    height: auto;
+}
 @media Screen and (max-width: 768px){
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 10px;
+    height: auto;
+}
+@media Screen and (max-width: 500px){
     width: 100%;
     margin-top: 20px;
     margin-right: 10px;
@@ -84,6 +97,13 @@ display: flex;
 /* justify-content: space-between; */
 width: 85%;
 margin: 0.5rem 0;
+
+@media Screen and (max-width: 768px){
+    width: 50%;
+}
+@media Screen and (max-width: 500px){
+    width: 85%;
+}
 `;
 // const A = styled.div`
 // color: #808080;

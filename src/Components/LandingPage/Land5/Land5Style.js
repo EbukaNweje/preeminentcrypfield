@@ -11,6 +11,7 @@ background-color: #0F192C;
 padding: 5rem 0;
 
 
+
 `;
 export const Wrapper = styled.div`
 width: 80%;
@@ -18,6 +19,11 @@ display: flex;
 flex-direction: column;
 height: 80%;
 
+@media Screen and (max-width: 1024px){
+    width: 90%;
+    margin-right: 15px;
+    flex-wrap: wrap;
+}
 @media Screen and (max-width: 768px){
     width: 90%;
     margin-right: 15px;
@@ -90,10 +96,12 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+flex-wrap: wrap;
 
 @media Screen and (max-width: 768px){
 flex-wrap: wrap;
 flex-direction: column;
+width: 100%;
 /* justify-content: center; */
 }
 

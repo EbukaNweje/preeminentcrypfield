@@ -8,10 +8,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 
+@media Screen and (max-width: 1024px){
+height: auto;
+padding-bottom: 10px;
+
+
+}
 @media Screen and (max-width: 768px){
 height: auto;
 padding-bottom: 10px;
-}
+};
+
 `;
 export const Wrapper = styled.div`
 width: 80%;
@@ -21,6 +28,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
+@media Screen and (max-width: 1024px){
+width: 100%;
+}
 @media Screen and (max-width: 768px){
     flex-direction: column;
     height: auto;
@@ -28,6 +38,7 @@ align-items: center;
     padding-bottom: 30px;
 }
 `;
+
 export const Left = styled.div`
 width: 50%;
 height: 80%;
@@ -48,6 +59,10 @@ p{
 }
 
 @media Screen and (max-width: 768px){
+    width: 100%;
+    margin-top: 50px;
+}
+@media Screen and (max-width: 500px){
     width: 90%;
     margin-top: 50px;
 }
@@ -61,6 +76,12 @@ position: relative;
 
 
 @media Screen and (max-width: 768px){
+    width: 100%;
+    height: 400px;
+    margin-left: 0;
+    margin-right: 35px;
+}
+@media Screen and (max-width: 500px){
     width: 315px;
     height: 315px;
     margin-left: 0;
@@ -118,6 +139,11 @@ cursor: pointer;
 color: aliceblue;
 font-size: 17px;
 
+@media Screen and (max-width: 1024px){
+padding: 0.5rem 3rem;
+margin-bottom: 10px;
+}
+
 :hover{
     background-color: #BA2222;
     transition: all 1s;
@@ -138,8 +164,14 @@ color: lightgrey;
 }
 
 @media Screen and (max-width: 768px){
-    width: 70%;
+    width: 28%;
+    :hover{
+        width: 30%;
+    }
 
+}
+@media Screen and (max-width: 500px){
+    width: 70%;
     :hover{
         width: 72%;
     }
@@ -161,6 +193,12 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin-top: 50px;
+
+@media Screen and (max-width: 1024px){
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
 `;
 
 export const ContactHold = styled.div`

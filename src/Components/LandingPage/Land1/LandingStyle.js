@@ -52,11 +52,16 @@ margin-top: 50px;
 @media Screen and (max-width: 768px){
  width: 100%;
  margin-top: 70px;
+ align-items: flex-start;
+margin-left: 0;
+margin-left: 10px;
+}
+@media Screen and (max-width: 500px){
+ width: 100%;
+ margin-top: 70px;
  align-items: center;
 margin-left: 0;
 margin-left: 10px;
-
-
 }
 `;
 
@@ -80,9 +85,13 @@ font-size: 65px;
 font-weight: bold;
 
 @media Screen and (max-width: 1024px){
-    font-size: 70px;
+    font-size: 50px;
 }
 @media Screen and (max-width: 768px){
+    font-size: 53px;
+    font-weight: bold;
+}
+@media Screen and (max-width: 500px){
     font-size: 43px;
     font-weight: bold;
 }

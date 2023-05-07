@@ -20,6 +20,9 @@ align-items: center;
 padding: 8rem 0;
 
 @media Screen and (max-width: 768px){
+    padding: 0 0 50rem 0
+}
+@media Screen and (max-width: 500px){
     padding: 0 0 25rem 0
 }
 
@@ -32,6 +35,7 @@ align-items: center;
 
 @media Screen and (max-width: 768px){
     flex-direction: column;
+    width: 90%
 }
 `;
 export const LeftDiv = styled.div`
@@ -94,7 +98,7 @@ h6{
 @media Screen and (max-width: 768px){
     width: 100%;
     margin-bottom: 10px;
-}
+};
 
 `;
 
@@ -104,6 +108,14 @@ position: absolute;
 right: 5rem;
 margin-bottom: 20px;
 
+@media Screen and (max-width: 1024px){
+    width : 45%;
+    right: 4.5rem;
+}
+@media Screen and (max-width: 768px){
+    width: 100%;
+    right: 0;
+}
 @media Screen and (max-width: 768px){
     width: 100%;
     right: 0;
@@ -127,6 +139,10 @@ width: 34%;
 export const NewBg3 = styled.img`
 width: 45%;
 margin-left: 400px;
+
+@media Screen and (max-width: 1024px){
+    margin-left: 200px;
+}
 @media Screen and (max-width: 768px){
     display: none;
 }

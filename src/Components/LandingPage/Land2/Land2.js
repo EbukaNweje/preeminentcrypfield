@@ -17,7 +17,7 @@ const Land2 = () => {
                 <H6>Uk based, European, American and Asian regulated crypto and securities broker platform</H6>
                 <p>Uk based, European, American and Asian regulated crypto and securities broker platform</p>
                 </Div2>
-            </Card>
+              </Card>
             <Card>
             <Div> <AiOutlineDollarCircle style={{width: 55, height: 55}}/>
             </Div>

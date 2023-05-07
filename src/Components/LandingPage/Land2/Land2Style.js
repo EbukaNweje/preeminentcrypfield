@@ -11,8 +11,21 @@ display: flex;
 justify-content: center;
 align-items: center;
 
+
+
+@media Screen and (max-width: 1024px){
+    height: 85vh;
+}
+
 @media Screen and (max-width: 768px){
+    height: 85vh;
+}
+@media Screen and (max-width: 500px){
     height: auto;
+    width: 100%;
+    display: inline-block;;
+
+    /* display: block; */
 }
 `;
 export const Wrapper = styled.div`
@@ -24,25 +37,37 @@ align-items: center;
 transition: all 400ms;
 
 
-
-
+@media Screen and (max-width: 1024px){
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem;
+    height: auto;
+    width: 90%;
+    margin-left: 70px
+}
 @media Screen and (max-width: 768px){
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4rem;
     height: auto;
+    width: 90%;
+    margin-left: 70px
+}
+@media Screen and (max-width: 500px){
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    width: 90%;
+    /* background-color: red; */
+    /* flex-direction: column; */
 }
 
-@media Screen and (max-width: 768px){
-    width: 90%
-}
 `;
 export const Card = styled.div`
 width: 30%;
 height: 80%;
 background-color: #0B1526;
 border-radius: 0.2rem;
-;
 box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px 1px;
 
 :hover{
@@ -54,15 +79,23 @@ box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px
     cursor: pointer;
     transform: scale(1.03);
 }
+@media Screen and (max-width: 1024px){
+    width: 90%;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
 @media Screen and (max-width: 768px){
-    width: 60%;
+    width: 90%;
     margin-right: 5rem;
     margin-bottom: 3rem;
 }
-@media Screen and (max-width: 425px){
+@media Screen and (max-width: 500px){
     width: 100%;
     margin-bottom: 3rem;
     margin-right: 0;
+    /* right: 0; */
+    /* margin-left: 70px; */
 }
 @media Screen and (max-width: 320px){
     width: 100%;
@@ -96,10 +129,17 @@ width: 57%;
 font-weight: 400;
 margin-left: 20px;
 
-
+@media Screen and (max-width: 1280px){
+width: 80%;
+}
 `;
 
 export const Div2 = styled.div`
+
+@media Screen and (max-width :1024px){
+margin-top: 0;
+padding-bottom: 1rem;
+}
 p{
     display: none;
 }

@@ -15,7 +15,7 @@ const Land3 = () => {
               <h4>TRADING SPOT</h4>
               <Img src={arr2} alt='arr right'/>
             </Trade>
-            <H1>Markets closed? Not <br/> anymore</H1>
+            <H1>Markets closed? Not anymore</H1>
           </Left>
           <Right>Invest whenever you want, even when the traditional stock <br/> market is closed.</Right>
         </TopDiv>

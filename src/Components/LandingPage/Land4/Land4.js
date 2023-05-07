@@ -21,10 +21,10 @@ const Land4 = () => {
                 <h4>Who we are</h4>
                 <Img src={arr2} alt='arr right'/>
             </Trade>
-            <H1>Reliability, productive, <br/> Opportunities</H1>
-            <p>At premium-cryptasset, we see investing differently. Today's <br/> financial system is complex, exclusive and expensive - making it <br/> hard for the typical person to start investing.</p>
-            <p>So, we're building a platform without digital walls and complex <br/> barriers. A platform that empowers you to see new possibilities for <br/> your money -  and helps make them a reality.</p>
-            <p>premium-cryptasset is backed by a team of world-class experts <br/> and the best technology talent. To stay at the forefront of <br/>innovation, we're always working on strengthening our position as <br/> Europe's leading digital asset platform.</p>
+            <H1>Reliability, productive, Opportunities</H1>
+            <p>At premium-cryptasset, we see investing differently. Today's financial system is complex, exclusive and expensive - making it hard for the typical person to start investing.</p>
+            <p>So, we're building a platform without digital walls and complex barriers. A platform that empowers you to see new possibilities for your money -  and helps make them a reality.</p>
+            <p>premium-cryptasset is backed by a team of world-class experts and the best technology talent. To stay at the forefront of innovation, we're always working on strengthening our position as Europe's leading digital asset platform.</p>
             <ButtonHold>
                 <Button>Discover More</Button>
                 <ContactHold>
