@@ -47,6 +47,8 @@ background-color: #111D32;
 
 @media Screen and (max-width: 1280px){
     height: auto;
+    width: 100%;
+
 }
 `;
 const Wrapper = styled.div`
@@ -78,24 +80,28 @@ justify-content: space-between;
 align-items: center;
 
 @media Screen and (max-width: 1280px){
-    width: 50%;
-    background-color: red;
+    width: 75%;
     position: relative;
     display: flex;
     justify-content: center;
+    /* background-color: red; */
     img{
+        display: none;
     /* right: 800px; */
     left:0;
     }
 };
-@media Screen and (max-width: 1024px){
+/* @media Screen and (max-width: 1280px){
     width: 45%;
     img{
-    /* margin-right: 300px; */
+        position: absolute;
+    margin-right: 500px;
+    right: 0;
     left :0;
+    display: none;
 
     }
-};
+}; */
 
 
 @media Screen and (max-width: 768px){
@@ -103,8 +109,7 @@ align-items: center;
     justify-content: center;
 
     img{
-    margin-right: 20px;
-    left :100px;
+    display: none
     }
 };
 
@@ -121,6 +126,7 @@ img{
     margin-right: 20px;
     left :970px;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    z-index: 1;
 };
 `;
 const Right = styled.div`
@@ -153,8 +159,13 @@ position: relative;
 
 
 @media Screen and (max-width: 1280px){
-    width:90%;
-    position: relative;
+    width:80%;
+    background-image: url(${pic});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* position: relative; */
 }
 @media Screen and (max-width: 768px){
     width:70%;
