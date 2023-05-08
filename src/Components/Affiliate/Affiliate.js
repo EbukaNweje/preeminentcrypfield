@@ -57,7 +57,7 @@ const Affiliate = () => {
                 Under the current partnership conditions, you will receive a reward at 3 levels for attracting new partners. For the first level you will receive 20% of profit, for level 2 5% and for level 3 - 3% .
                 <br/>
                 <br/>
-                The number of partners involved, as well as the partner’s profit, has no limits. At the same time, the conditions of the current affiliate program can be changed in the future at the initiative of swiftcryptrade.com.
+                The number of partners involved, as well as the partner’s profit, has no limits. At the same time, the conditions of the current affiliate program can be changed in the future at the initiative of premium-cryptassets.
                 </Content>
                 </Hold>
             </Bottom>

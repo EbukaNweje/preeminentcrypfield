@@ -53,7 +53,8 @@ width:  100%;
 height: 100vh;
 /* background-color: red; */
 display: flex;
-flex-direction: column;
+justify-content: center;
+align-items: center;
 `;
 
 const Wrapper = styled.div`
@@ -61,6 +62,12 @@ width: 100%;
 height: 100%;
 display :flex;
 justify-content: flex-start;
+/* background-color: red; */
+
+@media Screen and (max-width: 768px){
+  /* background-color: green; */
+
+}
 
 `;
 
@@ -69,6 +76,10 @@ width: 15%;
 height: 100%;
 background-color: #16233C;
 border-top: 1px solid #4A525E;
+
+@media Screen and (max-width: 768px){
+  display: none;
+}
 `;
 const Hold = styled.button`
 width: 100%;

@@ -21,7 +21,7 @@ const AssetCryp = () => {
                 <Div>
                     <IconHold data-aos="flip-down"><AiOutlinePercentage style={{width: 35, height: 35}}/></IconHold>
                     <H4>INSTITUTIONAL INVESTMENT</H4>
-                    <span>When you select kryptbased-assets.com to manage institutional assets, you will generate a better ROI</span>
+                    <span>When you select premium-cryptassets.com to manage institutional assets, you will generate a better ROI</span>
                 </Div>
                 <Line></Line>
                 <Div>
@@ -33,7 +33,7 @@ const AssetCryp = () => {
                 <Div>
                     <IconHold  data-aos="flip-down"><AiOutlineQuestion style={{width: 35, height: 35}}/></IconHold>
                     <H4>ALTERNATIVES</H4>
-                    <span>As a pioneer in alternative investing cryptfield has a long track record of managing investors money</span>
+                    <span>As a pioneer in alternative investing., premium-cryptassets has a long track record of managing investors money</span>
                 </Div>
             </Bottom>
         </Wrapper>
