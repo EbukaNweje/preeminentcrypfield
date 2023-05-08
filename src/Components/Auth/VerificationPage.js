@@ -15,7 +15,7 @@ const Verify = () =>{
                     <Input placeholder="0"/>
                     <Line></Line>
                     <Input placeholder="0"/>
-                    <Line></Line>
+                   <Line></Line>
                     <Input placeholder="0"/>
                     <Line></Line>
                     <Input placeholder="0"/>

@@ -14,6 +14,8 @@ import Faq from './Components/Support/Faq';
 import Howreg from './Components/Support/Howreg';
 import Sendreq from './Components/Support/Sendrequest';
 import Investment from './Components/LandingPage/Land5/Land5';
+// import Dashboard from './Components/Dashboard/Dashboard';
+import Dashboard2 from './Dashboard2/Dashboard2';
 
 
 const App = () => {
@@ -33,10 +35,14 @@ const App = () => {
         <Route path="/faqdet" element={<Faq/>}/>
         <Route path="/sendrequest" element={<Sendreq/>}/>
         <Route path="/Howreg" element={<Howreg/>}/>
+        <Route path="/dashboard" element={<Dashboard2/>}/>
       </Routes>
       <Footer/> 
        </BrowserRouter>
   )
-}
+};
 
 export default App;
+
+
+
