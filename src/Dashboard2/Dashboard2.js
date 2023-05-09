@@ -1,18 +1,21 @@
 import React from 'react'
 // import DashHeader from './DashHeader/DashHeader'
 import styled from 'styled-components'
-import DashHome from './DashHome/DashHome'
 import { FaLaptopCode } from 'react-icons/fa'
 import { GiShakingHands } from 'react-icons/gi'
 import { BsBagCheck } from 'react-icons/bs'
 import {HiOutlineCurrencyDollar} from 'react-icons/hi'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { VscAccount } from 'react-icons/vsc'
+import NewDashboard from './Newdashboard/Newdashboard'
+import Settings from './Setting/Setting'
+import History from './History/History2'
+import Withdraw from './Withdraw/Withdraw'
+import Orders from './Orders'
 
 const Dashboard2 = () => {
   return (
     <Container>
-        {/* <DashHeader/> */}
         <Wrapper>
         <SideNav>
         <Hold>
@@ -40,7 +43,11 @@ const Dashboard2 = () => {
         <Title>Affiliate Program</Title>
       </Hold>
         </SideNav>
-        <DashHome/>
+        {/* <NewDashboard/> */}
+        {/* <Settings/> */}
+        {/* <History/> */}
+        {/* <Withdraw/> */}
+        <Orders/>
         </Wrapper>
     </Container>
   )
@@ -50,8 +57,8 @@ export default Dashboard2;
 
 const Container = styled.div`
 width:  100%;
-height: 100vh;
-/* background-color: red; */
+height: auto;
+background-color: #16233C;
 display: flex;
 justify-content: center;
 align-items: center;

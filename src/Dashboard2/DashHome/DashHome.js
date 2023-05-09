@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaBitcoin, FaDollarSign} from 'react-icons/fa';
-import {AiOutlineDollar} from 'react-icons/ai'
-import {AiFillHome, AiFillWallet, AiOutlineCodeSandbox,AiFillCreditCard} from 'react-icons/ai'
+// import {AiOutlineDollar} from 'react-icons/ai'
+// import {AiFillHome, AiFillWallet, AiOutlineCodeSandbox,AiFillCreditCard} from 'react-icons/ai'
 import usdt from './usdt.png';
 import eth from './eth.png';
 import line from './line.png';
-import bgbg from './bgbg.jpg';
+// import bgbg from './bgbg.jpg';
 import DashboardMobile from './DashboardMobile';
 
 
@@ -104,7 +104,6 @@ const DashHome = () => {
       </Next2>
     </Container>
     <DashboardMobile/>
-    
    </>
   )
 }

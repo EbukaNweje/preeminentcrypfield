@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Withdra = styled.div `
    width: 100%;
-   height: 100%;
+   height: 80vh;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    /* justify-content: center; */
-   /* background-color: red; */
+   background-color: #101C30;
    
 `
 export const Card = styled.div`

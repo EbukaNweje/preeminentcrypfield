@@ -20,14 +20,19 @@ import { MainContainer,
 const Setting = () => {
   return (
     <MainContainer>
-        <H1>Edit Account</H1>
+        <H1>Dashboard - <br/> <span style={{color: "#ff4d4d"}}>Edit Account</span></H1>
         <DivContainer>
            <Name>
               <P>Account Name:</P>
-              <P1>Brewer</P1>
+              <P1>User Name</P1>
            </Name>
+           {/* <ImageEdit>
+            <Image>
+              <Input />
+            </Image>
+           </ImageEdit> */}
            <Date2>
-              <P2>Registration Date:</P2>
+              <P2>Registration  Date:</P2>
               <P3>May-5-2023 09:53:15 AM</P3>
            </Date2>
            <InputDiv>
