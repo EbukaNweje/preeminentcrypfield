@@ -6,23 +6,22 @@ import {HiOutlineCurrencyDollar} from 'react-icons/hi'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import {BsBagCheck} from 'react-icons/bs'
 import {GiShakingHands} from 'react-icons/gi'
+import { Link } from 'react-router-dom';
 
 
-const DashSideNav = ({setState}) => {
+const DashSideNav = () => {
   return (
     <Container>
       <Hold>
       <div>Welcome back Ceeci</div>
       </Hold>
-      <Hold onClick={() =>{
-        setState(false)
-      }}>
+      <Hold>
         <FaLaptopCode style={{width: 30, height: 30, color: "silver"}}/>
-        <Title>Dashboard</Title>
+        <Title to='/dashboard/:userid'>Dashboard</Title>
       </Hold>
       <Hold>
         <VscAccount style={{width: 30, height: 30, color: "silver"}}/>
-        <Title>Update Account</Title>
+        <Title to='/settings'>Update Account</Title>
       </Hold>
       <Hold>
         <HiOutlineCurrencyDollar style={{width: 30, height: 30, color: "silver"}}/>
@@ -69,7 +68,7 @@ outline: none;
   cursor: pointer;
 }
 `;
-const Title = styled.div`
+const Title = styled(Link)`
 margin-left: 5px;
 font-size: 15px;
 font-weight: 500;

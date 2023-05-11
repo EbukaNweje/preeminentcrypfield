@@ -16,6 +16,7 @@ import Sendreq from './Components/Support/Sendrequest';
 import Investment from './Components/LandingPage/Land5/Land5';
 // import Dashboard from './Components/Dashboard/Dashboard';
 import Dashboard2 from './Dashboard2/Dashboard2';
+import Setting from './Dashboard2/Setting/Setting'
 
 
 const App = () => {
@@ -35,7 +36,8 @@ const App = () => {
         <Route path="/faqdet" element={<Faq/>}/>
         <Route path="/sendrequest" element={<Sendreq/>}/>
         <Route path="/Howreg" element={<Howreg/>}/>
-        <Route path="/dashboard" element={<Dashboard2/>}/>
+        <Route path="/dashboard/:userid" element={<Dashboard2/>}/>
+        <Route path="/settings" element={<Setting/>}/>
       </Routes>
       <Footer/> 
        </BrowserRouter>

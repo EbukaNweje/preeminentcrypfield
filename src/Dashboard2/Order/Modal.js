@@ -1,13 +1,11 @@
 import React from "react";
 import styled from 'styled-components';
-import {FaTimes} from "react-icons/fa"
 
 
 const Modal = () =>{
     return(
         <Container>
             <Wrapper>
-                {/* <FaTimes/> */}
                 <H1>Open manual order</H1>
                 <One>
                     <Left>

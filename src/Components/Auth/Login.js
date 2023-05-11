@@ -26,7 +26,7 @@ const Login = () => {
 
     console.log(message);
     
-    const url = "https://swiftcryptrade.onrender.com/api/login"
+    const url = "https://calm-erin-coral-wrap.cyclic.app/"
   const Data = {userName, password}
   console.log(url)
   console.log(Data)
@@ -34,7 +34,7 @@ const Login = () => {
   const Login = (e) => {
     e.preventDefault()
     setLoading(true)
-    Axios.post("url", "data")
+    Axios.post(url, Data)
     .then((res) => {
       console.log(res)
       localStorage.setItem("User", JSON.stringify(res.data));
@@ -44,7 +44,7 @@ const Login = () => {
       console.log(getId._id);
      setMessage({ error: true, msg: "successfully!" });
     setTimeout(() => {
-      navigate(`/user/dashboard/${getId._id}`)
+      navigate(`/dashboard/${getId._id}`)
     }, [2000]);
     }
     )

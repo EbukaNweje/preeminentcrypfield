@@ -33,36 +33,40 @@ const SignUp = () => {
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState({ error: false, msg:""});
 
+
     console.log(message);
     
     const Data = {fullName, userName, email, retypeEmail, password, confirmPassword}
-    const url = "https://swiftcryptrade.onrender.com/api/register"
+    const url = "https://calm-erin-coral-wrap.cyclic.app/"
 
-    console.log(url)
+    // console.log(url)
 
     const Siginup = (e) => {
         e.preventDefault()
         setLoading(true)
         console.log(Data);
 
-        Axios.post("url","Data")
+        Axios.post(url,Data)
         .then((res) => {
         localStorage.setItem("User", JSON.stringify(res.data));
-        const getId = JSON.parse(localStorage.getItem("User"))
         // dispatch(addId(getUser.data._id))
         // dispatch(GetUser(getUser.data))
-        console.log(res)
-        console.log(getId.data._id);
-
-        setMessage({ error: true, msg: "successfully!" });
+        // console.log(res)
+        // console.log(getId.data._id);
+        setMessage({ error: true, msg: res.data.message});
+        const getId = JSON.parse(localStorage.getItem("User"))
           setTimeout(() => {
-            navigate(`/user/dashboard/${getId.data._id}`)
+            navigate(`/dashboard/${getId.data._id}`)
+            // navigate(`/dashboard/${getId._id}`)
+            console.log(getId._id);
           }, [2000]);
+
+
         }
         )
         .catch((error)=>{
           setMessage({error: false, msg: "user not found" });
-        console.log(error)
+        // console.log(error)
         //  reset(),
       })
 
@@ -99,7 +103,7 @@ const SignUp = () => {
 
                     <CheckContainer>
                         <CheckBox type="checkbox" required/>
-                        <Tetx>I am over 18 years old and I agree to the terms and conditions cryptfield.com</Tetx>
+                        <Tetx>I am over 18 years old and I agree to the terms and conditions premium-cryptfield.com</Tetx>
                     </CheckContainer>
                     <Button>{loading ? <SpinnerCircular size={25} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" /> : "Create an account"}</Button>
                 </Form>
