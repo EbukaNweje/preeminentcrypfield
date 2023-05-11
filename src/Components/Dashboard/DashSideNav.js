@@ -11,6 +11,9 @@ import {GiShakingHands} from 'react-icons/gi'
 const DashSideNav = ({setState}) => {
   return (
     <Container>
+      <Hold>
+      <div>Welcome back Ceeci</div>
+      </Hold>
       <Hold onClick={() =>{
         setState(false)
       }}>
