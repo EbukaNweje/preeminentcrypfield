@@ -92,7 +92,7 @@ const History2 = () =>{
                 <Card>
                     <BsBank style={{borderRadius: "5px",padding: "10px", width: 250, height: 250, color: "#015FC9"}}/>
                     <Div>
-                        <Type>BNB</Type>
+                        <Type>Bank Transfer</Type>
                         <Limit>Limit: 1000 - 5000000 USD</Limit>
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>

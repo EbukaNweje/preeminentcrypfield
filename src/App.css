@@ -26,6 +26,8 @@
 background: linear-gradient(45deg,  #030e21cf, #031128a9);
 box-shadow: rgba(17, 132, 194, 0.2) 0px 2px 8px 0px;
 
+box-shadow: rgba(197, 197, 255, 0.25) 0px 2px 5px -1px, rgba(80, 80, 80, 0.3) 0px 1px 3px -1px;
+
 }
 
 .App-link {
