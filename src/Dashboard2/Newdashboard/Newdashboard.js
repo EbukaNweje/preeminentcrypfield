@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { 
     AiFillCopy,
@@ -7,11 +7,19 @@ import {AiFillHome, AiFillProfile, AiOutlineCodeSandbox} from 'react-icons/ai'
 // import usdt from './
 import bgbg from './bgbg.jpg';
 import {useParams} from "react-router-dom";
+import axios from 'axios';
 
 const NewDashboard = () => {
 
+const [data, setData] = useState()
   const {userid} = useParams()
   const url = `https://calm-erin-coral-wrap.cyclic.app/api/userdata/${userid}`
+
+  useEffect(() =>{
+    axios.get(url).then(res => setData(res.data.data))
+  }, [])
+
+  console.log(data)
 
   return (
     <Container>

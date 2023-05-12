@@ -14,7 +14,7 @@ import NewDashboard from './Newdashboard/Newdashboard'
 // import DepositHistory from './DepositHistory/Deposithistory'
 // import Orders from './Orders' 
 // import Modal from './Order/Modal'
-// import Orders2 from './Order/Orders2'
+import Orders2 from './Order/Orders2'
 // import Qrcodeset from './Setting/Qrcodeset'
 
 const Dashboard2 = () => {
@@ -48,12 +48,12 @@ const Dashboard2 = () => {
         <Title>Affiliate Program</Title>
       </Hold>
         </SideNav>
-        <NewDashboard/>
+        {/* <NewDashboard/> */}
         {/* <Settings/> */}
         {/* <History/>  */}
         {/* <Withdraw/> */}
         {/* <Orders/> */}
-        {/* <Orders2/> */}
+        <Orders2/>
         {/* <Modal/> */}
         {/* <Qrcodeset/> */}
         {/* <DepositHistory/> */}
