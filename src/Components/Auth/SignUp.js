@@ -30,10 +30,11 @@ const SignUp = () => {
     const [retypeEmail, setRetypeEmail] = useState("")
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
+    const [phoneNumber, setPhoneNumber] = useState("")
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState({ error: false, msg:""});
 
-    const Data = {fullName, userName, email, retypeEmail, password, confirmPassword}
+    const Data = {fullName, userName, email, retypeEmail, password, confirmPassword, phoneNumber}
     const url = "https://calm-erin-coral-wrap.cyclic.app/api/register"
 
     // console.log(url)
@@ -80,6 +81,8 @@ const SignUp = () => {
                     <Input type="email" placeholder='example@gmail.com' value={email} onChange ={(e)=>{setEmail(e.target.value)}} required/>
                     <Label><MdEmail style={{marginRight:"2%" }}/>Retype Email*</Label>
                     <Input type="email" placeholder='example@gmail.com' value={retypeEmail} onChange ={(e)=>{setRetypeEmail(e.target.value)}} required/>
+                    <Label><MdEmail style={{marginRight:"2%" }}/>Phone Number*</Label>
+                    <Input type="tel" placeholder='+444 000 000 0000' value={phoneNumber} onChange ={(e)=>{setPhoneNumber(e.target.value)}} required/>
                     <Label><BsFillLockFill style={{marginRight:"2%" }}/>Password*</Label>
                     <Input type="password" placeholder='Qwerty123!@#' value={password} onChange ={(e)=>{setPassword(e.target.value)}} required/>
                     <Label><BsFillLockFill style={{marginRight:"2%" }}/>Retype Password*</Label>
