@@ -10,6 +10,8 @@ import 'aos/dist/aos.css'
 const Header = () =>{
 
     const [nav, setNav] = useState(false);
+    // const [navData, setNavData] = useState();
+    const UserData = JSON.parse(localStorage.getItem("User"));
 
     useEffect(() =>{
         AOS.init({duration:1000})
@@ -70,11 +72,13 @@ const Header = () =>{
           <AiOutlineMenu style={{color: "#0CE0FF", width: 20, height: 20}}/>
         </BurgerHold>
        </Wrapper>
-            {
+            {UserData ? "yes" :   <>
+                 {
         nav? (<NavDiv data-aos="fade-right"> 
           <SideNav setNav={setNav}/>
         </NavDiv>) : null
             }
+            </>}
         </Container>
     )
 };

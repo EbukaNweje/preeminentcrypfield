@@ -6,8 +6,13 @@ import {
 import {AiFillHome, AiFillProfile, AiOutlineCodeSandbox} from 'react-icons/ai'
 // import usdt from './
 import bgbg from './bgbg.jpg';
+import {useParams} from "react-router-dom";
 
 const NewDashboard = () => {
+
+  const {userid} = useParams()
+  const url = `https://calm-erin-coral-wrap.cyclic.app/api/userdata/${userid}`
+
   return (
     <Container>
         <Wrapper>

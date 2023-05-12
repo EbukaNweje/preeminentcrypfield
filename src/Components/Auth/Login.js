@@ -26,7 +26,7 @@ const Login = () => {
 
     console.log(message);
     
-    const url = "https://calm-erin-coral-wrap.cyclic.app/"
+    const url = "https://calm-erin-coral-wrap.cyclic.app/api/login"
   const Data = {userName, password}
   console.log(url)
   console.log(Data)
@@ -48,7 +48,7 @@ const Login = () => {
     }, [2000]);
     }
     )
-    // .then(()=>{
+    // .then(()=>{ 
     //   setMessage({ error: true, msg: "successfully!" });
     // //   const getId = JSON.parse(localStorage.getItem("User"));
     // //   console.log(getId.data._id);

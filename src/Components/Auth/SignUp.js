@@ -33,28 +33,22 @@ const SignUp = () => {
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState({ error: false, msg:""});
 
-
-    console.log(message);
-    
     const Data = {fullName, userName, email, retypeEmail, password, confirmPassword}
-    const url = "https://calm-erin-coral-wrap.cyclic.app/"
+    const url = "https://calm-erin-coral-wrap.cyclic.app/api/register"
 
     // console.log(url)
 
     const Siginup = (e) => {
         e.preventDefault()
         setLoading(true)
-        console.log(Data);
+        console.log(Data); 
 
         Axios.post(url,Data)
         .then((res) => {
         localStorage.setItem("User", JSON.stringify(res.data));
-        // dispatch(addId(getUser.data._id))
-        // dispatch(GetUser(getUser.data))
-        // console.log(res)
-        // console.log(getId.data._id);
         setMessage({ error: true, msg: res.data.message});
         const getId = JSON.parse(localStorage.getItem("User"))
+        console.log("this is the data", getId.data._id)
           setTimeout(() => {
             navigate(`/dashboard/${getId.data._id}`)
             // navigate(`/dashboard/${getId._id}`)
@@ -66,8 +60,6 @@ const SignUp = () => {
         )
         .catch((error)=>{
           setMessage({error: false, msg: "user not found" });
-        // console.log(error)
-        //  reset(),
       })
 
     };
