@@ -48,12 +48,12 @@ const Dashboard2 = () => {
         <Title>Affiliate Program</Title>
       </Hold>
         </SideNav>
-        {/* <NewDashboard/> */}
+        <NewDashboard/>
         {/* <Settings/> */}
         {/* <History/>  */}
         {/* <Withdraw/> */}
         {/* <Orders/> */}
-        <Orders2/>
+        {/* <Orders2/> */}
         {/* <Modal/> */}
         {/* <Qrcodeset/> */}
         {/* <DepositHistory/> */}
