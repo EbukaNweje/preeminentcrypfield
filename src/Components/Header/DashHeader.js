@@ -1,26 +1,24 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components';
 import {AiFillHome} from 'react-icons/ai'
 import {RxUpdate} from 'react-icons/rx'
 import {MdOutlinePayments, MdAddTask} from 'react-icons/md'
 import {BiMoneyWithdraw} from 'react-icons/bi'
 import {TbAffiliate} from 'react-icons/tb'
-// import logo from '../Assets/images/logo.svg';
-// import {FaBars, FaTimes} from 'react-icons/fa'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 const DashHeader = () => {
 
-    // const [toggle, setToggle] = useState(false);
-
-    // const handleToggle = () =>{
-    //     setToggle(!toggle)
-    // }
+    useEffect(() =>{
+        AOS.init({duration:1000})
+      },[])
 
 
     
   return (
-    <Container>
+    <Container data-aos="fade-down">
         <Wrapper>
             {/* <Logo src={logo} alt="logo"/> */}
             <NavWrap  
@@ -28,7 +26,7 @@ const DashHeader = () => {
             >
                 <NavHold>
                     <AiFillHome/>
-                    <Nav> Home</Nav>
+                    <Nav > Home</Nav>
                 </NavHold>
                 <NavHold>
                     <RxUpdate/>

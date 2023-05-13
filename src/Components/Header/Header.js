@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { A, Container, Header1, Header2, Left, Line, Login, Logo, LogoHold, Nav, NavHold, Right, SignUp, SocialHold, SocialIcon, Wrapper , Icon, Wrapper1, BurgerHold, NavDiv} from './HeaderStyle';
 import {AiOutlinePhone,AiOutlineMenu, AiFillMail} from 'react-icons/ai'
-import {BsInstagram, BsTwitter, BsYoutube} from 'react-icons/bs'
+import {BsInstagram, BsTwitter, BsYoutube, BsFillPersonFill} from 'react-icons/bs'
 import logo from '../../Assets/mylogo.png'
 import SideNav from "./SideNav";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import DashHeader from "./DashHeader";
+// import {useNavigate} from 'react-router-dom'
 
 const Header = () =>{
 
+    // const navigate = useNavigate();
     const [nav, setNav] = useState(false);
     // const [navData, setNavData] = useState();
     const UserData = JSON.parse(localStorage.getItem("User"));
+
+    const deleteUser = () =>{
+        localStorage.removeItem("User");
+        // navigate("/")
+    };
 
     useEffect(() =>{
         AOS.init({duration:1000})
@@ -48,7 +55,11 @@ const Header = () =>{
                     <LogoHold>
                         <Logo src={logo} alt="logo"/>
                     </LogoHold>
-                    <NavHold>
+                    
+                    {UserData? <Nav onClick={() =>{
+                            deleteUser();
+                        }}  to='/' style={{color: "#FF4D4D", fontWeight: "bold", fontSize: "20px", display: "flex", alignItems: "center"}}> <BsFillPersonFill/> Sign Out</Nav>  : <>
+                        <NavHold>
                         <Nav to='/'>Home</Nav>
                         <Nav to='/aboutus'>About Us</Nav>
                         {/* <Nav to='/investment'>Investment Plan</Nav> */}
@@ -58,22 +69,16 @@ const Header = () =>{
                         <Line></Line>
                         <Login to='/login'>login</Login>
                         <SignUp to='/register'>SignUp</SignUp>
-                    </NavHold>
-                    {/*    <ContactHold>
-                        {/* <CallIcon><AiFillPhone style={{width: "30px", height: "35px", color:"#45395b"}}/></CallIcon> */}
-                        {/* <ContDiv>
-                            <P>(760)545-5660</P>
-                        <Nav style={{color: "#45395b", fontSize: "18px", fontWeight: "bold"}}>Call to Our Experts</Nav>
-                        </ContDiv> */}
-                    {/*</ContactHold>*/}
+                    </NavHold></>
+                    }
             </Header2>
             <BurgerHold onClick={() =>{
-          setNav(true)
+          setNav(!nav)
         }}> 
           <AiOutlineMenu style={{color: "#0CE0FF", width: 20, height: 20}}/>
         </BurgerHold>
        </Wrapper>
-            {UserData ? (<DashHeader/>) :   <>
+            {UserData ? <>{nav?(<DashHeader/>):""}</> :   <>
                  {
         nav? (<NavDiv data-aos="fade-right"> 
           <SideNav setNav={setNav}/>
@@ -86,3 +91,4 @@ const Header = () =>{
 
 export default Header;
 
+   

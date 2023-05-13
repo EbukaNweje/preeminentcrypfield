@@ -105,11 +105,11 @@ const [data, setData] = useState()
             <LeftHold>
               <InputHold2>
                 <Title>Date:</Title>
-                <Right2>10/05/2023</Right2>
+                <Right2></Right2>
               </InputHold2>
               <InputHold2>
                 <Title>Transaction Id:</Title>
-                <Right2>P2Cr004BC2DffyM</Right2>
+                <Right2></Right2>
               </InputHold2>
               <InputHold2>
                 <Title>Gateway:</Title>
@@ -117,11 +117,12 @@ const [data, setData] = useState()
               </InputHold2>
               <InputHold2>
                 <Title>Status:</Title>
-                <Button2>{data?.status}</Button2>
+                <Right2>{data?.status}</Right2>
+                {/* <Button2>{data?.status}</Button2> */}
               </InputHold2>
               <InputHold2>
                 <Title>Post Balance:</Title>
-                <Right2>${data?.currentBalance}.00</Right2>
+                <Right2>{data?.currentBalance}</Right2>
               </InputHold2>
         <Button3 onClick={() =>{
           setModal(true);

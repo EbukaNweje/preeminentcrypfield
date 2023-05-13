@@ -19,6 +19,7 @@ import Dashboard2 from './Dashboard2/Dashboard2';
 // import Setting from './Dashboard2/Setting/Setting'
 import WalletPage from './Dashboard2/History/Wallet'
 import WalletId from './Dashboard2/Withdraw/WalletId'
+import Private from "./Components/Private"
 
 const App = () => {
   return (
@@ -37,9 +38,11 @@ const App = () => {
         <Route path="/faqdet" element={<Faq/>}/>
         <Route path="/sendrequest" element={<Sendreq/>}/>
         <Route path="/Howreg" element={<Howreg/>}/>
+        <Route element={<Private />}>
         <Route path="/dashboard/:userid" element={<Dashboard2/>}/>
         <Route path="/walletpage" element={<WalletPage/>}/>
         <Route path="/walletid" element={<WalletId/>}/>
+        </Route>
         {/* <Route path="/settings" element={<Setting/>}/> */}
       </Routes>
       <Footer/> 

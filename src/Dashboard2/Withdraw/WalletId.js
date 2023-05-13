@@ -8,6 +8,7 @@ import {AiFillHome, AiFillProfile, AiOutlineCodeSandbox} from 'react-icons/ai'
 import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
+import qrcode from "./qrcode.jpeg"
 
 const WalletId = () => {
 
@@ -39,8 +40,10 @@ const [data, setData] = useState()
             <Hold>
             <InputHold>
             <Left1>
-                <Title>Please send your payment to this wallet address: 145nsjdien3874g3b3b3b7289304h</Title>
-
+                <Title>Please send your payment to this wallet address: 16QHjLEwjJNaCnTQJkHKdPfD6bb1NrUSYd</Title>
+                <Box>
+                  <img src={qrcode} alt="wallet qr code"/>
+                </Box>
                 <TitleHold>
                   <Title>Plan: </Title>
                   <Titlename>Silver</Titlename>
@@ -88,6 +91,16 @@ const [data, setData] = useState()
 }
 
 export default WalletId;
+
+const Box = styled.div`
+width: 100%;
+height: 300px;
+/* background-color: red; */
+margin: 30px 0;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+`;
 
 const Button = styled(Link)`
 width: 40%;
