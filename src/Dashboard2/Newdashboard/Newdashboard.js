@@ -6,10 +6,13 @@ import {
 import {AiFillHome, AiFillProfile, AiOutlineCodeSandbox} from 'react-icons/ai'
 // import usdt from './
 import bgbg from './bgbg.jpg';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
+import Modal from "../Order/Modal"
 
 const NewDashboard = () => {
+
+  const [modal, setModal] = useState(false)
 
 const [data, setData] = useState()
   const {userid} = useParams()
@@ -19,14 +22,14 @@ const [data, setData] = useState()
     axios.get(url).then(res => setData(res.data.data))
   }, [])
 
-  console.log(data)
+  console.log("This is the data",data)
 
   return (
     <Container>
         <Wrapper>
             <Hold2>
                 <Div>
-                    <H1>Dashboard</H1>
+                    <H1>{data?.userName} Dashboard</H1>
                     <Holder>
                         <Icon />
                         <Pagename>--Home</Pagename>
@@ -47,7 +50,7 @@ const [data, setData] = useState()
             <InputHold>
             <Left>
               <Title>Deposit Wallet Balance</Title>
-              <Price>$10</Price>
+              <Price>${data?.depositWalletbalance}.00</Price>
             </Left>
             <Right>
               <AiOutlineDollar style={{width: 45, height: 45, color: "#FF4D4D"}}/>
@@ -56,7 +59,7 @@ const [data, setData] = useState()
             <InputHold>
             <Left>
               <Title>Interest Wallet Balance</Title>
-              <Price>$10</Price>
+              <Price>${data?.interestWalletbalance}.00</Price>
             </Left>
             <Right>
               <AiOutlineWallet style={{width: 45, height: 45, color: "#FF4D4D"}}/>
@@ -65,7 +68,7 @@ const [data, setData] = useState()
             <InputHold>
             <Left>
               <Title>Total Invest</Title>
-              <Price>$10</Price>
+              <Price>${data?.totalInvest}.00</Price>
             </Left>
             <Right>
               <AiOutlineCodeSandbox style={{width: 45, height: 45, color: "#FF4D4D"}}/>
@@ -74,7 +77,7 @@ const [data, setData] = useState()
             <InputHold>
             <Left>
               <Title>Total Deposit</Title>
-              <Price>$10</Price>
+              <Price>${data?.totalDeposit}.00</Price>
             </Left>
             <Right>
               <AiOutlineCreditCard style={{width: 45, height: 45, color: "#FF4D4D"}}/>
@@ -83,7 +86,7 @@ const [data, setData] = useState()
             <InputHold>
             <Left>
               <Title>Total Withdrawal</Title>
-              <Price>$10</Price>
+              <Price>${data?.totalWithdraw}.00</Price>
             </Left>
             <Right>
               <AiOutlineCloud style={{width: 45, height: 45, color: "#FF4D4D"}}/>
@@ -101,25 +104,28 @@ const [data, setData] = useState()
             </Hold>
             <LeftHold>
               <InputHold2>
-                <Title>Date</Title>
+                <Title>Date:</Title>
                 <Right2>10/05/2023</Right2>
               </InputHold2>
               <InputHold2>
-                <Title>Transaction Id</Title>
+                <Title>Transaction Id:</Title>
                 <Right2>P2Cr004BC2DffyM</Right2>
               </InputHold2>
               <InputHold2>
-                <Title>Amount</Title>
-                <Right2>+210</Right2>
+                <Title>Gateway:</Title>
+                <Right2>{data?.gateWay}</Right2>
               </InputHold2>
               <InputHold2>
-                <Title>Wallet</Title>
-                <Button2>Deposit Wallet</Button2>
+                <Title>Status:</Title>
+                <Button2>{data?.status}</Button2>
               </InputHold2>
               <InputHold2>
-                <Title>Post Balance</Title>
-                <Right2>$10.00</Right2>
+                <Title>Post Balance:</Title>
+                <Right2>${data?.currentBalance}.00</Right2>
               </InputHold2>
+        <Button3 onClick={() =>{
+          setModal(true);
+        }}>Make Deposit</Button3>
               <Wrap2>
                 <iframe title='btc' allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#%7B%22symbol%22%3A%22NASDAQ%3AAAPL%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22dateRange%22%3A%2212M%22%2C%22colorTheme%22%3A%22light%22%2C%22trendLineColor%22%3A%22rgba(41%2C%2098%2C%20255%2C%201)%22%2C%22underLineColor%22%3A%22rgba(41%2C%2098%2C%20255%2C%200.3)%22%2C%22underLineBottomColor%22%3A%22rgba(41%2C%2098%2C%20255%2C%200)%22%2C%22isTransparent%22%3Afalse%2C%22autosize%22%3Atrue%2C%22largeChartUrl%22%3A%22%22%2C%22utm_source%22%3A%22www.kryptbased-assets.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22mini-symbol-overview%22%2C%22page-uri%22%3A%22www.kryptbased-assets.com%2F%22%7D" style={{boxSizing: "border-box",display: "block", height: "100%", width: "32%"}}></iframe>
 
@@ -131,11 +137,22 @@ const [data, setData] = useState()
         <BottomDiv>
         <iframe style={{width: "100%", height: "600px", margin: "80px 0"}} title='frame' allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/forex-cross-rates/?locale=en#%7B%22width%22%3A%22100%25%22%2C%22height%22%3A500%2C%22currencies%22%3A%5B%22EUR%22%2C%22USD%22%2C%22JPY%22%2C%22GBP%22%2C%22CHF%22%2C%22AUD%22%2C%22CAD%22%2C%22NZD%22%2C%22CNY%22%5D%2C%22isTransparent%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22utm_source%22%3A%22swiftcryptrade.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22forex-cross-rates%22%2C%22page-uri%22%3A%22swiftcryptrade.com%2F%3Fa%3Dhome%22%7D" ></iframe>
         </BottomDiv>
+        {
+          modal? (<ModalHold><Modal setModal={setModal}/></ModalHold>) : null
+        }
     </Container>
   )
 }
 
 export default NewDashboard;
+
+const ModalHold= styled.div`
+    position: fixed;
+    height: 50vh;
+    width: 90%;
+    background-color: transparent;
+    bottom: 120px;
+`;
 
 export const BottomDiv = styled.div`
 /* background-color: #BF1E24; */
@@ -316,13 +333,13 @@ font-size: 15px;
     color: whitesmoke;
 @media Screen and (max-width: 768px){
     /* display: block; */
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
     color: whitesmoke;
 }
 `;
 const Button2 = styled.div`
-width: auto;
+width: 100px;
 height: 30px;
 padding: 7px;
 background-color: #FF4D4D;
@@ -334,6 +351,26 @@ font-size: 15px;
 font-weight: 500;
 color: white;
 cursor: pointer;
+@media Screen and (max-width: 768px){
+  
+}
+`;
+const Button3 = styled.button`
+width: 140px;
+height: 60px;
+padding: 7px;
+background-color: #FF4D4D;
+border-radius: 0.4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+font-weight: 500;
+text-decoration: none;
+color: white;
+cursor: pointer;
+margin-top: 50px;
+border: none;
 @media Screen and (max-width: 768px){
   
 }

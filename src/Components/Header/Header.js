@@ -6,6 +6,7 @@ import logo from '../../Assets/mylogo.png'
 import SideNav from "./SideNav";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import DashHeader from "./DashHeader";
 
 const Header = () =>{
 
@@ -72,7 +73,7 @@ const Header = () =>{
           <AiOutlineMenu style={{color: "#0CE0FF", width: 20, height: 20}}/>
         </BurgerHold>
        </Wrapper>
-            {UserData ? "yes" :   <>
+            {UserData ? (<DashHeader/>) :   <>
                  {
         nav? (<NavDiv data-aos="fade-right"> 
           <SideNav setNav={setNav}/>

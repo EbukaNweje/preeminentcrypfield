@@ -7,6 +7,7 @@ import bgbg from "./bgbg.jpg";
 import doge  from './dogecoin.jpg';
 import bnb from './bnb.png'
 import ripple from './ripple.png'
+import { Link } from "react-router-dom";
 
 const History2 = () =>{
     return(
@@ -31,7 +32,7 @@ const History2 = () =>{
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button>Deposit</Button>
+                        <Button to='/walletid'>Deposit</Button>
                     </Div3>
                 </Card>
                 <Card>
@@ -42,7 +43,7 @@ const History2 = () =>{
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button>Deposit</Button>
+                        <Button to='/walletid'>Deposit</Button>
                     </Div3>
                 </Card>
                 <Card>
@@ -53,7 +54,7 @@ const History2 = () =>{
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button>Deposit</Button>
+                        <Button to='/walletid'>Deposit</Button>
                     </Div3>
                 </Card>
                 <Card>
@@ -64,7 +65,7 @@ const History2 = () =>{
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button>Deposit</Button>
+                        <Button to='/walletid'>Deposit</Button>
                     </Div3>
                 </Card>
                 <Card>
@@ -75,7 +76,7 @@ const History2 = () =>{
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button>Deposit</Button>
+                        <Button to='/walletid'>Deposit</Button>
                     </Div3>
                 </Card>
                 <Card>
@@ -86,7 +87,7 @@ const History2 = () =>{
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button>Deposit</Button>
+                        <Button to='/walletid'>Deposit</Button>
                     </Div3>
                 </Card>
                 <Card>
@@ -97,7 +98,7 @@ const History2 = () =>{
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button>Deposit</Button>
+                        <Button to='/walletid'>Deposit</Button>
                     </Div3>
                 </Card>
             </Wrapper>
@@ -295,11 +296,13 @@ border-bottom: 1px dashed grey;
  padding: 10px 0;
  margin: 20px 0 10px 0
 `;
-const Button = styled.div`
+const Button = styled(Link)`
 width: 70%;
 background-color: #015FC9;
 text-align: center;
 padding: 10px;
 border-radius: 5px;
 cursor: pointer;
+text-decoration: none;
+color: whitesmoke;
 `;

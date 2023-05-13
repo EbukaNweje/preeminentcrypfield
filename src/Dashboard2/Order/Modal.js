@@ -1,11 +1,17 @@
 import React from "react";
 import styled from 'styled-components';
+import {FaTimes} from 'react-icons/fa'
+import { Link } from "react-router-dom";
 
-
-const Modal = () =>{
+const Modal = ({setModal}) =>{
     return(
-        <Container>
+        <Container setModal={setModal}>
             <Wrapper>
+            <Hold onClick={() =>{
+                setModal(false);
+            }}>
+            <FaTimes/>
+            </Hold>
                 <H1>Open manual order</H1>
                 <One>
                     <Left>
@@ -32,7 +38,7 @@ const Modal = () =>{
                         </Input>
                     </InputHold>
                 </Three>
-                <Button>Create Order</Button>
+                <Button to='/walletpage'>Create Order</Button>
             </Wrapper>
         </Container>
     )
@@ -41,10 +47,23 @@ const Modal = () =>{
 
 export default Modal;
 
-const Button = styled.div`
+const Hold = styled.button`
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #FF4D4D;
+color: white;
+background-color: #0F192C;
+width: 30px;
+height: 30px;
+cursor: pointer;
+`;
+
+const Button = styled(Link)`
 width: auto;
 height: 30px;
 padding:10px 12px;
+text-decoration: none;
 /* background-color: #FF4D4D; */
 background-color: #0F192C;
 border-radius: 0.4rem;
@@ -67,12 +86,13 @@ margin-top: 15px;
 `;
 
 const Container = styled.div`
-width: 100%;
+width: 95%;
 height: 450px;
 border-radius: 5px;
-background-color: #111D32;
+background-color: transparent;
 display: flex;
 justify-content: center;
+margin-left: 25px;
 
 `;
 const Wrapper = styled.div`

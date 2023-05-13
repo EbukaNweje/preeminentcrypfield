@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 // import DashHeader from './DashHeader/DashHeader'
 import styled from 'styled-components'
 import { FaLaptopCode } from 'react-icons/fa'
@@ -9,16 +9,15 @@ import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { VscAccount } from 'react-icons/vsc'
 import NewDashboard from './Newdashboard/Newdashboard'
 // import Settings from './Setting/Setting'
-// import History from './History/Wallet'
+import History from './History/Wallet'
 // import Withdraw from './Withdraw/Withdraw'
 // import DepositHistory from './DepositHistory/Deposithistory'
 // import Orders from './Orders' 
 // import Modal from './Order/Modal'
-import Orders2 from './Order/Orders2'
+// import Orders2 from './Order/Orders2'
 // import Qrcodeset from './Setting/Qrcodeset'
 
 const Dashboard2 = () => {
-  const [click, setClick] = useState(false)
   return (
     <Container>
         <Wrapper>
