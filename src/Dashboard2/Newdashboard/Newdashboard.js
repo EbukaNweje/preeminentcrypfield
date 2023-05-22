@@ -6,7 +6,7 @@ import {
 import {AiFillHome, AiFillProfile, AiOutlineCodeSandbox} from 'react-icons/ai'
 // import usdt from './
 import bgbg from './bgbg.jpg';
-import {Link, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import axios from 'axios';
 import Modal from "../Order/Modal"
 
@@ -16,10 +16,11 @@ const NewDashboard = () => {
 
 const [data, setData] = useState()
   const {userid} = useParams()
-  const url = `https://calm-erin-coral-wrap.cyclic.app/api/userdata/${userid}`
+  const url = `https://premium-crypt.onrender.com/api/userdata/${userid}`
 
   useEffect(() =>{
     axios.get(url).then(res => setData(res.data.data))
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, [])
 
   console.log("This is the data",data)
@@ -42,8 +43,8 @@ const [data, setData] = useState()
             <InputHold>
             <Left1>
                 <Title>Referral Links</Title>
-              <Linkput>https://premium-cryptassets/123ref_io
-              <AiFillCopy style={{width: 45, height: 45, color: "#FF4D4D"}}/>
+              <Linkput>https://preeminent crypfield.com//123ref_io
+              <AiFillCopy style={{width: 45, height: 45, color: "#BF2024"}}/>
                </Linkput>
             </Left1>
           </InputHold>
@@ -53,7 +54,7 @@ const [data, setData] = useState()
               <Price>${data?.depositWalletbalance}.00</Price>
             </Left>
             <Right>
-              <AiOutlineDollar style={{width: 45, height: 45, color: "#FF4D4D"}}/>
+              <AiOutlineDollar style={{width: 45, height: 45, color: "#BF2024"}}/>
             </Right>
           </InputHold>
             <InputHold>
@@ -62,7 +63,7 @@ const [data, setData] = useState()
               <Price>${data?.interestWalletbalance}.00</Price>
             </Left>
             <Right>
-              <AiOutlineWallet style={{width: 45, height: 45, color: "#FF4D4D"}}/>
+              <AiOutlineWallet style={{width: 45, height: 45, color: "#BF2024"}}/>
             </Right>
           </InputHold>
             <InputHold>
@@ -71,7 +72,7 @@ const [data, setData] = useState()
               <Price>${data?.totalInvest}.00</Price>
             </Left>
             <Right>
-              <AiOutlineCodeSandbox style={{width: 45, height: 45, color: "#FF4D4D"}}/>
+              <AiOutlineCodeSandbox style={{width: 45, height: 45, color: "#BF2024"}}/>
             </Right>
           </InputHold>
             <InputHold>
@@ -80,7 +81,7 @@ const [data, setData] = useState()
               <Price>${data?.totalDeposit}.00</Price>
             </Left>
             <Right>
-              <AiOutlineCreditCard style={{width: 45, height: 45, color: "#FF4D4D"}}/>
+              <AiOutlineCreditCard style={{width: 45, height: 45, color: "#BF2024"}}/>
             </Right>
           </InputHold>
             <InputHold>
@@ -89,7 +90,7 @@ const [data, setData] = useState()
               <Price>${data?.totalWithdraw}.00</Price>
             </Left>
             <Right>
-              <AiOutlineCloud style={{width: 45, height: 45, color: "#FF4D4D"}}/>
+              <AiOutlineCloud style={{width: 45, height: 45, color: "#BF2024"}}/>
             </Right>
           </InputHold>
             <InputHold>
@@ -98,7 +99,7 @@ const [data, setData] = useState()
               <Price>$10</Price>
             </Left>
             <Right>
-              <AiFillProfile style={{width: 45, height: 45, color: "#FF4D4D"}}/>
+              <AiFillProfile style={{width: 45, height: 45, color: "#BF2024"}}/>
             </Right>
           </InputHold>
             </Hold>
@@ -339,28 +340,12 @@ font-size: 15px;
     color: whitesmoke;
 }
 `;
-const Button2 = styled.div`
-width: 100px;
-height: 30px;
-padding: 7px;
-background-color: #FF4D4D;
-border-radius: 0.4rem;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 15px;
-font-weight: 500;
-color: white;
-cursor: pointer;
-@media Screen and (max-width: 768px){
-  
-}
-`;
+
 const Button3 = styled.button`
 width: 140px;
 height: 60px;
 padding: 7px;
-background-color: #FF4D4D;
+background-color: #BF2024;
 border-radius: 0.4rem;
 display: flex;
 justify-content: center;
@@ -457,11 +442,11 @@ width :40%;
 
 const Container = styled.div`
 width: 100%;
-   height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  background-color: #0F192C;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #0F192C;
 @media Screen and (max-width: 768px){
     display: block;
     width: 100%;
@@ -557,7 +542,7 @@ display: block;
 const Pagename = styled.div`
 /* display: none; */
 font-size: 25px;
-color: #FF4D4D;
+color: #BF2024;
 font-weight: bold;
 display: block;
 display: flex;
@@ -572,7 +557,7 @@ justify-content: flex-start;
 }
 `;
 const Icon = styled(AiFillHome)`
-    color: #FF4D4D;
+    color: #BF2024;
     width: 30px;
     height: 30px;
 

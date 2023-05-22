@@ -30,7 +30,7 @@ const Support = () => {
                 <Icon2/>
                     <Left>
                         <Title data-aos="fade-down">Send request</Title>
-                        <P data-aos="fade-down">Can't find a solution to your problem?<br/> Contact cryptfield.com Client Support</P>
+                        <P data-aos="fade-down">Can't find a solution to your problem?<br/> Contact preeminent crypfield Client Support</P>
                         <Readmore data-aos="fade-down" to='/sendrequest'>Read more</Readmore>
                     </Left>
                 </Card>
@@ -160,9 +160,9 @@ const Icon2 = styled(FaMailBulk)`
 width: 50px;
 height: 50px;
 border-radius: 0.7rem;
-background-color: #FECD38;
+background-color: #a60a0a;
 padding: 30px 30px;
-color: #463A5C;
+color: #fff;
 
 @media Screen and (max-width: 1024px){
     margin-right: 10px;
@@ -175,9 +175,9 @@ const Icon3 = styled(FaTelegramPlane)`
 width: 50px;
 height: 50px;
 border-radius: 0.7rem;
-background-color: #FECD38;
+background-color: #a60a0a;
 padding: 30px 30px;
-color: #463A5C;
+color: #fff;
 @media Screen and (max-width: 1024px){
     margin-right: 20px;
 }

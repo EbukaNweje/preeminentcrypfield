@@ -13,7 +13,7 @@ const Affiliate = () => {
   return (
     <Container>
         <Wrapper>
-            <H1 data-aos="fade-down">Premium-Cryptassets Affiliate program is more  <span style={{color: "#FFCC40"}}>profitable</span> with friends.</H1>
+            <H1 data-aos="fade-down">Premium crypfield Affiliate program is more  <span style={{color: "#015ec9"}}>profitable</span> with friends.</H1>
             <Advice>
                 <Cont>
                     <Title data-aos="fade-down">Get your link</Title>
@@ -57,7 +57,7 @@ const Affiliate = () => {
                 Under the current partnership conditions, you will receive a reward at 3 levels for attracting new partners. For the first level you will receive 20% of profit, for level 2 5% and for level 3 - 3% .
                 <br/>
                 <br/>
-                The number of partners involved, as well as the partner’s profit, has no limits. At the same time, the conditions of the current affiliate program can be changed in the future at the initiative of premium-cryptassets.
+                The number of partners involved, as well as the partner’s profit, has no limits. At the same time, the conditions of the current affiliate program can be changed in the future at the initiative of Premium crypfield.
                 </Content>
                 </Hold>
             </Bottom>
@@ -140,9 +140,10 @@ justify-content: space-between;
 margin-top: 20px;
 `;
 const Login = styled(Link)`
-color: #0F192C;
+color: #fff;
 /* background-color: #015FC9; */
-background-color: #FFCC40;
+/* background-color: #FFCC40; */
+background-color: #a60a0a;
 border-radius: 5px;
 cursor: pointer;
 padding: 0.5rem 2rem;
@@ -159,9 +160,9 @@ font-weight: bold;
 }
 `;
 const Signup = styled(Link)`
-color: #0F192C;
+color: #fff;
 /* background-color: #015FC9; */
-background-color: #FFCC40;
+background-color: #a60a0a;
 border-radius: 5px;
 cursor: pointer;
 padding: 0.5rem 2rem;
@@ -207,6 +208,7 @@ const Notice = styled.div`
 width: 96%;
 border-radius: 0.7rem;
 background-color: #0F192C;
+/* background: linear-gradient(90deg, #a60a0a, #0F192C); */
 color: lightgrey;
 padding: 40px 30px;
 margin: 30px 0;

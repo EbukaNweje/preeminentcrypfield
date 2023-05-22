@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { A, Container, Header1, Header2, Left, Line, Login, Logo, LogoHold, Nav, NavHold, Right, SignUp, SocialHold, SocialIcon, Wrapper , Icon, Wrapper1, BurgerHold, NavDiv} from './HeaderStyle';
-import {AiOutlinePhone,AiOutlineMenu, AiFillMail} from 'react-icons/ai'
-import {BsInstagram, BsTwitter, BsYoutube, BsFillPersonFill} from 'react-icons/bs'
-import logo from '../../Assets/mylogo.png'
+import { Container, Header2, Line, Login, Logo, LogoHold, Nav, NavHold,SignUp,Wrapper,BurgerHold, NavDiv} from './HeaderStyle';
+import {AiOutlineMenu} from 'react-icons/ai'
+import {BsFillPersonFill} from 'react-icons/bs'
+import logo from './preeminentlogo.png'
 import SideNav from "./SideNav";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -19,6 +19,7 @@ const Header = () =>{
     const deleteUser = () =>{
         localStorage.removeItem("User");
         // navigate("/")
+        window.location.reload();
     };
 
     useEffect(() =>{
@@ -27,7 +28,7 @@ const Header = () =>{
 
     return(
         <Container>
-            <Wrapper1>
+            {/* <Wrapper1>
             <Header1>
                     <Left>
                         <A>
@@ -49,7 +50,7 @@ const Header = () =>{
                         </SocialHold>
                     </Right>
             </Header1>
-            </Wrapper1>
+            </Wrapper1> */}
             <Wrapper>
             <Header2>
                     <LogoHold>
@@ -58,12 +59,12 @@ const Header = () =>{
                     
                     {UserData? <Nav onClick={() =>{
                             deleteUser();
-                        }}  to='/' style={{color: "#FF4D4D", fontWeight: "bold", fontSize: "20px", display: "flex", alignItems: "center"}}> <BsFillPersonFill/> Sign Out</Nav>  : <>
+                        }}  to='/' style={{color: "#fff", fontWeight: "bold", fontSize: "20px", display: "flex", alignItems: "center"}}> <BsFillPersonFill/> Sign Out</Nav>  : <>
                         <NavHold>
                         <Nav to='/'>Home</Nav>
                         <Nav to='/aboutus'>About Us</Nav>
                         {/* <Nav to='/investment'>Investment Plan</Nav> */}
-                        <Nav to='/arbitage'>Arbitage</Nav>
+                        <Nav to='/arbitage'>Investment Plans</Nav>
                         <Nav to='/affiliate'>Affiliate program</Nav>
                         <Nav to='/support'>Support</Nav>
                         <Line></Line>
@@ -75,7 +76,7 @@ const Header = () =>{
             <BurgerHold onClick={() =>{
           setNav(!nav)
         }}> 
-          <AiOutlineMenu style={{color: "#0CE0FF", width: 20, height: 20}}/>
+          <AiOutlineMenu style={{color: "#0CE0FF", width: 15, height: 15}}/>
         </BurgerHold>
        </Wrapper>
             {UserData ? <>{nav?(<DashHeader/>):""}</> :   <>

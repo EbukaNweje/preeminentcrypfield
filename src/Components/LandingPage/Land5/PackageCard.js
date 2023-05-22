@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {VscCheck} from 'react-icons/vsc'
+import {Link} from "react-router-dom"
 
 const PackageCard = (props) => {
   return (
@@ -8,35 +9,27 @@ const PackageCard = (props) => {
         <Wrapper>
             <Price pr={props.pr}>{props.price}</Price>
             <Title coll={props.coll}>{props.title}</Title>
-            {/* <Packages>
-                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
-                <A>{props.a}</A>
-            </Packages> */}
             <Packages>
-                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
+                <VscCheck style={{color: "#a60a0a", width: 25, height: 25}}/>
+                <A>{props.a}</A>
+            </Packages>
+            <Packages>
+                <VscCheck style={{color: "#a60a0a", width: 25, height: 25}}/>
                 <B>{props.b}</B>
             </Packages>
             <Packages>
-                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
+                <VscCheck style={{color: "#a60a0a", width: 25, height: 25}}/>
                 <C>{props.c}</C>
             </Packages>
             <Packages>
-                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
+                <VscCheck style={{color: "#a60a0a", width: 25, height: 25}}/>
                 <D>{props.d}</D>
             </Packages>
             <Packages>
-                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
+                <VscCheck style={{color: "#a60a0a", width: 25, height: 25}}/>
                 <E>{props.e}</E>
             </Packages>
-            <Packages>
-                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
-                <F>{props.f}</F>
-            </Packages>
-            <Packages>
-                <VscCheck style={{color: "aqua", width: 25, height: 25}}/>
-                <G>{props.g}</G>
-            </Packages>
-            <Button>Get Started</Button>
+            <Button to='/login'>Get Started</Button>
         </Wrapper>
     </Container>
   )
@@ -48,11 +41,12 @@ export default PackageCard;
 const Container = styled.div`
 width: 22%;
 background-color: whitesmoke;
-height: 80vh;
+/* height: 80vh; */
+height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 3rem 0.5rem;
+padding: 2rem 0.5rem;
 border-radius: 0.3rem;
 margin-top: 10px;
 
@@ -106,10 +100,10 @@ margin: 0.5rem 0;
     width: 85%;
 }
 `;
-// const A = styled.div`
-// color: #808080;
-// margin-left : 20px;
-// `;
+const A = styled.div`
+color: #808080;
+margin-left : 20px;
+`;
 const B = styled.div`
 color: #808080;
 margin-left : 20px;
@@ -129,16 +123,17 @@ const E = styled.div`
 color: #808080;
 margin-left : 20px;
 `;
-const F = styled.div`
-color: #808080;
-margin-left : 20px;
-`;
-const G = styled.div`
-color: #808080;
-margin-left : 20px;
-`;
-const Button = styled.div`
-background-color: #015FC9;
+// const F = styled.div`
+// color: #808080;
+// margin-left : 20px;
+// `;
+// const G = styled.div`
+// color: #808080;
+// margin-left : 20px;
+// `;
+const Button = styled(Link)`
+/* background-color: #015FC9; */
+background-color: #a60a0a;
 width: 70%;
 padding: 1.1rem 0.2rem;
 text-align: center;
@@ -149,9 +144,11 @@ font-weight: 500;
 margin-top: 2rem;
 cursor: pointer;
 color: lightgrey;
+text-decoration: none;
 
 /* :hover{
     background-color: #BA2222;
     transition: all 1s;
 } */
 `;
+

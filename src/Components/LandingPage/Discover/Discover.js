@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import pic from './hm.png'
+import pic from './banner.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -182,7 +182,7 @@ color: silver;
 `;
 
 const Button = styled.div`
-background-color: #015FC9;
+background-color: #a60a0a;
 width: 30%;
 padding: 0.8rem 0.2rem;
 text-align: center;

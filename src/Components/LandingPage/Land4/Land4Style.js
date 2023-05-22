@@ -4,6 +4,7 @@ export const Container = styled.div`
 width: 100%;
 height: 100vh;
 background-color: #111D32;
+/* background-color: #56111A; */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -188,7 +189,7 @@ export const Img = styled.img`
 export const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: #FFCC40;
+color: #fff;
 margin-bottom: 40px;
 `;
 export const ButtonHold = styled.div`

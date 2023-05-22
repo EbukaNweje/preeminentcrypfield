@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { 
-    AiFillCopy,
-     AiOutlineCloud, AiOutlineCreditCard, AiOutlineDollar, AiOutlineWallet} from 'react-icons/ai'
-import {AiFillHome, AiFillProfile, AiOutlineCodeSandbox} from 'react-icons/ai'
+import {AiFillHome} from 'react-icons/ai'
 // import usdt from './
 import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
-import qrcode from "./qrcode.jpeg"
+import qrcode from "./bt1.jpg"
 
 const WalletId = () => {
 
@@ -19,6 +16,7 @@ const [data, setData] = useState()
 
   useEffect(() =>{
     axios.get(url).then(res => setData(res.data.data))
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, [])
 
   console.log("This is the data",data)
@@ -40,7 +38,9 @@ const [data, setData] = useState()
             <Hold>
             <InputHold>
             <Left1>
-                <Title>Please send your payment to this wallet address: 16QHjLEwjJNaCnTQJkHKdPfD6bb1NrUSYd</Title>
+                <Title>Please send your payment to this wallet address: 
+                  <Title>bc1qcxum393n73ywftqnm77kjg7k<br/>c0qtav5s9fay5a</Title>
+                </Title>
                 <Box>
                   <img src={qrcode} alt="wallet qr code"/>
                 </Box>

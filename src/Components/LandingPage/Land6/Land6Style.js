@@ -60,6 +60,7 @@ align-items: center;
 export const Box= styled.div`
 width: 45%;
 background-color: #0F192C;
+background:linear-gradient(45deg, #015ec989,  #a60a0a8f);
 height: 11rem;
 display: flex;
 flex-direction: column;

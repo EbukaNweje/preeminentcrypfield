@@ -20,7 +20,7 @@ const Land8 = () => {
             <Wrap>
                 <Wrapper>
                 <Top>
-                <BsBookmarkCheck style={{color: "#2A203B",width: 75, height: 75}}/>
+                <BsBookmarkCheck style={{color: "#fff",width: 75, height: 75}}/>
                     <Left>
                         <Line></Line>
                         <H1>2.6k</H1>
@@ -30,7 +30,7 @@ const Land8 = () => {
                 </Wrapper>
                 <Wrapper>
                 <Top>
-                    <RiTeamLine style={{color: "#2A203B",width: 75, height: 75}}/>
+                    <RiTeamLine style={{color: "#fff",width: 75, height: 75}}/>
                     <Left>
                         <Line></Line>
                         <H1>500+</H1>
@@ -40,7 +40,7 @@ const Land8 = () => {
                 </Wrapper>
                 <Wrapper>
                 <Top>
-                <AiFillSafetyCertificate style={{color: "#2A203B",width: 75, height: 75}}/>
+                <AiFillSafetyCertificate style={{color: "#fff",width: 75, height: 75}}/>
                     <Left>
                         <Line></Line>
                         <H1>2.8k</H1>
@@ -50,7 +50,7 @@ const Land8 = () => {
                 </Wrapper>
                 <Wrapper>
                 <Top>
-                <GiCheckeredFlag style={{color: "#2A203B",width: 75, height: 75}}/>
+                <GiCheckeredFlag style={{color: "#fff",width: 75, height: 75}}/>
                     <Left>
                         <Line></Line>
                         <H1>99%</H1>

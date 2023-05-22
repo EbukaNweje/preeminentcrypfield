@@ -1,8 +1,7 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import {AiOutlineArrowDown} from 'react-icons/ai'
-import {FaMoneyBill, FaChartBar, FaCoins} from 'react-icons/fa'
-import slider1 from './slider1.jpg'
+import {FaMoneyBill, FaChartBar, FaCoins} from 'react-icons/fa';
+import slider1 from './slider1.jpg';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 // import data from './land.json'
@@ -21,14 +20,14 @@ const Hero3 = () => {
             <Div1>
                 <H1 data-aos="fade-down">Putting our investors first is <span style={{textDecoration: "10px solid orange"}}>Key</span></H1>
                 <H4>We are committed to providing all our investors with exceptional service while offering our team the best training.</H4>
-                <P data-aos="fade-down">The Premium-cryptassests is an International online broker that has been actively operating in the Crypto & Stocks Trading trading markets. With our advanced, web-based trading platform, you can trade on the largest lists of assets in the industry. From Currency pairs, and Commodities to stocks and indices, we have it all. Keep your trading costs down with competitive spreads, commissions and low margins. View spreads on our most popular cash instruments.</P>
+                <P data-aos="fade-down">The preeminent crypfield is an International online broker that has been actively operating in the Crypto & Stocks Trading trading markets. With our advanced, web-based trading platform, you can trade on the largest lists of assets in the industry. From Currency pairs, and Commodities to stocks and indices, we have it all. Keep your trading costs down with competitive spreads, commissions and low margins. View spreads on our most popular cash instruments.</P>
             </Div1>
             <Div2>
                 <H1 data-aos="fade-down">Experience more than Trading.</H1>
                 <H4>We follow a very strict and disciplined process for investment, as we are aware, that we are dealing with our client’s funds. Investment means a lot to us, and we respect the trust of our clients.</H4>
                 <P data-aos="fade-down">You relax and our platform generates profit for you. Distributed server load keeps the bot always in service. Only 0.005 BTC one-time and you get daily profit for a lifetime. A personalized plan that brings all aspects of your financial life together A strategic mix of insurance and investments working together for your goals Your go-to financial expert who helps keep your big picture, and dreams, in focus</P>
             </Div2>
-            <Arrow/>
+            {/* <Arrow/> */}
             <Line></Line>
             <Div3>
                 <H1 data-aos="fade-down" style={{color: "#FDBA43"}}>Investment plans that suits your personality</H1>
@@ -121,16 +120,16 @@ const Div2 = styled.div`
 margin-top: 85px;
 text-align: center;
 `;
-const Arrow = styled(AiOutlineArrowDown)`
-color: #FDBA43;
-margin: 100px 0;
-width: 40px;
-height: 40px;
+// const Arrow = styled(AiOutlineArrowDown)`
+// color: #FDBA43;
+// margin: 50px 0 10px 0;
+// width: 40px;
+// height: 40px;
 
-@media Screen and (max-width: 768px){
-    margin: 50px 0;
-}
-`;
+// @media Screen and (max-width: 768px){
+//     margin: 50px 0;
+// }
+// `;
 
 const Line = styled.div`
 margin: 50px;

@@ -6,7 +6,7 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-/* background-color: #072847; */
+/* background-color: #56111A; */
 background-color: #0F192C;
 padding: 5rem 0;
 

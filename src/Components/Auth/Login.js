@@ -26,7 +26,7 @@ const Login = () => {
 
     console.log(message);
     
-    const url = "https://calm-erin-coral-wrap.cyclic.app/api/login"
+    const url = "https://premium-crypt.onrender.com/api/login"
   const Data = {userName, password}
   console.log(url)
   console.log(Data)
@@ -45,7 +45,9 @@ const Login = () => {
      setMessage({ error: true, msg: "successfully!" });
     setTimeout(() => {
       navigate(`/dashboard/${getId._id}`)
+      window.location.reload()
     }, [2000]);
+    // window.location.reload();
     }
     )
     // .then(()=>{ 

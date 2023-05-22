@@ -4,11 +4,14 @@ import {Link} from 'react-router-dom'
 export const Container = styled.div`
 width: 100%;
 height: 110px;
-background-color:  #111D32;
+// background-color:  #111D32;
+background: linear-gradient(45deg, #015ec9,  #a60a0a);
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+z-index: 1000;
+/* display: none; */
 @media Screen and (max-width: 768px){
     height: 120px;
     width: 100%;
@@ -22,7 +25,7 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-height: 70%;
+height: 85%;
 background: linear-gradient(45deg, #111D32,#000911c3);
 @media Screen and (max-width: 768px){
     background: none;
@@ -52,7 +55,7 @@ align-items: center;
 bottom: 100px;
 top: 0;
 left: 0;
-z-index: 999999;
+z-index: 500;
 
 
 @media Screen and (max-width: 768px){
@@ -64,13 +67,12 @@ z-index: 999999;
 export const BurgerHold = styled.button`
 width : 45px;
 height: 45px;
-
 display: none;
 @media Screen and (max-width: 768px){
     display: block;
     background-color: #16243dc2;
-    width: 75px;
-    height: 50px;
+    width: 45px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +160,8 @@ margin-right: 30px;
 
 `;
 export const LogoHold = styled.div`
-width: 18%;
+width: 15%;
+height: 150px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -172,7 +175,7 @@ align-items: center;
 export const Logo = styled.img`
 width: 100%;
 height: 100%;
-/* margin-top: 20px; */
+margin-top: 20px;
 
 @media Screen and (max-width: 768px){
 width: 250px;
@@ -230,7 +233,6 @@ font-weight: bold;
 color: aliceblue;
 border: none;
 outline: none;
-/* background-image: linear-gradient(to right,#008CC9, #212121); */
 border-radius: 0 0.3rem 0.3rem 0;
 /* border-radius: 0.3rem; */
 background-color: #015FC9;

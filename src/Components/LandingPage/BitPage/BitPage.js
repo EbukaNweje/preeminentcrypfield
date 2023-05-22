@@ -33,7 +33,7 @@ padding: 30px 0;
 `;
 
 const Wrapper = styled.div`
-width: 75%;
+width: 80%;
 height: auto;
 display: flex;
 flex-direction: column;
@@ -89,12 +89,13 @@ const Button = styled.div`
 width: 130px;
 height: auto;
 padding: 10px 20px;
-background-color: #FFCC40;
+background-color: #015ec9;
 border-radius: 0.5rem;
 /* margin-right: 45px; */
 text-align: center;
 margin-top: 15px;
+margin-right: 15px;
 font-weight: bold;
-
+color: #fff;
 `;
 

@@ -7,6 +7,7 @@ import {BiMoneyWithdraw} from 'react-icons/bi'
 import {TbAffiliate} from 'react-icons/tb'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import {Link} from 'react-router-dom'
 
 
 const DashHeader = () => {
@@ -26,28 +27,33 @@ const DashHeader = () => {
             >
                 <NavHold>
                     <AiFillHome/>
-                    <Nav > Home</Nav>
-                </NavHold>
-                <NavHold>
-                    <RxUpdate/>
-                    <Nav>Update Account</Nav>
+                    <Nav to='/dashboard/:userid'> Home</Nav>
                 </NavHold>
                 <NavHold>
                     <MdOutlinePayments/>
-                    <Nav>Make Deposit</Nav>
+                    <Nav to='/walletpage'>Make Deposit</Nav>
                 </NavHold>
                 <NavHold>
                     <BiMoneyWithdraw/>
-                    <Nav>Withdraw</Nav>
-                </NavHold>
-                <NavHold>
-                    <MdAddTask/>
-                    <Nav>Orders</Nav>
+                    <Nav to='/withdraw'>Withdraw</Nav>
                 </NavHold>
                 <NavHold>
                     <TbAffiliate/>
-                    <Nav>Affiliate program</Nav>
+                    <Nav to='/qrcodeset'>Two Factor Authentication</Nav>
                 </NavHold>
+                <NavHold>
+                    <RxUpdate/>
+                    <Nav to='/settings'>Update Account</Nav>
+                </NavHold>
+                <NavHold>
+                    <MdAddTask/>
+                    <Nav to='/deposit'>Confirm Orders</Nav>
+                </NavHold>
+                {/* <NavHold>
+                    <MdAddTask/>
+                    <Nav to='/updateuser'>Update User</Nav>
+                </NavHold> */}
+                
             </NavWrap>
             <BurgerHold 
             // onClick={handleToggle}
@@ -132,7 +138,7 @@ color: white;
 transition :all 400ms
 
 `;
-const Nav = styled.div`
+const Nav = styled(Link)`
 color: white;
 font-weight: bold;
 cursor: pointer;

@@ -4,21 +4,20 @@ import hover from '../../../Assets/feature-one-shape-1.png'
 
 export const Container = styled.div`
 width: 100%;
-height: 60vh;
+height: max-content;
 /* background-color: #05203D; */
 background-color: #111D32;
+/* background-color: #4C3B59; */
 display: flex;
 justify-content: center;
 align-items: center;
-
-
-
+padding: 50px 0;
 @media Screen and (max-width: 1024px){
-    height: auto;
+    /* height: auto; */
 }
 
 @media Screen and (max-width: 768px){
-    height: 85vh;
+    /* height: 85vh; */
 }
 @media Screen and (max-width: 500px){
     height: auto;
@@ -65,7 +64,7 @@ transition: all 400ms;
 `;
 export const Card = styled.div`
 width: 30%;
-height: 80%;
+height: 83%;
 background-color: #0B1526;
 border-radius: 0.2rem;
 box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px 1px;
@@ -118,9 +117,9 @@ justify-content: center;
 align-items: center;
 width: 150px;
 height: 130px;
-background-image: linear-gradient(to right, #FFCC40,  #F14456);
+background-image: linear-gradient(45deg, #015FC9,  #a60a0a8f);
 /* background-image: linear-gradient(to right, #187FBA, skyblue); */
-margin-bottom: 20px;
+margin-bottom: 30px;
 color: white;
 `;
 export const H3 = styled.div`

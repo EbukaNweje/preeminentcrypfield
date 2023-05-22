@@ -7,7 +7,8 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #0F192C;
+background-color: #fff;
+/* background-color: #0F192C; */
 @media Screen and (max-width: 768px){
     height: auto;
     /* padding-bottom: 20px; */
@@ -81,8 +82,10 @@ export const Left = styled.div`
 `;
 export const Right = styled.div`
 font-size: 20px;
-font-weight: 400;
-color: white;
+font-weight: bold;
+/* color: white; */
+color: #0F192C;
+
 
 @media Screen and (max-width: 768px){
     width: 100%;
@@ -93,7 +96,9 @@ width: 50%;
 display: flex;
 align-items: center;
 justify-content: space-between;
-color: white;
+/* color: white; */
+color: #0F192C;
+
 
 :hover{
     width: 52%;
@@ -122,7 +127,9 @@ export const Img = styled.img`
 export const H1 = styled.div`
 font-size: 45px;
 font-weight: bold;
-color: white;
+/* color: white; */
+color: #0F192C;
+
 
 @media Screen and  (max-width: 768px){
     font-size: 40px

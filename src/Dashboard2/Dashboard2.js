@@ -8,8 +8,9 @@ import {HiOutlineCurrencyDollar} from 'react-icons/hi'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { VscAccount } from 'react-icons/vsc'
 import NewDashboard from './Newdashboard/Newdashboard'
+import {Link} from 'react-router-dom'
 // import Settings from './Setting/Setting'
-import History from './History/Wallet'
+// import History from './History/Wallet'
 // import Withdraw from './Withdraw/Withdraw'
 // import DepositHistory from './DepositHistory/Deposithistory'
 // import Orders from './Orders' 
@@ -26,25 +27,29 @@ const Dashboard2 = () => {
         <FaLaptopCode style={{width: 30, height: 30, color: "silver"}}/>
         <Title>Dashboard</Title>
       </Hold>
-      <Hold>
+      <Hold to='/settings'>
         <VscAccount style={{width: 30, height: 30, color: "silver"}}/>
         <Title>Update Account</Title>
       </Hold>
-      <Hold>
+      <Hold to='/walletpage'>
         <HiOutlineCurrencyDollar style={{width: 30, height: 30, color: "silver"}}/>
         <Title>Make Deposit</Title>
       </Hold>
-      <Hold>
+      <Hold to='/withdraw'>
         <AiOutlineFundProjectionScreen style={{width: 30, height: 30, color: "silver"}}/>
         <Title>Withdraw</Title>
       </Hold>
-      <Hold>
+      <Hold to='/qrcodeset'>
         <BsBagCheck style={{width: 30, height: 30, color: "silver"}}/>
-        <Title>Orders</Title>
+        <Title>Two Factor <br/>Authentication</Title>
       </Hold>
-      <Hold>
+      <Hold to='/deposit'>
         <GiShakingHands style={{width: 30, height: 30, color: "silver"}}/>
-        <Title>Affiliate Program</Title>
+        <Title>Confirm Orders</Title>
+      </Hold>
+      <Hold to='/updateuser'>
+        <GiShakingHands style={{width: 30, height: 30, color: "silver"}}/>
+        <Title>Update User</Title>
       </Hold>
         </SideNav>
         <NewDashboard/>
@@ -80,7 +85,6 @@ justify-content: flex-start;
 /* background-color: red; */
 
 @media Screen and (max-width: 768px){
-  /* background-color: green; */
 
 }
 
@@ -96,7 +100,7 @@ border-top: 1px solid #4A525E;
   display: none;
 }
 `;
-const Hold = styled.button`
+const Hold = styled(Link)`
 width: 100%;
 padding: 20px 0 20px 30px;
 display: flex;
@@ -106,6 +110,7 @@ margin: 5px 0;
 background: transparent;
 border: none;
 outline: none;
+text-decoration: none;
 
 
 :hover{

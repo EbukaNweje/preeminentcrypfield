@@ -5,7 +5,7 @@ import {
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import data from './land.json'
- 
+
 
 const LandingPage = () => {
 
@@ -21,12 +21,11 @@ const LandingPage = () => {
   return (
     <Container>
         <Wrapper>
-            <Wrap data-aos="fade-down">
+            <Wrap>
               <Rec></Rec>
-             <H2>{data[move % data.length].text} <br/>
-              {/* PREMIUM-CRYPTASSETS IS <span style={{color:"#FFCC40",}}>BEYOND YOUR IMAGINATION</span> */}
+             <H2 data-aos="fade-down">{data[move % data.length].text} <br/>
               </H2>
-              <H5>Our platform is suitable for all traders, both beginners, and professionals.
+              <H5> Get started with the easiest most secure platform to invest, and earn cryptocurrencies.
               </H5>
               <Button>Let's get started</Button>
             </Wrap>
