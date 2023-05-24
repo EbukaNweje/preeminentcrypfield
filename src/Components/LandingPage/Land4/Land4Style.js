@@ -47,6 +47,7 @@ height: 80%;
 @media Screen and (max-width: 768px){
     width: 100%;
     margin-top: 10px;
+    /* background-color: red; */
 }
 `;
 export const Right = styled.div`
@@ -80,13 +81,13 @@ position: relative;
     width: 100%;
     height: 400px;
     margin-left: 0;
-    margin-right: 35px;
+    /* margin-right: 35px; */
 }
 @media Screen and (max-width: 500px){
-    width: 315px;
+    width: 300px;
     height: 315px;
     margin-left: 0;
-    margin-right: 35px;
+    /* margin-right: 35px; */
 }
 
 `;

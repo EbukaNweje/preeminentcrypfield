@@ -3,7 +3,7 @@ import {
     Container, Wrapper, Gif, Top, Line,
     H1, P, Wrap, Left, Gif2
 } from './Land8Style';
-import twist from '../../../Assets/twist.png'
+// import twist from '../../../Assets/twist.png'
 import twist2 from '../../../Assets/twist2.png'
 import {RiTeamLine} from 'react-icons/ri'
 import {BsBookmarkCheck} from 'react-icons/bs'
@@ -60,7 +60,7 @@ const Land8 = () => {
                 </Wrapper>
             </Wrap>
             <Gif2>
-                <Gif style={{marginRight: 0, width: "25rem"}} src={twist}/>
+                {/* <Gif style={{marginRight: 0, width: "25rem"}} src={twist}/> */}
             </Gif2>
     </Container>
   )
