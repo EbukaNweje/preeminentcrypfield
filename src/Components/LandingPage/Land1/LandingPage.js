@@ -7,6 +7,8 @@ import 'aos/dist/aos.css';
 import data from './land.json'
 
 
+
+
 const LandingPage = () => {
 
   const [move, setMove] = useState(false);
@@ -27,7 +29,7 @@ const LandingPage = () => {
               </H2>
               <H5> Get started with the easiest most secure platform to invest, and earn cryptocurrencies.
               </H5>
-              <Button>Let's get started</Button>
+              <Button to='/register'>Let's get started</Button>
             </Wrap>
         </Wrapper>
     </Container>

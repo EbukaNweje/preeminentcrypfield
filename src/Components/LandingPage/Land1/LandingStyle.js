@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import mainslider from "./bit1.jpg"
 import mainslider from "./slider1.jpg"
+import { Link } from "react-router-dom";
 //#072847 #193B56
 
 export const Container = styled.div`
@@ -10,7 +11,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-z-index: -1;
+/* z-index: -1; */
 /* background:linear-gradient(45deg,  #7a12125b, #7a1212), url(${mainslider}); */
 background:linear-gradient(45deg, #015ec989,  #a60a0a8f), url(${mainslider});
 background-position: center;
@@ -114,7 +115,7 @@ font-size: 18px;
 
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
 background-color: #015FC9;
 /* border-radius: 1rem 3rem 3rem 1rem; */
 border-radius: 0.3rem;
@@ -125,6 +126,7 @@ margin-top: 20px;
 cursor: pointer;
 color: whitesmoke;
 font-size: 17px;
+text-decoration: none;
 
 @media Screen and (max-width: 768px){
     margin-right: 120px;
