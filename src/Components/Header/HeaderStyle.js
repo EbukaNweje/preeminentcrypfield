@@ -13,7 +13,7 @@ align-items: center;
 z-index: 1000;
 /* display: none; */
 @media Screen and (max-width: 768px){
-    height: 120px;
+    height: 70px;
     width: 100%;
     background: linear-gradient(45deg, #111D32,#000911ef);;
 
@@ -156,6 +156,7 @@ margin-right: 30px;
 @media Screen and (max-width: 768px){
     width: 85%;
     justify-content: space-between;
+    height: 70px;
 }
 
 `;
@@ -178,9 +179,10 @@ height: 100%;
 margin-top: 20px;
 
 @media Screen and (max-width: 768px){
-width: 250px;
-height: 50px;
+width: 400px;
+height: 100px;
 margin-left: 50px;
+margin-top: 0px;
 
 }
 

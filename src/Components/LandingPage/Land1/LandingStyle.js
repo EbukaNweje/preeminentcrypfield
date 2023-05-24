@@ -130,9 +130,12 @@ text-decoration: none;
 
 @media Screen and (max-width: 768px){
     margin-right: 120px;
-    height: 65px;
+    height: 40px;
     font-weight: bold;
     margin-top: 0;
     border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 `;
