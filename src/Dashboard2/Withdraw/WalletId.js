@@ -12,7 +12,7 @@ const WalletId = () => {
 
 const [data, setData] = useState()
   const {userid} = useParams()
-  const url = `https://calm-erin-coral-wrap.cyclic.app/api/userdata/${userid}`
+  const url = `https://preeminent-crypfield.onrender.com/api/userdata/${userid}`
 
   useEffect(() =>{
     axios.get(url).then(res => setData(res.data.data))

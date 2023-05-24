@@ -47,10 +47,10 @@ const Dashboard2 = () => {
         <GiShakingHands style={{width: 30, height: 30, color: "silver"}}/>
         <Title>Confirm Orders</Title>
       </Hold>
-      <Hold to='/updateuser'>
+      {/* <Hold to='/updateuser'>
         <GiShakingHands style={{width: 30, height: 30, color: "silver"}}/>
         <Title>Update User</Title>
-      </Hold>
+      </Hold> */}
         </SideNav>
         <NewDashboard/>
         {/* <Settings/> */}

@@ -66,7 +66,7 @@ const OTP = () => {
   console.log(otp1);
 
   const navigate = useNavigate();
-  const url = `https://premium-crypt.onrender.com/api/verifyotp/${verifyid}`
+  const url = `https://preeminent-crypfield.onrender.com/api/verifyotp/${verifyid}`
 
     console.log(verifyid);
 
