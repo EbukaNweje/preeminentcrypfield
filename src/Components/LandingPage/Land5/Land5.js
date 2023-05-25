@@ -34,10 +34,10 @@ const Land5 = () =>{
                     </Right>
                 </TopDiv>
                 <BottomDiv data-aos="fade-down">
-                    <PackageCard pr="#16243D" coll="#16243D" price='$3,000 - $9,999' title='Bronze Plan' a='20+ assets/product' b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/>
-                    <PackageCard pr="#985F25" coll="#985F25" price='$10,000 - $29,999' title='Silver Plan' a='50+ assets/product'  b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/>
-                    <PackageCard pr="grey" coll="grey"  price='$30,000 - $99,999' title='Gold Plan' a='100+ assets/product'  b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/>
-                    <PackageCard pr="#A87419" coll="#A87419"  price='$100,000 - $1,000,000' title='Diamond Plan' a='200+ assets/product'  b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/>
+                    <PackageCard pr="#C28138" coll="#C28138" price='$3,000 - $9,999' title='Bronze Plan' a='20+ assets/product' b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/>
+                    <PackageCard pr="#838383" coll="#838383" price='$10,000 - $29,999' title='Silver Plan' a='50+ assets/product'  b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/>
+                    <PackageCard pr="#E7B24D" coll="#E7B24D"  price='$30,000 - $99,999' title='Gold Plan' a='100+ assets/product'  b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/>
+                    <PackageCard pr="#1C2534" coll="#1C2534"  price='$100,000 - $1,000,000' title='Diamond Plan' a='200+ assets/product'  b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/>
                     {/* <PackageCard pr="#43443F" coll="#43443F" price='$150,000 - $1,000,000' title='VIP Platinum' a='500+ assets/product'  b='24/7 support' c='Risk Management' d='Free Signals' e="Unlimited Support"/> */}
                 </BottomDiv>
             </Wrapper>

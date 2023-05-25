@@ -42,7 +42,7 @@ const [data, setData] = useState()
                   <Title>TFA8zuVoXH3Tra4DwMr5dUpKB31mGTH8tk</Title>
                 </Title>
                 <Box>
-                  <img src={qrcode} alt="wallet qr code"/>
+                  <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
                 </Box>
                 <TitleHold>
                   <Title>Plan: </Title>
@@ -208,7 +208,7 @@ font-size: 15px;
     color: whitesmoke;
 @media Screen and (max-width: 768px){
     /* display: block; */
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     color: whitesmoke;
 }

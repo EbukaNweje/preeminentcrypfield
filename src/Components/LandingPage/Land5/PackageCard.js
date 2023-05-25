@@ -77,7 +77,7 @@ align-items: center;
 `;
 const Price = styled.div`
 color: ${({pr}) => pr};
-font-size: 20px;
+font-size: 18px;
 font-weight: bold;
 `;
 const Title = styled.div`

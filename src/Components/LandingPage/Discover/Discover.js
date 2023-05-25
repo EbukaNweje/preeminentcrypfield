@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import pic from './banner.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const Discover = () =>{
 
@@ -21,7 +22,7 @@ const Discover = () =>{
                     <P>A personalized plan that brings all aspects of your financial life together A strategic mix of insurance and investments working together for your goals Your go-to financial expert who helps keep your big picture, and dreams, in focus</P>
                     <H5>Multi-award winner</H5>
                     <P>We’ve been consistently recognised by our industry and have won the highest accolades for our products, platform and service.</P>
-                    <Button>About Us</Button>
+                    <Button to="/aboutus">About Us</Button>
                 </Right>
                 <Left>
                     {/* <img src={pic} alt='rectangle'/> */}
@@ -181,7 +182,7 @@ margin: 20px 0;
 color: silver;
 `;
 
-const Button = styled.div`
+const Button = styled(Link)`
 background-color: #a60a0a;
 width: 30%;
 padding: 0.8rem 0.2rem;
@@ -193,6 +194,7 @@ font-weight: 500;
 margin-top: 2rem;
 cursor: pointer;
 transition: all 400ms;
+text-decoration: none;
 :hover{
     background: none;
     transition: background-color 1s;

@@ -36,6 +36,8 @@ import Farm from './Components/FooterNew/Farm'
 import Multiassets from './Components/FooterNew/Multiassets'
 // import Crypto from './Components/FooterNew/Stock'
 import BankTransfer from './Dashboard2/Withdraw/bankdetail';
+import ForgotPassword from './Components/Auth/ForgotPassword';
+import RestPassword from './Components/Auth/RestPassword';
 
 const App = () => {
   return (
@@ -44,6 +46,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+        <Route path='/restLink/:userid/:tokenid' element={<RestPassword/>}/>
         <Route path='/register' element={<SignUp/>}/>
         <Route path="/affiliate" element={<Affiliate/>}/>
         <Route path="/stock" element={<Stock/>}/>

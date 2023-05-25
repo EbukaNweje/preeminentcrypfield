@@ -83,7 +83,7 @@ const SignUp = () => {
         <Wrapper>
             <Card>
                 <H1>Create an account </H1>
-                <Span>Already have and account? <Span2 to='/login'>Login</Span2></Span>
+                <Span>Already have an account? <Span2 to='/login'>Login</Span2></Span>
                 {/* <span style={{color: "lightgrey", marginTop: "80px"}}>Already have and account? <span style={{color: "#FF4D4D"}}>Login</span></span> */}
                 <Form onSubmit ={(e)=> Siginup(e)}>
                     <Label><MdPersonAddDisabled style={{marginRight:"2%" }}/>Full Name*</Label>

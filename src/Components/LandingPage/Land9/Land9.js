@@ -28,7 +28,7 @@ const Land7 = () => {
             </CardHold>
             <CardHold>
                <Card avatar={avatar3} name="Thomas Green" review="I've been extremely satisfied with my returns and the transparency of the company's practices."/>
-               <Card avatar={avatar4} review="I never thought I'd be a stock market investor, but this company has made it easy and profitable for me." name="Maria Rodriguez"/>
+               <Card avatar={avatar4} review="I never thought I'd be a stock market investor, but this company has made it easy and profitable for me." name="John Rodriguez"/>
             </CardHold>
         </Wrapper>
     </Container>

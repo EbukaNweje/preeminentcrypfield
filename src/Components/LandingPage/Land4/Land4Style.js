@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -130,7 +131,7 @@ p{
     color: silver;
 }
 `;
-export const Button = styled.div`
+export const Button = styled(Link)`
 background-color: #015FC9;
 /* border-radius: 1rem 3rem 3rem 1rem; */
 border-radius: 0.3rem;
@@ -140,6 +141,7 @@ padding: 0.7rem 3.2rem;
 cursor: pointer;
 color: aliceblue;
 font-size: 17px;
+text-decoration: none;
 
 @media Screen and (max-width: 1280px){
 padding: 0.3rem 2rem;

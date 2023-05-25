@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import styled from 'styled-components';
 // import {AiOutlineCloseSquare} from 'react-icons/bs';
 import {Link} from 'react-router-dom';
-import LogoBg from './bglogo.png';
+import LogoBg from './preeminentlogo.png';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -46,7 +46,7 @@ const SideNav = ({setNav}) =>{
                     <Line></Line>
                     <Span to='/arbitage'  onClick={()=>{
                 setNav(false);
-            }}> Arbitage </Span>
+            }}> Arbitrage </Span>
                     <Line></Line>
                     <Span to='/affiliate'  onClick={()=>{
                 setNav(false);

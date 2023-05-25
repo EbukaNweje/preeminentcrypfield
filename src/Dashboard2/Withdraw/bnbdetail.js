@@ -42,7 +42,7 @@ const [data, setData] = useState()
                   <Title>0xdbe2c06cb88894d3a13ca12450<br/>57fb26d69e181f</Title>
                 </Title>
                 <Box>
-                  <img src={qrcode} alt="wallet qr code"/>
+                  <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
                 </Box>
                 <TitleHold>
                   <Title>Plan: </Title>

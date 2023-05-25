@@ -25,7 +25,7 @@ const Land4 = () => {
             <p>So, we're building a platform without digital walls and complex barriers. A platform that empowers you to see new possibilities for your money -  and helps make them a reality.</p>
             <p>preeminent crypfield is backed by a team of world-class experts and the best technology talent. To stay at the forefront of innovation, we're always working on strengthening our position as Europe's leading digital asset platform.</p>
             <ButtonHold>
-                <Button>Discover More</Button>
+                <Button to="/aboutus">Discover More</Button>
             </ButtonHold>
         </Right>
         </Wrapper>

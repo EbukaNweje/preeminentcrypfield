@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const BitPage = () =>{
@@ -7,7 +8,7 @@ const BitPage = () =>{
             <Wrapper>
                 <Wrap>
                     <Text>IS BITCOIN A GOOD INVESTMENT - THE ANSWER IS, YES!</Text>
-                    <Button>Checkout</Button>
+                    <Button to="/register">Checkout</Button>
                 </Wrap>
                 <Wrap2>
                 <iframe title='btc' allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#%7B%22symbol%22%3A%22NASDAQ%3AAAPL%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22dateRange%22%3A%2212M%22%2C%22colorTheme%22%3A%22light%22%2C%22trendLineColor%22%3A%22rgba(41%2C%2098%2C%20255%2C%201)%22%2C%22underLineColor%22%3A%22rgba(41%2C%2098%2C%20255%2C%200.3)%22%2C%22underLineBottomColor%22%3A%22rgba(41%2C%2098%2C%20255%2C%200)%22%2C%22isTransparent%22%3Afalse%2C%22autosize%22%3Atrue%2C%22largeChartUrl%22%3A%22%22%2C%22utm_source%22%3A%22www.kryptbased-assets.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22mini-symbol-overview%22%2C%22page-uri%22%3A%22www.kryptbased-assets.com%2F%22%7D" style={{boxSizing: "border-box",display: "block", height: "100%", width: "100%"}}></iframe>
@@ -85,7 +86,7 @@ font-size: 17px;
 color: whitesmoke;
 
 `;
-const Button = styled.div`
+const Button = styled(Link)`
 width: 130px;
 height: auto;
 padding: 10px 20px;
@@ -97,5 +98,7 @@ margin-top: 15px;
 margin-right: 15px;
 font-weight: bold;
 color: #fff;
+cursor: pointer;
+text-decoration: none;
 `;
 
