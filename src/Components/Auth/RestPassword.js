@@ -49,7 +49,7 @@ const Login = (e) => {
         Swal.fire({
           icon: 'success',
           title: 'successfully',
-          text: "you have successfuly change your passwo",
+          text: "you have successfuly change your password",
        }) 
         setTimeout(() => {
           navigate(`/login`) 

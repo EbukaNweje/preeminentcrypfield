@@ -18,7 +18,6 @@ import { SpinnerCircular } from 'spinners-react';
 
 
 
-
 const OTP = () => {
 
   const {verifyid} = useParams()
@@ -67,6 +66,7 @@ const OTP = () => {
 
   const navigate = useNavigate();
   const url = `https://preeminent-crypfield.onrender.com/api/verifyotp/${verifyid}`
+  const url2 = `https://preeminent-crypfield.onrender.com/api/resetotp/${verifyid}`
 
     console.log(verifyid);
 
@@ -138,6 +138,19 @@ const OTP = () => {
 };
 
 
+const Resend = () => {
+  Axios.post(url2)
+  .then((res) => {
+    setMessage({ error: true, msg: res.data.data.message});
+    })
+    .catch((err)=>{
+    setMessage({ error: true, msg: err.data.data.message});
+    // console.log(err.data.data.message)
+    })
+
+}
+
+
 
   // const handleInputChange = (event) => {
   //   const { name, value } = event.target;
@@ -180,7 +193,7 @@ const OTP = () => {
       <Button onClick={(e)=> Verified(e)}> {loading ? <SpinnerCircular size={25} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" /> : "Verify"}</Button>
      <div style={{color: "red"}}>{errorotp? "Wrong verification code" : null}</div>
       <P>I didn't receieve any code</P>
-      <R>Resend code</R>
+      <R onClick={()=> Resend()}>Resend code</R>
       </Hold>
     </Wrapper>
   )
