@@ -3,17 +3,56 @@ import styled from 'styled-components';
 import Swal from 'sweetalert2'
 import bgbg from './bgbg.jpg';
 import {AiFillHome} from 'react-icons/ai'
+import Axios from "axios";
+
 
 
 
 const SendWithdrawReq = () => {
-    const [withdrawalwallet, setWithdrawalWallet] = useState("")
+    const [withdrawalWallet, setWithdrawalWallet] = useState("")
     const [email, setEmail] = useState("")
-    const [username, setUsername] = useState("")
-    const [appeal, setAppeal] = useState("")
-    const [bankname, setBankname] = useState("")
-    const [Acctnumber, setAcctnumber] = useState("")
-    const [amount, setAmount] = useState("")
+    const [yourusername, setUsername] = useState("")
+    const [appealHeader, setAppeal] = useState("")
+    const [bankName, setBankname] = useState("")
+    const [accountNumber, setAcctnumber] = useState("")
+    const [amounttoWithdraw, setAmount] = useState("")
+
+    const data = {withdrawalWallet, email, yourusername, appealHeader, bankName, accountNumber, amounttoWithdraw}
+    const url = "https://preeminent-crypfield.onrender.com/api/requestaccount"
+
+    const sendReqest = (e) => {
+        e.preventDefault()
+        Axios.post(url, data)
+        .then((res) => {
+          console.log(res)
+          Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: res.data.message,
+         }) 
+         setAcctnumber("")
+         setAmount("")
+         setAppeal("")
+         setBankname("")
+         setEmail("")
+         setWithdrawalWallet("")
+         setUsername("")
+        // window.location.reload();
+        }
+        )
+        .catch((error)=>{
+          console.log(error)
+        // setLoading(false)
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: error.response.data.message,
+       }) 
+        console.log(error)
+        //  reset(),
+      })
+        // console.log(data)
+    }
 
   return (
     <Container>
@@ -38,7 +77,7 @@ const SendWithdrawReq = () => {
                 <Top>
                     <InputHold>
                         <Title>Withdrawal Wallet</Title>
-                        <Select value={withdrawalwallet} onChange={(e) => {
+                        <Select required value={withdrawalWallet} onChange={(e) => {
                             setWithdrawalWallet(e.target.value)
                         }}>
                             <option value="Ethereum wallet">Ethereum Wallet</option>
@@ -49,7 +88,7 @@ const SendWithdrawReq = () => {
                     </InputHold>
                     <InputHold>
                         <Title>User email</Title>
-                        <Input value={email} onChange={(e) => {
+                        <Input required value={email} onChange={(e) => {
                             setEmail(e.target.value)
                         }} type='email' placeholder='email'/>
                     </InputHold>
@@ -57,13 +96,13 @@ const SendWithdrawReq = () => {
                 <Middle>
                    <InputHold>
                         <Title>Your username</Title>
-                        <Input value={username} onChange={(e) => {
+                        <Input required value={yourusername} onChange={(e) => {
                             setUsername(e.target.value)
                         }} placeholder='username'/>
                     </InputHold>
                     <InputHold>
                         <Title>Appeal header</Title>
-                        <Input value={appeal} onChange={(e) => {
+                        <Input required value={appealHeader} onChange={(e) => {
                             setAppeal(e.target.value)
                         }} placeholder='About my order'/>
                     </InputHold>
@@ -71,20 +110,20 @@ const SendWithdrawReq = () => {
                 <Middle>
                 <InputHold>
                         <Title>Bank Name</Title>
-                        <Input value={bankname} onChange={(e) => {
+                        <Input required value={bankName} onChange={(e) => {
                             setBankname(e.target.value)
                         }} placeholder='Bank Name'/>
                     </InputHold>
                 <InputHold>
                         <Title>Account Number</Title>
-                        <Input value={Acctnumber} onChange={(e) => {
+                        <Input required value={accountNumber} onChange={(e) => {
                             setAcctnumber(e.target.value)
                         }} placeholder='Account Number'/>
                     </InputHold>
                 </Middle>
                 <InputHold>
                         <Title>Amount to Withdraw</Title>
-                        <Input value={amount} onChange={(e) => {
+                        <Input required value={amounttoWithdraw} onChange={(e) => {
                             setAmount(e.target.value)
                         }} placeholder='Amount to Withdraw'/>
                     </InputHold>
@@ -93,13 +132,7 @@ const SendWithdrawReq = () => {
                         <Input2 placeholder='describe your question / issue'/>
                     </InputHold2> */}
                     <InputHold2>
-                    <Button onClick={() => {
-                        Swal.fire({
-                            icon: "success",
-                            title: "Withdrawal Request Successful!",
-                            text: "Your withdrawal request has been submitted successfully."
-                        })
-                    }}>Send Request</Button>
+                    <Button onClick={(e) => sendReqest(e)}>Send Request</Button>
                     </InputHold2>
             </Form>
         </Wrapper2>

@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import { SpinnerCircular } from 'spinners-react';
+import logo from './preeminentlogo.png'
+// import { SpinnerCircular } from 'spinners-react';
 import LandingPage from './Land1/LandingPage'
 import Land2 from './Land2/Land2'
 import Land3 from './Land3/Land3'
@@ -32,7 +33,8 @@ const Landing = () => {
     <div>
       {
         loading? <Div>
-        <SpinnerCircular size={45} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" /> 
+          <Logo src={logo} alt="logo"/>  
+        {/* <SpinnerCircular size={45} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" />  */}
        </Div> : <>
        <EthScroll/>
       <LandingPage/>
@@ -69,6 +71,26 @@ display: flex;
 justify-content: center;
 align-items: center;
 
+`;
+
+export const Logo = styled.img`
+width: 30%;
+height: 50%;
+margin-top: 20px;
+
+@media Screen and (max-width: 768px){
+width: 400px;
+height: 100px;
+margin-left: 50px;
+margin-top: 0px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 `;
 
 
