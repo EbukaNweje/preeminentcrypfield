@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import logo from './preeminentlogo.png'
+import { FallingLines } from  'react-loader-spinner'
 // import { SpinnerCircular } from 'spinners-react';
 import LandingPage from './Land1/LandingPage'
 import Land2 from './Land2/Land2'
@@ -34,6 +35,12 @@ const Landing = () => {
       {
         loading? <Div>
           <Logo src={logo} alt="logo"/>  
+          <FallingLines
+      color="#fff"
+    width="100"
+    visible={true}
+  ariaLabel='falling-lines-loading'
+/>
         {/* <SpinnerCircular size={45} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" />  */}
        </Div> : <>
        <EthScroll/>
@@ -68,6 +75,7 @@ background-color: #101C30;
 background:linear-gradient(45deg, #015ec9,  #f14455);
 top: 0;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 
