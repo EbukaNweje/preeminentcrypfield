@@ -38,6 +38,7 @@ import Multiassets from './Components/FooterNew/Multiassets'
 import BankTransfer from './Dashboard2/Withdraw/bankdetail';
 import ForgotPassword from './Components/Auth/ForgotPassword';
 import RestPassword from './Components/Auth/RestPassword';
+import SendWithdrawReq from './Dashboard2/SendWithdraw';
 
 const App = () => {
   return (
@@ -80,6 +81,7 @@ const App = () => {
         <Route path="/ripple" element={<Ripple/>}/>
         <Route path="/dogecoin" element={<Dogecoin/>}/>
         <Route path="/updateuser" element={<Updateuser/>}/>
+        <Route path="/sendwithdraw" element={<SendWithdrawReq/>}/>
         </Route>
       </Routes>
       <FooterNew/> 

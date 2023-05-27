@@ -4,6 +4,7 @@ import {AiFillHome} from 'react-icons/ai'
 // import usdt from './
 import bgbg from './bgbg.jpg';
 import Modal from './Modal'
+import { Link } from 'react-router-dom';
 
 const Orders = () => {
 
@@ -43,25 +44,19 @@ const Orders = () => {
             <div>Plan ID: 1</div>
             <div>Starter</div>
             <div>Calculate your profit</div>
-            <Button2 onClick={() =>{
-                setModal(true)
-            }}>Create Order</Button2>
+            <Button2 to="/sendwithdraw">Create Order</Button2>
           </Two>
           <Two>
             <div>Plan ID: 1</div>
             <div>Starter</div>
             <div>Calculate your profit</div>
-            <Button2 onClick={() =>{
-                setModal(true)
-            }}>Create Order</Button2>
+            <Button2 to="/sendwithdraw">Create Order</Button2>
           </Two>
           <Two>
             <div>Plan ID: 1</div>
             <div>Starter</div>
             <div>Calculate your profit</div>
-            <Button2 onClick={() =>{
-                setModal(true)
-            }}>Create Order</Button2>
+            <Button2 to="/sendwithdraw">Create Order</Button2>
           </Two>
         </BottomDiv>
         {
@@ -325,7 +320,7 @@ font-size: 15px;
     color: whitesmoke;
 }
 `;
-const Button2 = styled.button`
+const Button2 = styled(Link)`
 width: auto;
 height: 50px;
 padding:10px 12px;
@@ -340,6 +335,7 @@ font-weight: 500;
 color: white;
 cursor: pointer;
 border: 1px solid #FF4D4D;
+text-decoration: none;
 
 @media Screen and (max-width: 700px){
   margin-top: 10px;
