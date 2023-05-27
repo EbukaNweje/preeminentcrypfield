@@ -87,9 +87,9 @@ height: 50%;
 margin-top: 20px;
 
 @media Screen and (max-width: 768px){
-width: 400px;
-height: 100px;
-margin-left: 50px;
+width: 70%;
+height: 40%;
+/* margin-left: 50px; */
 margin-top: 0px;
 
 }
