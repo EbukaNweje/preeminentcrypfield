@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 import { 
-    AiFillCopy,
+    // AiFillCopy,
      AiOutlineCloud, AiOutlineCreditCard, AiOutlineDollar, AiOutlineWallet} from 'react-icons/ai'
 import {AiFillHome, AiFillProfile, AiOutlineCodeSandbox} from 'react-icons/ai'
 // import usdt from './
@@ -13,6 +15,11 @@ import Modal from "../Order/Modal"
 const NewDashboard = () => {
 
   const [modal, setModal] = useState(false)
+  const [state, setState] = useState({
+    value: "https://preeminentcrypfield.com/",
+    copied: false,
+  });
+
 
 const [data, setData] = useState()
   const {userid} = useParams()
@@ -43,8 +50,14 @@ const [data, setData] = useState()
             <InputHold>
             <Left1>
                 <Title>Referral Links</Title>
-              <Linkput>https://preeminentcrypfield.com//123ref_io
-              <AiFillCopy style={{width: 45, height: 45, color: "#BF2024"}}/>
+              <Linkput>
+              <input value={state.value} />
+              <CopyToClipboard
+            text={state.value}
+            onCopy={() => setState({ copied: true })}
+          >
+            <button>{state.copied ? "Copied" : "Copy text"}</button>
+          </CopyToClipboard>
                </Linkput>
             </Left1>
           </InputHold>
@@ -229,6 +242,22 @@ width: 100%;
     align-items: center;
     padding: 0 15px;
     border-radius: 0.3rem;
+
+    input{
+      color: white;
+      background-color: transparent;
+      width: 69%;
+      outline: none;
+      border: none;
+    }
+
+    button{
+      border: none;
+      background-color: red;
+      color: white;
+      height: 70%;
+      border-radius: 3px;
+    }
 
 @media Screen and (max-width: 768px){
     /* display: block; */
