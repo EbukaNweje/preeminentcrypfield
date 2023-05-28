@@ -94,7 +94,7 @@ export default WalletId;
 
 const Box = styled.div`
 width: 100%;
-height: 300px;
+height: 40%;
 /* background-color: red; */
 margin: 30px 0;
 display: flex;

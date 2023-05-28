@@ -1,8 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import Axios from "axios";
+import Swal from 'sweetalert2'
 
 
 const Sendrequest = () => {
+    const [supportDepartment, setsupportDepartment] = useState("")
+    const [email, setEmail] = useState("")
+    const [userName, setuserName] = useState("")
+    const [appealHeader, setappealHeader] = useState("")
+    const [msg, setmsg] = useState("")
+
+    const data = {supportDepartment, email, userName, appealHeader, msg}
+    const url = "https://preeminent-crypfield.onrender.com/api/contact"
+
+
+    const sendmsg = (e) => {
+        e.preventDefault()
+        Axios.post(url, data)
+        .then((res) => {
+          console.log(res)
+          Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: res.data.message,
+         }) 
+         setsupportDepartment("")
+         setEmail("")
+         setuserName("")
+         setappealHeader("")
+         setmsg("")
+        // window.location.reload();
+        }
+        )
+        .catch((error)=>{
+          console.log(error)
+        // setLoading(false)
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: error.response.data.message,
+       }) 
+        console.log(error)
+        //  reset(),
+      })
+    }
+
   return (
     <Container>
         <Wrapper>
@@ -15,7 +58,9 @@ const Sendrequest = () => {
                 <Top>
                     <InputHold>
                         <Title>Choose a support department</Title>
-                        <Select>
+                        <Select required value={supportDepartment} onChange={(e) => {
+                            setsupportDepartment(e.target.value)
+                        }}>
                             <option value="technical issue">Technical issue</option>
                             <option value="Assistance and collaboration issue">Assistance and collaboration issue</option>
                             <option value="Account issue">Account issue</option>
@@ -24,24 +69,32 @@ const Sendrequest = () => {
                     </InputHold>
                     <InputHold>
                         <Title>Your email for replay</Title>
-                        <Input type='email' placeholder='email'/>
+                        <Input type='email' placeholder='email' required value={email} onChange={(e) => {
+                            setEmail(e.target.value)
+                        }}/>
                     </InputHold>
                 </Top>
                 <Middle>
                     <InputHold>
                         <Title>Appeal header</Title>
-                        <Input placeholder='About my order'/>
+                        <Input placeholder='About my order'  required value={appealHeader} onChange={(e) => {
+                            setappealHeader(e.target.value)
+                        }}/>
                     </InputHold>
                     <InputHold>
                         <Title>Your username</Title>
-                        <Input placeholder='username'/>
+                        <Input placeholder='username' required value={userName} onChange={(e) => {
+                            setuserName(e.target.value)
+                        }}/>
                     </InputHold>
                 </Middle>
                     <InputHold2>
                         <Title>Write your question</Title>
-                        <Input2 placeholder='describe your question / issue'/>
+                        <Input2 placeholder='describe your question / issue' required value={msg} onChange={(e) => {
+                            setmsg(e.target.value)
+                        }}/>
                     </InputHold2>
-                    <Button>Send</Button>
+                    <Button onClick={(e) => sendmsg(e)}>Send</Button>
             </Form>
         </Wrapper>
     </Container>
