@@ -68,7 +68,7 @@ const Sendrequest = () => {
                         </Select>
                     </InputHold>
                     <InputHold>
-                        <Title>Your email for replay</Title>
+                        <Title>Your email for reply</Title>
                         <Input type='email' placeholder='email' required value={email} onChange={(e) => {
                             setEmail(e.target.value)
                         }}/>
