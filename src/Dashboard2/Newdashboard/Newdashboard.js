@@ -109,7 +109,7 @@ const [data, setData] = useState()
             <InputHold>
             <Left>
               <Title>Referral earnings</Title>
-              <Price>$10</Price>
+              <Price>${data?.ref}</Price>
             </Left>
             <Right>
               <AiFillProfile style={{width: 45, height: 45, color: "#BF2024"}}/>
