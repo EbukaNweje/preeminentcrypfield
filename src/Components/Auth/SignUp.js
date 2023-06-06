@@ -111,7 +111,7 @@ const SignUp = () => {
 
                     <CheckContainer>
                         <CheckBox type="checkbox" required/>
-                        <Tetx>I am over 18 years old and I agree to the terms and conditions premium-assets.com</Tetx>
+                        <Tetx>I am over 18 years old and I agree to the terms and conditions preeminentcrypfield.com</Tetx>
                     </CheckContainer>
                     <Button>{loading ? <SpinnerCircular size={25} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" /> : "Create an account"}</Button>
                 </Form>

@@ -6,10 +6,14 @@ import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
 import qrcode from "./bnbid.jpg"
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 
 const BnB = () => {
-
-
+  const [state, setState] = useState({
+    value: "0xdbe2c06cb88894d3a13ca1245057fb26d69e181f",
+    copied: false,
+  });
 const [data, setData] = useState()
   const {userid} = useParams()
   const url = `https://preeminent-crypfield.onrender.com/api/userdata/${userid}`
@@ -39,7 +43,15 @@ const [data, setData] = useState()
             <InputHold>
             <Left1>
                 <Title>Please send your payment to this wallet address: 
-                  <Title>0xdbe2c06cb88894d3a13ca12450<br/>57fb26d69e181f</Title>
+                  <Title>
+                  <input value={state.value} />
+              <CopyToClipboard
+            text={state.value}
+            onCopy={() => setState({ copied: true })}
+          >
+            <button>{state.copied ? "Copied" : "Copy text"}</button>
+          </CopyToClipboard>
+                  </Title>
                 </Title>
                 <Box>
                   <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
@@ -206,6 +218,22 @@ const Title = styled.div`
 font-size: 15px;
     font-weight: 500;
     color: whitesmoke;
+    margin-top: 20px;
+    input{
+      color: white;
+      background-color: transparent;
+      width: 69%;
+      outline: none;
+      border: none;
+    }
+
+    button{
+      border: none;
+      background-color: red;
+      color: white;
+      height: 70%;
+      border-radius: 3px;
+    }
 @media Screen and (max-width: 768px){
     /* display: block; */
     font-size: 17px;
