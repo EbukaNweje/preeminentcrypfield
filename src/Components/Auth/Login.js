@@ -81,8 +81,8 @@ const Login = () => {
                 <H1 style={{textAlign: "center"}}>Log in to your account</H1>
                 <Span>Don't have an account? <Span2 to='/register'>Sign up</Span2></Span>
                 <Form onSubmit={(e)=> Login(e)}>
-                    <Label><MdEmail style={{marginRight:"2%" }}/>Username*</Label>
-                    <Input type="text" placeholder='Username' value={userName} onChange ={(e)=>{setUserName(e.target.value)}} required/>
+                    <Label><MdEmail style={{marginRight:"2%" }}/>Email*</Label>
+                    <Input type="email" placeholder='Username' value={userName} onChange ={(e)=>{setUserName(e.target.value)}} required/>
 
                     <Label><BsFillLockFill style={{marginRight:"2%" }}/>Password*</Label>
                     <Input type="password" placeholder='Qwerty123!@#' value={password} onChange ={(e)=>{setPassword(e.target.value)}} required/>
