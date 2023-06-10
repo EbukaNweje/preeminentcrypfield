@@ -82,7 +82,7 @@ const Login = () => {
                 <Span>Don't have an account? <Span2 to='/register'>Sign up</Span2></Span>
                 <Form onSubmit={(e)=> Login(e)}>
                     <Label><MdEmail style={{marginRight:"2%" }}/>Email*</Label>
-                    <Input type="text" placeholder='Email' value={email} onChange ={(e)=>{setUserName(e.target.value)}} required/>
+                    <Input type="email" placeholder='Email' value={email} onChange ={(e)=>{setUserName(e.target.value)}} required/>
 
                     <Label><BsFillLockFill style={{marginRight:"2%" }}/>Password*</Label>
                     <Input type="password" placeholder='Qwerty123!@#' value={password} onChange ={(e)=>{setPassword(e.target.value)}} required/>
