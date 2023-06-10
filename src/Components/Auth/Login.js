@@ -19,7 +19,7 @@ import{ Container,
 const Login = () => {
 
     const navigate = useNavigate()
-    const [userName, setUserName] = useState("")
+    const [email, setUserName] = useState("")
     const [password, setPassword] = useState("")
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState({ error: false, msg:""});
@@ -27,7 +27,7 @@ const Login = () => {
     console.log(message);
     
     const url = "https://preeminent-crypfield.onrender.com/api/login"
-  const Data = {userName, password}
+  const Data = {email, password}
   console.log(url)
   console.log(Data)
 
@@ -82,7 +82,7 @@ const Login = () => {
                 <Span>Don't have an account? <Span2 to='/register'>Sign up</Span2></Span>
                 <Form onSubmit={(e)=> Login(e)}>
                     <Label><MdEmail style={{marginRight:"2%" }}/>Email*</Label>
-                    <Input type="email" placeholder='Email' value={userName} onChange ={(e)=>{setUserName(e.target.value)}} required/>
+                    <Input type="text" placeholder='Email' value={email} onChange ={(e)=>{setUserName(e.target.value)}} required/>
 
                     <Label><BsFillLockFill style={{marginRight:"2%" }}/>Password*</Label>
                     <Input type="password" placeholder='Qwerty123!@#' value={password} onChange ={(e)=>{setPassword(e.target.value)}} required/>
