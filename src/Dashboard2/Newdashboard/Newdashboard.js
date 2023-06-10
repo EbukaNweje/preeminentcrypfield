@@ -72,7 +72,7 @@ const [data, setData] = useState()
           </InputHold>
             <InputHold>
             <Left>
-              <Title>Interest Wallet Balance</Title>
+              <Title>Total Earned</Title>
               <Price>${data?.interestWalletbalance}.00</Price>
             </Left>
             <Right>
