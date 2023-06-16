@@ -11,7 +11,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const BnB = () => {
   const [state, setState] = useState({
-    value: "0xdbe2c06cb88894d3a13ca1245057fb26d69e181f",
+    value: "bnb1urf2a2keqeukmpqn3eyacp53s7zhhpy62cq6ck",
     copied: false,
   });
 const [data, setData] = useState()

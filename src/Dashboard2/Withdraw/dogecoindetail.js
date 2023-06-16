@@ -10,7 +10,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const DogeCoin = () => {
   const [state, setState] = useState({
-    value: "DQpticQ7X7qm5e4H3vMjaoYVuVYJFjDuSz",
+    value: "DNRDKX9ZySoFfXXsbhVYrmGfZTRnMBNhLp",
     copied: false,
   });
 
