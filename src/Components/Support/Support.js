@@ -41,7 +41,7 @@ const Support = () => {
                     <Left>
                         <Title data-aos="fade-down">Beginner's Guide</Title>
                         <P data-aos="fade-down">Everything you need for a successful<br/> start. Start earning now</P>
-                        <Readmore data-aos="fade-down" to='https://gmail.com'>Read more</Readmore>
+                        <Readmore data-aos="fade-down" to='/affiliate'>Read more</Readmore>
                     </Left>
                 </Card>
                 <Card>
