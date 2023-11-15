@@ -17,7 +17,7 @@ const DashHeader = () => {
       },[])
 
       const user =  JSON.parse(localStorage.getItem('User'))
-      console.log(user)
+      console.log(user.status)
     
   return (
     <Container data-aos="fade-down">
@@ -50,10 +50,14 @@ const DashHeader = () => {
                     <MdAddTask/>
                     <Nav to='/deposit'>Confirm Orders</Nav>
                 </NavHold>
-                <NavHold>
+
+                {
+                    user.status? <NavHold>
                     <MdAddTask/>
                     <Nav to='/updateuser'>Update User</Nav>
-                </NavHold>
+                </NavHold> : null
+                }
+                
                 {/* <NavHold>
                     <MdAddTask/>
                     <Nav to='/updateuser'>Update User</Nav>
