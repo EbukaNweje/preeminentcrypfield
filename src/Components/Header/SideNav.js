@@ -8,7 +8,6 @@ import 'aos/dist/aos.css'
 
 
 const SideNav = ({setNav}) =>{
-
     useEffect(() =>{
         AOS.init({duration:1000})
       },[])

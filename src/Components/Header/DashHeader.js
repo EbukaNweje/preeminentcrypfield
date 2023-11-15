@@ -16,7 +16,8 @@ const DashHeader = () => {
         AOS.init({duration:1000})
       },[])
 
-
+      const user =  JSON.parse(localStorage.getItem('User'))
+      console.log(user)
     
   return (
     <Container data-aos="fade-down">
@@ -48,6 +49,10 @@ const DashHeader = () => {
                 <NavHold>
                     <MdAddTask/>
                     <Nav to='/deposit'>Confirm Orders</Nav>
+                </NavHold>
+                <NavHold>
+                    <MdAddTask/>
+                    <Nav to='/updateuser'>Update User</Nav>
                 </NavHold>
                 {/* <NavHold>
                     <MdAddTask/>

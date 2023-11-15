@@ -26,7 +26,7 @@ const [data, setData] = useState()
   const url = `https://preeminent-crypfield.onrender.com/api/userdata/${userid}`
 
   useEffect(() =>{
-    axios.get(url).then(res => setData(res.data.data))
+    axios.get(url).then(res =>setData(res.data))
     /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, [])
 
