@@ -63,6 +63,18 @@ const UpdateWallet = ({Display}) => {
         // window.location.reload();
       }
 
+      const deleteprofile = (id) => {
+        const url = `https://preeminent-crypfield.onrender.com/api/userdata/${id}`
+        Axios.delete(url)
+        .then(res => {
+          console.log(res)
+          window.location.reload()
+        })
+        .catch((Err)=>{
+          console.log(Err)
+        })
+      }
+
   return (
     <Container>
         <h1>
@@ -74,6 +86,8 @@ const UpdateWallet = ({Display}) => {
          {
           data?.map((props)=>(
             <Wrapper>
+              <div style={{width:"100%", display:'flex', justifyContent:'flex-end',}}>
+                <button style={{background:'red', color:'white', border:'none'}} onClick={()=>deleteprofile(props._id)}>Delete</button></div>
             <TextDiv>
             <label>Name:</label>
              <p>{props.fullName}</p>
